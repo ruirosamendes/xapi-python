@@ -20,8 +20,10 @@ with open("credentials.json", "r") as f:
     
 
 
-async def SetSellStop(socket: Socket, position: str, percentage: int):
-    response = await socket.getTradeRecords([1181731000])
+async def SetSellStop(socket: Socket, position: int, percentage: int):
+    
+    # Calculate Sell Stop
+    response = await socket.getTradeRecords([position])
     if response['status'] == True:
         tradeRecords = response['returnData']
         data = pd.json_normalize(tradeRecords)
@@ -36,53 +38,61 @@ async def SetSellStop(socket: Socket, position: str, percentage: int):
         print("Open Price: " + str(buyOpenPrice))
         print("Volume: " + str(buyVolume))
         if percentage < 0:
-            customComment = "Minus " + str(percentage) 
-            print(customComment + "% : " + str(sellStop))            
+            customComment = "Minus " + str(percentage)  
         else:
             customComment = "Plus " + str(percentage) 
-            print(customComment + "% : " + str(sellStop))
-        
+        customComment = customComment + "%, price: " + str(sellStop)
+        print(customComment + "\n")                
     else:
         print("Failed to get trade records", response)
     
-    # # Set sell Stops!
-    # response = await connection.socket.tradeTransaction(
-    #         symbol="symbol",
-    #         cmd=TradeCmd.SELL_STOP,
-    #         type=TradeType.OPEN,
-    #         order=0,
-    #         price=sellStopMinus8,
-    #         volume=buyVolume,
-    #         customComment="-8%"
-    #     )
+    # Confirm sell stop order
+    user_input = input("Do you want to order the sell stop: " + customComment +  "? ")
 
-    # if response['status'] != True:
-    #     print("Failed to trade a transaction", response)
-    #     return
+    if user_input.lower() == 'yes':
+        print("Opening sell stop order\n")
+        # Set sell Stops!
+        response = await socket.tradeTransaction(
+                symbol=symbol,
+                cmd=TradeCmd.SELL_STOP,
+                type=TradeType.OPEN,
+                order=0,
+                price=sellStop,
+                volume=buyVolume,
+                customComment=customComment
+            )
 
-    # order = response['returnData']['order']
+        if response['status'] != True:
+            print("Failed to trade a transaction", response)
+            return
 
-    # response = await x.socket.tradeTransactionStatus(order)
-    # if response['status'] != True:
-    #     print("Failed to trade a transaction", response)
-    #     return
+        order = response['returnData']['order']
 
-    # requestStatus = response['returnData']['requestStatus']
-    # if requestStatus == TradeStatus.ERROR.value:
-    #     print(f"The transaction finished with error: {response['returnData']['message']}")
-    # elif requestStatus == TradeStatus.PENDING.value:
-    #     print(f"The transaction is pending")
-    # elif requestStatus == TradeStatus.ACCEPTED.value:
-    #     print(f"The transaction has been executed successfully")
-    # elif requestStatus == TradeStatus.REJECTED.value:
-    #     print(f"The transaction has been rejected: {response['returnData']['message']}")
+        response = await socket.tradeTransactionStatus(order)
+        if response['status'] != True:
+            print("Failed to trade a transaction", response)
+            return
+
+        requestStatus = response['returnData']['requestStatus']
+        if requestStatus == TradeStatus.ERROR.value:
+            print(f"The transaction finished with error: {response['returnData']['message']}")
+        elif requestStatus == TradeStatus.PENDING.value:
+            print(f"The transaction is pending")
+        elif requestStatus == TradeStatus.ACCEPTED.value:
+            print(f"The transaction has been executed successfully")
+        elif requestStatus == TradeStatus.REJECTED.value:
+            print(f"The transaction has been rejected: {response['returnData']['message']}")
+    
+    else:
+        print("NO sell stop ordered\n")   
 
 
 async def main():
     try:
         async with await xapi.connect(**CREDENTIALS) as x:            
-            position = "1181731000"            
+            position = 1177105528            
             await SetSellStop(x.socket, position, -8)
+            await SetSellStop(x.socket, position, 10)
 
     except xapi.LoginFailed as e:
         print(f"Log in failed: {e}")
