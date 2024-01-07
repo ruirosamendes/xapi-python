@@ -10,8 +10,7 @@ logging.basicConfig(level=logging.INFO)
 with open("credentials.json", "r") as f:
     CREDENTIALS = json.load(f)
 
-async def SetSellStop(socket: Socket, position: int, percentage: int):
-    
+async def SetSellStop(socket: Socket, position: int, percentage: int):    
     # Calculate Sell Stop
     response = await socket.getTradeRecords([position])
     if response['status'] == True:
@@ -20,12 +19,19 @@ async def SetSellStop(socket: Socket, position: int, percentage: int):
         buyTradeRecords = data[["order", "symbol","volume","open_price","close_price","profit","open_timeString","nominalValue","cmd","position"]].query("cmd==0")
 
         symbol = buyTradeRecords["symbol"].values[0]
-        buyOpenPrice = buyTradeRecords["open_price"].values[0]
+        openPrice = buyTradeRecords["open_price"].values[0]
+        closePrice = buyTradeRecords["close_price"].values[0]
         buyVolume = buyTradeRecords["volume"].values[0]
-        sellStop = round(buyOpenPrice * (1 + percentage/100),2)        
+        
+        referencePrice = openPrice
+        # Chose close price as reference if close price is higher than open price and negative percentage requested
+        if ((percentage < 0) and (closePrice > openPrice)):
+            referencePrice = closePrice
+        
+        sellStop = round(referencePrice * (1 + percentage/100),2)        
         
         print("Symbol: " + symbol)
-        print("Open Price: " + str(buyOpenPrice))
+        print("Reference Price: " + str(referencePrice))
         print("Volume: " + str(buyVolume))
         if percentage < 0:
             customComment = "Minus " + str(percentage)  
@@ -80,9 +86,9 @@ async def SetSellStop(socket: Socket, position: int, percentage: int):
 async def main():
     try:
         async with await xapi.connect(**CREDENTIALS) as x:            
-            position = 1177105528            
-            await SetSellStop(x.socket, position, -8)
-            await SetSellStop(x.socket, position, 10)
+            position = 1181731000            
+            await SetSellStop(x.socket, position, -10)
+            await SetSellStop(x.socket, position, 20)
 
     except xapi.LoginFailed as e:
         print(f"Log in failed: {e}")
