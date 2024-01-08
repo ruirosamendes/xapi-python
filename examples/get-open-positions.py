@@ -31,7 +31,8 @@ async def main():
                 openPositions = openPositions.rename(columns={"order_x":"buy_order","volume_x":"buy_volume","open_price_x":"buy_open_price","order_y":"sell_stop_order","volume_y":"sell_stop_volume","open_price_y":"sell_stop_open_price"})                         
                 openPositions.insert(2, "market_value", 0.0)
                 openPositions["market_value"] = round(openPositions["nominalValue"] + openPositions["profit"], 2)
-                
+                openPositions.insert(13, "sell_stop_percentage", 0.0)                
+                openPositions["sell_stop_percentage"] = -(100 - round((openPositions["sell_stop_open_price"] / openPositions["buy_open_price"]) * 100, 2))
                                             
                 print(openPositions.sort_values("symbol",ascending=True))              
                 # OUTPUT TO FILE
