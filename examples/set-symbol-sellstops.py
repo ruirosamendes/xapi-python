@@ -86,9 +86,8 @@ async def SetSellStop(socket: Socket, position: int, percentage: int):
 async def main():
     try:
         async with await xapi.connect(**CREDENTIALS) as x:            
-            position = 1177105528            
-            await SetSellStop(x.socket, position, -8)
-            await SetSellStop(x.socket, position, 16)
+            position = 1188802990            
+            await SetSellStop(x.socket, position, -5)            
 
     except xapi.LoginFailed as e:
         print(f"Log in failed: {e}")
