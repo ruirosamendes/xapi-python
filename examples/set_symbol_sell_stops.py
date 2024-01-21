@@ -107,7 +107,7 @@ async def set_sell_stop_price(socket: Socket, symbol: str, percentage: int, comm
                 # if user_input.lower() == 'yes': 
                 if (commit):
                     # Modify sell stop order!
-                    print("Modify sell stop order:" + str(sell_stop_order) + "\n")
+                    print("Modify sell stop order: " + str(sell_stop_order) + "\n")
                     await modify_sell_stop_order(socket, sell_stop_order, sell_stop_symbol, sell_stop_volume, sell_stop_price, custom_comment)                    
                 else:
                     print("Sell stop order: " + str(sell_stop_order) + " not modified\n")
@@ -138,7 +138,7 @@ async def main():
                 data = pd.json_normalize(trade_records)        
                 buy_trade_records = data[["order", "symbol","cmd"]].query("cmd==0")
                 for index, row in buy_trade_records.iterrows():
-                    await set_sell_stop_price(x.socket, row["symbol"], -5, True)                    
+                    await set_sell_stop_price(x.socket, row["symbol"], -5, False)                    
             else:
                     print("Failed to get trade records", response)
                     return
