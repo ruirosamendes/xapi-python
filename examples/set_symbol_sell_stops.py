@@ -131,11 +131,21 @@ async def set_sell_stop_price(socket: Socket, symbol: str, percentage: int, comm
 async def main():
     """Main."""
     try:
-        async with await xapi.connect(**CREDENTIALS) as x: 
-            await set_sell_stop_price(x.socket, "IFX.DE_9", -5)
-            await set_sell_stop_price(x.socket, "JMT.PT_9", -5)
-            await set_sell_stop_price(x.socket, "SLB.US_9", -5)
-            await set_sell_stop_price(x.socket, "MBG.DE_9", -5)
+        async with await xapi.connect(**CREDENTIALS) as x:
+            response = await x.socket.getTrades(True)
+            if response['status'] is True:
+                trade_records = response['returnData']
+                data = pd.json_normalize(trade_records)        
+                buy_trade_records = data[["order", "symbol","cmd"]].query("cmd==0")
+                for index, row in buy_trade_records.iterrows():
+                    await set_sell_stop_price(x.socket, row["symbol"], -5, True)                    
+            else:
+                    print("Failed to get trade records", response)
+                    return
+            # await set_sell_stop_price(x.socket, "IFX.DE_9", -5, True)
+            # await set_sell_stop_price(x.socket, "JMT.PT_9", -5, True)
+            # await set_sell_stop_price(x.socket, "SLB.US_9", -5, True)
+            # await set_sell_stop_price(x.socket, "MBG.DE_9", -5, True)
     except xapi.LoginFailed as e:
         print(f"Log in failed: {e}")
 
