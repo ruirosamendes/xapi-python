@@ -125,11 +125,9 @@ async def set_sell_stop_price(socket: Socket, symbol: str, percentage: int, comm
     else:
         print("Failed to get trade records", response)
         return
-       
-
-
-async def main():
-    """Main."""
+    
+async def set_open_positions_sell_stop_price(percentage:int, commit:bool = False):
+    """Set the sell stop_price all open positions."""
     try:
         async with await xapi.connect(**CREDENTIALS) as x:
             response = await x.socket.getTrades(True)
@@ -138,10 +136,10 @@ async def main():
                 data = pd.json_normalize(trade_records)        
                 buy_trade_records = data[["order", "symbol","cmd"]].query("cmd==0")
                 for index, row in buy_trade_records.iterrows():
-                    await set_sell_stop_price(x.socket, row["symbol"], -5, False)                    
+                    await set_sell_stop_price(x.socket, row["symbol"], percentage, commit)                    
             else:
-                    print("Failed to get trade records", response)
-                    return
+                print("Failed to get trade records", response)
+                return
             # await set_sell_stop_price(x.socket, "IFX.DE_9", -5, True)
             # await set_sell_stop_price(x.socket, "JMT.PT_9", -5, True)
             # await set_sell_stop_price(x.socket, "SLB.US_9", -5, True)
@@ -151,6 +149,10 @@ async def main():
 
     except xapi.ConnectionClosed as e:
         print(f"Connection closed: {e}")
+
+async def main():
+    """Main."""
+    await set_open_positions_sell_stop_price(-5, False)
 
 if __name__ == "__main__":
     asyncio.run(main())

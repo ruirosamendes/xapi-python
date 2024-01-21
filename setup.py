@@ -22,4 +22,5 @@ setup(
     python_requires='>=3.7',
     version="0.1.7",
     packages=['xapi'],
+    install_requires=['websockets>=11.0.2']
 )
