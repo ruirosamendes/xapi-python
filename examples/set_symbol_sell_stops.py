@@ -14,7 +14,7 @@ with open("credentials.json", "r") as f:
 async def return_order_status(socket: Socket, order:int):
     """Return roder status"""
     response = await socket.tradeTransactionStatus(order)
-    if response['status'] is not True:
+    if response['status'] is not True: 
         print("Failed to trade a transaction", response)
         return response
     request_status = response['returnData']['requestStatus']
