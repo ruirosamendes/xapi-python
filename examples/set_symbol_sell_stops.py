@@ -1,6 +1,7 @@
 import logging
 import asyncio
 import json
+import time
 import pandas as pd
 import xapi
 from xapi import Socket, TradeCmd, TradeType, TradeStatus
@@ -136,14 +137,18 @@ async def set_open_positions_sell_stop_price(percentage:int, commit:bool = False
                 data = pd.json_normalize(trade_records)        
                 buy_trade_records = data[["order", "symbol","cmd"]].query("cmd==0")
                 for index, row in buy_trade_records.iterrows():
-                    await set_sell_stop_price(x.socket, row["symbol"], percentage, commit)                    
+                    await set_sell_stop_price(x.socket, row["symbol"], percentage, commit)
+                    time.sleep(10)
             else:
                 print("Failed to get trade records", response)
                 return
             # await set_sell_stop_price(x.socket, "IFX.DE_9", -5, True)
-            # await set_sell_stop_price(x.socket, "JMT.PT_9", -5, True)
-            # await set_sell_stop_price(x.socket, "SLB.US_9", -5, True)
+            # await set_sell_stop_price(x.socket, "BBVA.ES_9", -5, True)
+            # await set_sell_stop_price(x.socket, "STLAM.IT", -5, True)
+            # await set_sell_stop_price(x.socket, "VAR1.DE_9", -5, True)
             # await set_sell_stop_price(x.socket, "MBG.DE_9", -5, True)
+            # await set_sell_stop_price(x.socket, "IFX.DE_9", -5, True)
+
     except xapi.LoginFailed as e:
         print(f"Log in failed: {e}")
 
@@ -152,7 +157,7 @@ async def set_open_positions_sell_stop_price(percentage:int, commit:bool = False
 
 async def main():
     """Main."""
-    await set_open_positions_sell_stop_price(-5, False)
+    await set_open_positions_sell_stop_price(-3, True)
 
 if __name__ == "__main__":
     asyncio.run(main())
