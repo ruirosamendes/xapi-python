@@ -84,7 +84,7 @@ async def set_sell_stop_price(socket: Socket, symbol: str, percentage: int, comm
         # than open price and negative percentage requested
         if ((percentage < 0) and (close_price > open_price)):
             reference_price = close_price        
-        sell_stop_price = round(reference_price * (1 + percentage/100),2)
+        sell_stop_price = round(reference_price * (1 + percentage/100),1)
         print("Symbol: " + symbol)
         print("Reference Price: " + str(reference_price))
         print("Volume: " + str(buy_volume))
@@ -138,7 +138,7 @@ async def set_open_positions_sell_stop_price(percentage:int, commit:bool = False
                 buy_trade_records = data[["order", "symbol","cmd"]].query("cmd==0")
                 for index, row in buy_trade_records.iterrows():
                     await set_sell_stop_price(x.socket, row["symbol"], percentage, commit)
-                    time.sleep(10)
+                    time.sleep(15)
             else:
                 print("Failed to get trade records", response)
                 return
@@ -157,7 +157,7 @@ async def set_open_positions_sell_stop_price(percentage:int, commit:bool = False
 
 async def main():
     """Main."""
-    await set_open_positions_sell_stop_price(-3, True)
+    await set_open_positions_sell_stop_price(-2, True)
 
 if __name__ == "__main__":
     asyncio.run(main())
