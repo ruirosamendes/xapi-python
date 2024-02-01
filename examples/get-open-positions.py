@@ -38,7 +38,13 @@ async def main():
                 openPositions.insert(12, "sell_stop_value", 0.0)                
                 openPositions["sell_stop_value"] = openPositions["sell_stop_price"] * openPositions["volume"]  
                 openPositions.insert(13, "sell_stop_lost", 0.0)                
-                openPositions["sell_stop_lost"] = (openPositions["buy_open_price"] * openPositions["volume"]) - openPositions["sell_stop_value"]
+                openPositions["sell_stop_lost"] = (openPositions["buy_open_price"] * openPositions["volume"]) - openPositions["sell_stop_value"]                
+                openPositions.insert(14, "alert_price_2", 0.0)
+                openPositions["alert_price_2"] =  round(openPositions["buy_open_price"] * (1 + 2/100), 2)
+                openPositions.insert(15, "alert_price_3", 0.0)
+                openPositions["alert_price_3"] =  round(openPositions["buy_open_price"] * (1 + 3/100), 2)
+                openPositions.insert(16, "alert_price_4", 0.0)
+                openPositions["alert_price_4"] =  round(openPositions["buy_open_price"] * (1 + 4/100), 2)
                 
 
                 print(openPositions.sort_values("symbol",ascending=True))              
