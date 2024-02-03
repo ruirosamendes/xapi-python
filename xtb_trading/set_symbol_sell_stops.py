@@ -11,7 +11,6 @@ logging.basicConfig(level=logging.INFO)
 with open("credentials.json", "r") as f:
     CREDENTIALS = json.load(f)
 
-
 async def return_order_status(socket: Socket, order:int):
     """Return roder status"""
     response = await socket.tradeTransactionStatus(order)
@@ -157,7 +156,7 @@ async def set_open_positions_sell_stop_price(percentage:int, commit:bool = False
 
 async def main():
     """Main."""
-    await set_open_positions_sell_stop_price(-5, True)
+    await set_open_positions_sell_stop_price(-4, True)
 
 if __name__ == "__main__":
     asyncio.run(main())
