@@ -9,3 +9,5 @@ __pycache__
 .venv
 *.pyc
 *.egg-info
+*.csv
+*.xlsx
