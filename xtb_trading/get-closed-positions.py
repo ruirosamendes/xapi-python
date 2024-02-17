@@ -1,10 +1,11 @@
 import logging
 import asyncio
 import json
-import xapi
-import pandas as pd
-from xapi import Socket
 from datetime import datetime as dt
+from xtb_trading.tradesymbol import Symbol
+import pandas as pd
+import xapi
+
 
 logging.basicConfig(level=logging.INFO)
 
@@ -15,16 +16,6 @@ with open("credentials.json", "r") as f:
 # start from the first day of a current year
 START = round(dt.today().replace(month=1, day=1).timestamp() * 1000)
 
-
-async def get_symbol_data(socket: Socket, symbol:str):
-    response = await socket.getSymbol(symbol)
-    if response['status'] is True:
-        data = pd.json_normalize(response['returnData'])
-        symbolData = data[["symbol", "description", "categoryName", "currency", "bid","ask", "time"]]
-    else:
-        symbolData = None
-        print("Failed to get symbol", response)
-    return symbolData
 
 async def main():
     try:
@@ -46,7 +37,8 @@ async def main():
                 
                 # Update current  bid, ask  and timeString
                 for index, row in closedTrades.iterrows():
-                    symbol_data = await get_symbol_data(x.socket, row["symbol"])
+                    symbol = Symbol(x.socket, row["symbol"])
+                    symbol_data = await symbol.get_data()
                     closedTrades.at[index, "description"] = symbol_data["description"].loc[0]
                     closedTrades.at[index, "category"] = symbol_data["categoryName"].loc[0]
                     closedTrades.at[index, "currency"] = symbol_data["currency"].loc[0]

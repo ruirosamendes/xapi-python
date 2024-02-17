@@ -21,10 +21,10 @@ async def main():
                 data = pd.json_normalize(trades)                              
                 print(data.columns.values)
                                 
-                buyTrades = data[["order", "symbol","volume","open_price","close_price","profit","open_timeString","nominalValue","cmd"]].query("cmd==0")
+                buyTrades = data[["order", "symbol","volume","open_price","close_price","profit","open_timeString","nominalValue","cmd"]].query("cmd==0 and symbol!='ABEA.DE_9'")
                 print(buyTrades)              
                 
-                sellStopTrades = data[["order", "symbol","volume","open_price","cmd"]].query("cmd==5")
+                sellStopTrades = data[["order", "symbol","volume","open_price","cmd"]].query("cmd==5 and symbol!='ABEA.DE_9'")
                 print(sellStopTrades)              
                                 
                 openPositions = pd.merge(buyTrades, sellStopTrades, how="inner", on=["symbol", "volume"]).drop(columns=["cmd_x", "cmd_y"])
