@@ -2,7 +2,7 @@ import logging
 import asyncio
 import json
 from datetime import datetime as dt
-from xtb_trading.tradesymbol import Symbol
+from trade_symbol import Symbol
 import pandas as pd
 import xapi
 
