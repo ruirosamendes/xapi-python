@@ -14,8 +14,9 @@ with open("credentials.json", "r") as f:
 async def main():
     try:
         async with await xapi.connect(**CREDENTIALS) as x:
-            symbol = Symbol(x.socket, "MSFT.US_9")
-            await symbol.open_short_buy(1000, True)
+            #symbol = Symbol(x.socket, "DBK.DE_9")
+            symbol = Symbol(x.socket, "MSF.DE_9")
+            await symbol.open_short_buy(2500, True)
             
     except xapi.LoginFailed as e:
         print(f"Log in failed: {e}")
