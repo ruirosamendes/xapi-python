@@ -15,15 +15,15 @@ async def main():
     try:
         async with await xapi.connect(**CREDENTIALS) as x:            
             # symbol = Symbol(x.socket, "RHM.DE_9")
-            # await symbol.open_short_buy(1000, True)
+            # await symbol.close_short_buy(True)
             # symbol = Symbol(x.socket, "CBK.DE_9")
-            #await symbol.open_short_buy(1000, False)
+            #await symbol.close_short_buy(False)
             symbol = Symbol(x.socket, "BAYN.DE_9")
-            await symbol.open_short_buy(1000, True)
+            await symbol.close_short_buy(True)
             # symbol = Symbol(x.socket, "TEF1.ES_9")
-            # await symbol.open_short_buy(1000, False)
+            # await symbol.close_short_buy(False)
             # symbol = Symbol(x.socket, "FTK.DE")
-            # await symbol.open_short_buy(1000, False)
+            # await symbol.close_short_buy(False)
             
             
 

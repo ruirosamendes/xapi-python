@@ -29,7 +29,7 @@ class Symbol:
         if response['status'] is True:
             print(response['returnData'])
             data = pd.json_normalize(response['returnData'])
-            symbol_data = data[["symbol", "description", "categoryName", "currency", "bid","ask", "time", "precision"]]
+            symbol_data = data[["symbol", "description", "categoryName", "currency", "bid","ask", "time", "precision", "spreadRaw"]]
         else:
             symbol_data = None
             print("Failed to get symbol", response)
@@ -72,6 +72,32 @@ class Symbol:
         else:
             print("Failed to make the transaction")        
         return order
+
+    async def __close_trade(self, order:int, cmd:TradeCmd, volume:int, price:float):
+        """close order."""
+        response = await self.socket.tradeTransaction(
+                        symbol=self.symbol,
+                        order=order,
+                        cmd=cmd,
+                        type=TradeType.CLOSE,
+                        price=price,
+                        volume=volume                        
+                    )
+        order = response['returnData']['order']
+        print(order)
+        if response['status'] is True:
+            print("Transaction done")
+             # Wait until the order is executed
+            pending = True
+            while pending:
+                status_response = await self.__return_order_status(order)           
+                if status_response['returnData']['requestStatus'] != TradeStatus.PENDING.value:
+                    pending = False
+        else:
+            print("Failed to make the transaction")        
+        return order
+
+
 
     async def set_sell_stop_price_by_percentage(self, percentage: int, commit: bool = False):
         """Calculate Sell Stop and set it."""
@@ -142,6 +168,8 @@ class Symbol:
         precision = symbol_data["precision"].loc[0]
         current_ask = round(symbol_data["ask"].loc[0],precision)
         current_bid = round(symbol_data["bid"].loc[0],precision)
+        loss_margin = 0.04
+        current_bid = round(current_bid * (1 - loss_margin/100),precision-1)
         volume = round(investment_value_reference / current_ask, 0)
         real_investment_value = round(current_ask * volume, 2)
         sell_stop_value = round(current_bid * volume, 2)
@@ -159,14 +187,45 @@ class Symbol:
             status_response = await self.__return_order_status(order)
             request_status = status_response['returnData']['requestStatus']
             if request_status == TradeStatus.ACCEPTED.value:
-                # print("Get buy order data")
-                # buy_order_data = await self.__get_order_data(order)
                 print("Buy order accepted, so now lets set the sell stop with the bid price and the same volume")
                 await self.__make_trade(0, TradeCmd.SELL_STOP, TradeType.OPEN, volume, current_bid, "sell stop short buy")               
         else:
             print("No buy ordered executed.\n")
 
+    async def close_short_buy(self, commit: bool = False):
+        """Close short buy."""        
         
+        print("Closing a buy short position\n")                                     
+        response = await self.socket.getTrades(False)
+        if response['status'] == True:
+            trades = response['returnData']
+            data = pd.json_normalize(trades)                              
+                            
+            buyTrades = data[["order", "symbol","volume","open_price","close_price","profit","open_timeString","nominalValue","cmd"]].query("cmd==0 and symbol==@self.symbol")
+            print(buyTrades)              
+            
+            sell_stop_trades = data[["order", "symbol","volume","open_price","cmd"]].query("cmd==5 and symbol==@self.symbol")
+            print(sell_stop_trades)     
 
+            if (commit):         
+                 # Is there any Sell Stop orders for this symbol?
+                if(len(sell_stop_trades) > 0):                    
+                    # Update them
+                    for index, row in sell_stop_trades.iterrows():
+                        print(index)
+                        sell_stop_order = row["order"]            
+                        sell_stop_volume = row["volume"]                    
+                        sell_stop_price = row["open_price"]                    
+                        # Close sell stop order!
+                        print("Close sell stop order: " + str(sell_stop_order) + "\n")                        
+                        order = await self.__close_trade(sell_stop_order, TradeCmd.SELL_STOP, sell_stop_volume, sell_stop_price)           
+                        await self.__return_order_status(order)                        
+            else:
+                print("No close orders executed.\n")    
+
+        else:
+            print("Failed to get trades", response)       
+
+       
         
         
