@@ -8,7 +8,7 @@ class Symbol:
         self.symbol = symbol
 
     async def __return_order_status(self, order:int):
-        """Return roder status"""
+        """Return order status"""
         response = await self.socket.tradeTransactionStatus(order)
         if response['status'] is not True:
             print("Failed to trade a transaction", response)
@@ -83,18 +83,19 @@ class Symbol:
                         type=TradeType.CLOSE,
                         price=price,
                         volume=volume                        
-                    )
-        order = response['returnData']['order']
-        print(order)
-        if response['status'] is True:
+                    )        
+        if response['status'] is True:            
             print("Transaction done")
-             # Wait until the order is executed
+            order = response['returnData']['order']
+            print(order)       
+            # Wait until the order is executed
             pending = True
             while pending:
                 status_response = await self.__return_order_status(order)           
                 if status_response['returnData']['requestStatus'] != TradeStatus.PENDING.value:
                     pending = False
         else:
+            order = None
             print("Failed to make the transaction")        
         return order
 
@@ -224,15 +225,19 @@ class Symbol:
             trades = response['returnData']
             data = pd.json_normalize(trades)       
             print(data.columns)
-            # SELL                
-            cmd = TradeCmd.SELL
-            trades = data[["order", "symbol","volume","open_price","close_price","cmd"]].query("cmd==@cmd and symbol==@self.symbol")
-            print(trades)
-            await self.__close_all_trades(trades, commit)
+            # # SELL                
+            # cmd = TradeCmd.SELL
+            # trades = data[["order", "symbol","volume","open_price","close_price","cmd"]].query("cmd==@cmd and symbol==@self.symbol")
+            # print(trades)
+            # await self.__close_all_trades(trades, commit)
+            # # SELL_STOP                
+            # cmd = TradeCmd.SELL_STOP
+            # trades = data[["order", "symbol","volume","open_price","close_price","cmd"]].query("cmd==@cmd and symbol==@self.symbol")
+            # print(trades)
+            # await self.__close_all_trades(trades, commit)
             # BUY
             cmd = TradeCmd.BUY
-            trades = data[["order", "symbol","volume","open_price","close_price","cmd"]].query("cmd==@cmd and symbol==@self.symbol")
-            print(trades)
+            trades = data[["order", "symbol","volume","open_price","close_price", "closed", "cmd"]].query("cmd==@cmd and symbol==@self.symbol")            
             await self.__close_all_trades(trades, commit)
         else:
             print("Failed to get trades", response) 

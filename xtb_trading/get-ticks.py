@@ -14,22 +14,18 @@ async def main():
     while True:
         try:
             symbol = "BITCOINCASH"
-            now = dt.now() # current date and time
-            date_time_str = now.strftime("%Y%m%d_%H%M%S")
-            filename = symbol + "_candles_" + date_time_str + ".csv"
-            print(filename)            
             async with await xapi.connect(**credentials) as x:
-                await x.stream.getCandles(symbol)
+                await x.stream.getTickPrices(symbol)
 
                 async for message in x.stream.listen():
                     data = message['data']
-                    minute_data = pd.json_normalize(data)
+                    tick_prices = pd.json_normalize(data)
                     #RSI com os tick prices
                     # minute_data.insert(2, "market_value", 0.0)
                     # minute_data["market_value"] = round(openPositions["nominalValue"] + openPositions["profit"], 2)
 
-                    print(minute_data)
-                    minute_data.to_csv(filename, mode='a', header=True, index=False)
+                    print(tick_prices)
+
 
         except xapi.LoginFailed as e:
             print(f"Log in failed: {e}")
