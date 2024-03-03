@@ -1,5 +1,6 @@
 import pandas as pd
 from xapi import Socket, TradeCmd, TradeType, TradeStatus
+from typing import cast
 
 class Symbol:
     def __init__(self, socket: Socket, symbol:str):
@@ -192,6 +193,28 @@ class Symbol:
         else:
             print("No buy ordered executed.\n")
 
+
+    async def __close_all_trades(self, trades: pd.DataFrame, commit: bool = False):
+        """Close all trades in the array"""                
+        if (commit):         
+                # Is there any Sell Stop orders for this symbol?
+            if(len(trades) > 0):                    
+                # Update them
+                for index, row in trades.iterrows():
+                    print(index)
+                    print(row)
+                    trade_cmd = TradeCmd(row["cmd"])  # Replace "cast" with "int"
+                    trade_order = row["order"]
+                    trade_volume = row["volume"]                        
+                    trade_price = row["open_price"]
+                    # Close sell stop order!
+                    print("Close  order: " + str(trade_order) + "\n")                        
+                    order = await self.__close_trade(trade_order, trade_cmd, trade_volume, trade_price)
+                    await self.__return_order_status(order)                        
+        else:
+            print("No close orders executed.\n")    
+
+
     async def close_short_buy(self, commit: bool = False):
         """Close short buy."""        
         
@@ -199,33 +222,17 @@ class Symbol:
         response = await self.socket.getTrades(False)
         if response['status'] == True:
             trades = response['returnData']
-            data = pd.json_normalize(trades)                              
-                            
-            buyTrades = data[["order", "symbol","volume","open_price","close_price","profit","open_timeString","nominalValue","cmd"]].query("cmd==0 and symbol==@self.symbol")
-            print(buyTrades)              
-            
-            sell_stop_trades = data[["order", "symbol","volume","open_price","cmd"]].query("cmd==5 and symbol==@self.symbol")
-            print(sell_stop_trades)     
-
-            if (commit):         
-                 # Is there any Sell Stop orders for this symbol?
-                if(len(sell_stop_trades) > 0):                    
-                    # Update them
-                    for index, row in sell_stop_trades.iterrows():
-                        print(index)
-                        sell_stop_order = row["order"]            
-                        sell_stop_volume = row["volume"]                    
-                        sell_stop_price = row["open_price"]                    
-                        # Close sell stop order!
-                        print("Close sell stop order: " + str(sell_stop_order) + "\n")                        
-                        order = await self.__close_trade(sell_stop_order, TradeCmd.SELL_STOP, sell_stop_volume, sell_stop_price)           
-                        await self.__return_order_status(order)                        
-            else:
-                print("No close orders executed.\n")    
-
+            data = pd.json_normalize(trades)       
+            print(data.columns)
+            # SELL                
+            cmd = TradeCmd.SELL
+            trades = data[["order", "symbol","volume","open_price","close_price","cmd"]].query("cmd==@cmd and symbol==@self.symbol")
+            print(trades)
+            await self.__close_all_trades(trades, commit)
+            # BUY
+            cmd = TradeCmd.BUY
+            trades = data[["order", "symbol","volume","open_price","close_price","cmd"]].query("cmd==@cmd and symbol==@self.symbol")
+            print(trades)
+            await self.__close_all_trades(trades, commit)
         else:
-            print("Failed to get trades", response)       
-
-       
-        
-        
+            print("Failed to get trades", response) 
