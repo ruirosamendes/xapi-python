@@ -28,10 +28,13 @@ async def main():
             # await symbol.close_short_buy(False)
             # symbol = Symbol(x.socket, "DBK.DE_9")
             # await symbol.close_short_buy(True)
-            symbol = Symbol(x.socket, "MSF.DE_9")
+            # symbol = Symbol(x.socket, "MSF.DE_9")
+            # await symbol.close_short_buy(True)
+            # symbol = Symbol(x.socket, "MSFT.US_9")
+            # await symbol.close_short_buy(True)
+            symbol = Symbol(x.socket, "QCOM.US_9")
             await symbol.close_short_buy(True)
-            
-            
+                                        
 
     except xapi.LoginFailed as e:
         print(f"Log in failed: {e}")

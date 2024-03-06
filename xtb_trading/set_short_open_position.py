@@ -20,14 +20,18 @@ async def main():
             #await symbol.open_short_buy(1000, False)
             # symbol = Symbol(x.socket, "BAYN.DE_9")
             # await symbol.open_short_buy(1000, True)
-            symbol = Symbol(x.socket, "DBK.DE_9")
-            await symbol.open_short_buy(1000, True)
+            # symbol = Symbol(x.socket, "DBK.DE_9")
+            # await symbol.open_short_buy(1000, True)
             # symbol = Symbol(x.socket, "TEF1.ES_9")
             # await symbol.open_short_buy(1000, False)
             # symbol = Symbol(x.socket, "FTK.DE")
             # await symbol.open_short_buy(1000, False)
             # symbol = Symbol(x.socket, "BITCOINCASH")
             # await symbol.open_short_buy(1000, False)
+            symbol = Symbol(x.socket, "QCOM.US_9")
+            await symbol.open_short_buy(1000, True)
+            
+
             
             
 

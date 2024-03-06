@@ -20,7 +20,10 @@ async def main():
                 async for message in x.stream.listen():
                     data = message['data']
                     tick_prices = pd.json_normalize(data)
-                    #RSI com os tick prices
+                    
+                    #RSI com os tick prices e ver divergências!## de ALTA ou de BAIXA!
+                    # mais regra do risco retorno (MAX 2%)  de todo o capital em risco (youtube)
+
                     # minute_data.insert(2, "market_value", 0.0)
                     # minute_data["market_value"] = round(openPositions["nominalValue"] + openPositions["profit"], 2)
 
