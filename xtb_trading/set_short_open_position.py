@@ -27,7 +27,7 @@ async def main():
             # symbol = Symbol(x.socket, "FTK.DE")
             # await symbol.open_short_buy(1000, False)
             # symbol = Symbol(x.socket, "BITCOINCASH")
-            # await symbol.open_short_buy(1000, False)
+            # await symbol.open_short_buy(1000, True)
             symbol = Symbol(x.socket, "QCOM.US_9")
             await symbol.open_short_buy(1000, True)
             

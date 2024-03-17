@@ -34,7 +34,8 @@ async def main():
             # await symbol.close_short_buy(True)
             symbol = Symbol(x.socket, "QCOM.US_9")
             await symbol.close_short_buy(True)
-                                        
+            # symbol = Symbol(x.socket, "BITCOINCASH")
+            # await symbol.close_short_buy(True)                                        
 
     except xapi.LoginFailed as e:
         print(f"Log in failed: {e}")

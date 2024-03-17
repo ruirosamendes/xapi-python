@@ -204,13 +204,12 @@ class Symbol:
                 for index, row in trades.iterrows():                    
                     print(row)
                     trade_cmd = TradeCmd(row["cmd"])  # Replace "cast" with "int"
-                    trade_order = row["order"]
-                    trade_position = row["position"]
+                    trade_order = row["order"]                    
                     trade_volume = row["volume"]                        
                     trade_price = row["open_price"]
                     # Close sell stop order!
-                    print("Closing position: " + str(trade_position) + "\n")                        
-                    order = await self.__close_trade(trade_position, trade_cmd, trade_volume, trade_price)
+                    print("Closing position: " + str(trade_order) + "\n")                        
+                    order = await self.__close_trade(trade_order, trade_cmd, trade_volume, trade_price)
                     await self.__return_order_status(order)                        
         else:
             print("No close orders executed.\n")    
@@ -225,18 +224,18 @@ class Symbol:
             trades = response['returnData']
             data = pd.json_normalize(trades)                 
             print(data.columns.values)
-            # # SELL                
-            # cmd = TradeCmd.SELL
-            # trades = data[["order", "symbol","volume","open_price","close_price","cmd"]].query("cmd==@cmd and symbol==@self.symbol")
-            # print(trades)
-            # await self.__close_all_trades(trades, commit)
+            # SELL                
+            cmd = TradeCmd.SELL
+            trades = data[["order", "symbol","volume","open_price","close_price","cmd"]].query("cmd==@cmd and symbol==@self.symbol")
+            print(trades)
+            await self.__close_all_trades(trades, commit)
             # # SELL_STOP                
             cmd = TradeCmd.SELL_STOP
-            trades = data[["order", "order2", "symbol","volume","open_price","close_price","position","cmd"]].query("cmd==@cmd and symbol==@self.symbol")            
+            trades = data[["order", "symbol","volume","open_price","close_price","position","cmd"]].query("cmd==@cmd and symbol==@self.symbol")            
             await self.__close_all_trades(trades, commit)
             # BUY
             cmd = TradeCmd.BUY
-            trades = data[["order", "order2", "symbol","volume","open_price","close_price","position","cmd"]].query("cmd==@cmd and symbol==@self.symbol")    
+            trades = data[["order", "symbol","volume","open_price","close_price","position","cmd"]].query("cmd==@cmd and symbol==@self.symbol")    
             await self.__close_all_trades(trades, commit)
         else:
             print("Failed to get trades", response) 
