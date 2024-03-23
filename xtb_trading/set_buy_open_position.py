@@ -28,11 +28,10 @@ async def main():
             # await symbol.open_short_buy(1000, False)
             # symbol = Symbol(x.socket, "BITCOINCASH")
             # await symbol.open_short_buy(1000, True)
-            symbol = Symbol(x.socket, "QCOM.US_9")
-            await symbol.open_short_buy(1000, True)
-            
-
-            
+            # symbol = Symbol(x.socket, "QCOM.US_9")
+            # await symbol.open_short_buy(1000, False)
+            symbol = Symbol(x.socket, "ETHEREUM")
+            await symbol.open_short_buy(20000, False)
             
 
     except xapi.LoginFailed as e:

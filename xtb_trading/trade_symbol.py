@@ -27,9 +27,8 @@ class Symbol:
     async def get_data(self):
         response = await self.socket.getSymbol(self.symbol)
         symbol_data = None
-        if response['status'] is True:
-            print(response['returnData'])
-            data = pd.json_normalize(response['returnData'])
+        if response['status'] is True:            
+            data = pd.json_normalize(response['returnData'])            
             symbol_data = data[["symbol", "description", "categoryName", "currency", "bid","ask", "time", "precision", "spreadRaw"]]
         else:
             symbol_data = None
@@ -49,7 +48,8 @@ class Symbol:
             print("Failed to get order", response)
         return order_data
     
-    async def __make_trade(self, order:int, cmd:TradeCmd, trade_type:TradeType, volume:int, price:float, custom_comment:str):
+    async def __make_trade(self, order:int, cmd:TradeCmd, trade_type:TradeType, volume:int,
+                            price:float, stop_loss:float=0.0, take_profit=0.0, custom_comment:str=None):
         """Open a new set stop order."""
         response = await self.socket.tradeTransaction(
                         symbol=self.symbol,
@@ -58,7 +58,9 @@ class Symbol:
                         type=trade_type,
                         price=price,
                         volume=volume,
-                        customComment=custom_comment
+                        customComment=custom_comment,
+                        sl=stop_loss,
+                        tp=take_profit
                     )
         order = response['returnData']['order']
         print(order)
@@ -142,7 +144,7 @@ class Symbol:
                     # if user_input.lower() == 'yes': 
                     if (commit):
                         # Modify sell stop order!
-                        print("Modify sell stop order: " + str(sell_stop_order) + "\n")                        
+                        print("Modify sell stop order: " + str(sell_stop_order) + "\n")                                                
                         order = await self.__make_trade(sell_stop_order, TradeCmd.SELL_STOP, TradeType.MODIFY, sell_stop_volume, sell_stop_price, custom_comment)           
                         await self.__return_order_status(order)
                     else:
@@ -165,32 +167,65 @@ class Symbol:
         
     async def open_short_buy(self, investment_value_reference:int, commit: bool = False):
         """Open short buy."""        
-        print("Get current negotiation data")                              
-        symbol_data = await self.get_data()
+        print("Get current negotiation data")                             
+        symbol_data = await self.get_data()        
+        category_name = symbol_data["categoryName"].loc[0]
         precision = symbol_data["precision"].loc[0]
         current_ask = round(symbol_data["ask"].loc[0],precision)
-        current_bid = round(symbol_data["bid"].loc[0],precision)
-        loss_margin = 0.04
-        current_bid = round(current_bid * (1 - loss_margin/100),precision-1)
-        volume = round(investment_value_reference / current_ask, 0)
-        real_investment_value = round(current_ask * volume, 2)
-        sell_stop_value = round(current_bid * volume, 2)
+        current_bid = round(symbol_data["bid"].loc[0],precision)        
+        # Buy strategy data
+        buy_price = current_ask
+        loss_margin = 1
+        sell_stop_price = round(current_bid * (1 - loss_margin/100),precision-1)        
+        stop_loss_price = sell_stop_price
+        gain_margin = 2.5
+        take_profit_price = round(current_ask * (1 + gain_margin/100),precision-1)        
+        # Investment, loss and profit values
+        volume = round(investment_value_reference / current_ask, 0)        
+        buy_value = round(buy_price * volume, 2)
+        sell_stop_value = round(sell_stop_price * volume, 2)
+        stop_loss_value = round(stop_loss_price * volume, 2)
+        take_profit_value = round(take_profit_price * volume, 2)       
+
         print("Symbol: " + self.symbol)
         print("Volume: " + str(volume))
         print("Ask price: " + str(current_ask))
-        print("Bid price: " + str(current_bid))
+        print("Bid price: " + str(current_bid) + "\n")        
+        print("Buy strategy data")        
+        print("buy price: " + str(buy_price))
+        print("Sell stop price: " + str(sell_stop_price))
+        print("Stop loss price: " + str(stop_loss_price))
+        print("Take profit price: " + str(take_profit_price))
+        
+        
         print("Investment Reference: " + str(investment_value_reference))
-        print("Real Investment: " + str(real_investment_value))
-        print("Sell stop value: " + str(sell_stop_value))
-        print("Opening a buy short position using tha ask price and the investment reference\n")                              
+        print("Buy value: " + str(buy_value))
+
+        if(category_name == "CRT"):
+            print("Stop loss value: " + str(stop_loss_value))
+            print("Max loss value: " + str(round(buy_value - stop_loss_value,2)))
+            print("Take profit value: " + str(take_profit_value))
+            print("Potential gain value: " + str(round(take_profit_value - buy_value,2)))
+        elif(category_name == "STC"):
+            print("Sell stop value: " + str(sell_stop_value))
+            print("Max loss value: " + str(round(buy_value - sell_stop_value,2)))
+
+        print("\n")        
+        print("Opening a buy short position using the ask price and the investment reference")                              
         if (commit):               
-            order = await self.__make_trade(0, TradeCmd.BUY, TradeType.OPEN, volume, current_ask, "open short buy")              
+            if(category_name == "CRT"):
+                print("Cripto order, so set the stop loss and the take profit")                    
+                order = await self.__make_trade(0, TradeCmd.BUY, TradeType.OPEN, volume, buy_price, sell_stop_price, take_profit_price, "open short buy")
+            elif(category_name == "STC"):
+                print("Stock order")              
+                order = await self.__make_trade(0, TradeCmd.BUY, TradeType.OPEN, volume, buy_price, "open short buy")
             # The order was accepted?
             status_response = await self.__return_order_status(order)
             request_status = status_response['returnData']['requestStatus']
             if request_status == TradeStatus.ACCEPTED.value:
-                print("Buy order accepted, so now lets set the sell stop with the bid price and the same volume")
-                await self.__make_trade(0, TradeCmd.SELL_STOP, TradeType.OPEN, volume, current_bid, "sell stop short buy")               
+                if(category_name == "STC"):
+                    print("Buy order accepted, so now lets set the sell stop with the bid price and the same volume")                    
+                    await self.__make_trade(0, TradeCmd.SELL_STOP, TradeType.OPEN, volume, sell_stop_price, "sell stop short buy")
         else:
             print("No buy ordered executed.\n")
 
