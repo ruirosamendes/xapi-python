@@ -14,7 +14,7 @@ with open("credentials.json", "r") as f:
 async def main():
     while True:
         try:
-            symbol = "BITCOINCASH"
+            symbol = "BITCOIN"
             symbol_prices = pd.DataFrame(columns=["symbol","ask","bid","low","high", "askVolume","bidVolume","spreadRaw","rsi"])
             async with await xapi.connect(**credentials) as x:
                 await x.stream.getTickPrices(symbol, 1)
