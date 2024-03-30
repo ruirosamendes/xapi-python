@@ -14,21 +14,27 @@ with open("credentials.json", "r") as f:
 async def main():
     while True:
         try:
-            symbol = "BITCOIN"
-            symbol_prices = pd.DataFrame(columns=["symbol","ask","bid","low","high", "askVolume","bidVolume","spreadRaw","rsi"])
+            symbol = "INTERCOMP"
+            symbol_prices = pd.DataFrame(columns=["symbol","ask","bid","low","high", "askVolume","bidVolume","spreadRaw","timestamp","datetime","rsiM1","rsiM5","rsiM15","rsiM30"])
             async with await xapi.connect(**credentials) as x:
-                await x.stream.getTickPrices(symbol, 1)
+                await x.stream.getTickPrices(symbol)
 
                 async for message in x.stream.listen():              
-                    data = pd.json_normalize(message['data'])
-                    
+                    data = pd.json_normalize(message['data'])                    
+                    tick_prices = data[["symbol","ask","bid","low","high","askVolume","bidVolume","spreadRaw", "timestamp"]]
+                    datetime = dt.fromtimestamp(tick_prices["timestamp"][0]/1000) 
+                    tick_prices.insert(9, "datetime", datetime)
                     # RSI com os tick prices e ver divergências!## de ALTA ou de BAIXA!
                     # mais regra do risco retorno (MAX 2%)  de todo o capital em risco (youtube)
                     # Sinal de compra: RSI > 30 
                     # Sinal de Venda: RSI < 70                                                        
-                    tick_prices = data[["symbol","ask","bid","low", "high", "askVolume","bidVolume","spreadRaw"]]
-                    symbol_prices = pd.concat([symbol_prices, tick_prices], ignore_index=True)
-                    symbol_prices["rsi"] = ta.rsi(symbol_prices["bid"], length=14)                    
+                    symbol_prices = pd.concat([symbol_prices, tick_prices], ignore_index=True)      
+                    symbol_prices["rsiM1"] = ta.rsi(symbol_prices["bid"], length=14)         
+                    symbol_prices["rsiM5"] = ta.rsi(symbol_prices["bid"], length=14)         
+                    symbol_prices["rsiM15"] = ta.rsi(symbol_prices["bid"], length=14)         
+                    symbol_prices["rsiM30"] = ta.rsi(symbol_prices["bid"], length=14)         
+                
+                    
                     print(symbol_prices)
                     
 

@@ -49,7 +49,7 @@ class Symbol:
         return order_data
     
     async def __make_trade(self, order:int, cmd:TradeCmd, trade_type:TradeType, volume:int,
-                            price:float, stop_loss:float=0.0, take_profit=0.0, custom_comment:str=None):
+                            price:float, stop_loss:float=0.0, take_profit:float=0.0, custom_comment:str=None):
         """Open a new set stop order."""
         response = await self.socket.tradeTransaction(
                         symbol=self.symbol,
@@ -58,9 +58,7 @@ class Symbol:
                         type=trade_type,
                         price=price,
                         volume=volume,
-                        customComment=custom_comment,
-                        sl=stop_loss,
-                        tp=take_profit
+                        customComment=custom_comment
                     )
         order = response['returnData']['order']
         print(order)

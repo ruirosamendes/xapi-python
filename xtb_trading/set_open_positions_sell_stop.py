@@ -44,7 +44,7 @@ async def set_open_positions_sell_stop_price(percentage:int, commit:bool = False
 
 async def main():
     """Main."""
-    await set_open_positions_sell_stop_price(-4, True)
+    await set_open_positions_sell_stop_price(-8, True)
 
 if __name__ == "__main__":
     asyncio.run(main())

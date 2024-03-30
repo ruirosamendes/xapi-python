@@ -14,8 +14,8 @@ with open("credentials.json", "r") as f:
 async def main():
     while True:
         try:
-            symbol = "BITCOINCASH"
-            close_prices = pd.DataFrame(columns=["symbol","ctmString","open","close","high","low","vol","quoteId","rsi"])
+            symbol = "INTERCOMP"
+            close_prices = pd.DataFrame(columns=["symbol","ctmString","open","close","high","low","vol","quoteId", "datetime", "rsiM1", "rsiM5", "rsiM15", "rsiM30"])
             now = dt.now() # current date and time
             date_time_str = now.strftime("%Y%m%d_%H%M%S")
             filename = symbol + "_candles_" + date_time_str + ".csv"
@@ -31,11 +31,24 @@ async def main():
                     # RSI com os tick prices e ver divergências!## de ALTA ou de BAIXA!
                     # mais regra do risco retorno (MAX 2%)  de todo o capital em risco (youtube)
                     # Sinal de compra: RSI > 30 
-                    # Sinal de Venda: RSI < 70           
-                    close_prices = pd.concat([close_prices, minute_data], ignore_index=True)                     
-                    close_prices["rsi"] = ta.rsi(close_prices["close"], length=14)      
+                    # Sinal de Venda: RSI < 70      
+                    datetime_object = dt.strptime(minute_data["ctmString"].iloc[0], '%b %d, %Y, %I:%M:%S %p')
+                    print(datetime_object)
+                    minute_data.insert(8, "datetime", datetime_object)
+
+
+                    # RSI com os tick prices e ver divergências!## de ALTA ou de BAIXA!
+                    # mais regra do risco retorno (MAX 2%)  de todo o capital em risco (youtube)
+                    # Sinal de compra: RSI > 30 
+                    # Sinal de Venda: RSI < 70                                                        
+                    close_prices = pd.concat([close_prices, minute_data], ignore_index=True)      
+                    close_prices["rsiM1"] = ta.rsi(close_prices["close"], length=14)         
+                    close_prices["rsiM5"] = ta.rsi(close_prices["close"], length=14)         
+                    close_prices["rsiM15"] = ta.rsi(close_prices["close"], length=14)         
+                    close_prices["rsiM30"] = ta.rsi(close_prices["close"], length=14)         
+                    
                     print(close_prices)
-                    #close_prices.to_csv(filename, mode='a', header=True, index=False)
+                    close_prices.to_csv(filename, mode='a', header=True, index=False)
 
         except xapi.LoginFailed as e:
             print(f"Log in failed: {e}")
