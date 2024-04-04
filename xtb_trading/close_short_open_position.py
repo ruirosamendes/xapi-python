@@ -32,7 +32,7 @@ async def main():
             # await symbol.close_short_buy(True)
             # symbol = Symbol(x.socket, "MSFT.US_9")
             # await symbol.close_short_buy(True)
-            symbol = Symbol(x.socket, "QCOM.US_9")
+            symbol = Symbol(x.socket, "PLTR.US_9")
             await symbol.close_short_buy(True)
             # symbol = Symbol(x.socket, "BITCOINCASH")
             # await symbol.close_short_buy(True)                                        
