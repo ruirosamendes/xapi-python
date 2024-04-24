@@ -14,8 +14,8 @@ with open("credentials.json", "r") as f:
 async def main():
     try:
         async with await xapi.connect(**CREDENTIALS) as x:            
-            symbol = Symbol(x.socket, "PLTR.US_9")
-            await symbol.open_short_buy(1000, True)
+            # symbol = Symbol(x.socket, "PLTR.US_9")
+            # await symbol.open_short_buy(1000, True)
             # symbol = Symbol(x.socket, "RHM.DE_9")
             # await symbol.open_short_buy(1000, True)
             # symbol = Symbol(x.socket, "ABI.BE_9")
