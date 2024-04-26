@@ -36,7 +36,7 @@ def set_rsi(prices:pd.DataFrame, ref_price_str:str, rsi_period = 14, sell_rsi = 
             print("RSI: " + str(last_price["rsiM1"].iloc[0]))
             print("ASK: " + str(last_price[ref_price_str].iloc[0]))  
             prices.loc[prices.index[-1], "signal"] = "BUY"
-            # symbol = Symbol(x.socket, sumbol_str)
+            # symbol = Symbol(x.socket, symbol_str)
             # await symbol.open_short_buy(1000, True)                            
         else:                            
             print ("No buy signal")                        

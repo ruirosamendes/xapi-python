@@ -16,7 +16,8 @@ async def main():
     while True:
         try:
             # symbol_str = "RHM.DE_9"
-            symbol_str = "PLTR.US_9"
+            # symbol_str = "PLTR.US_9"
+            symbol_str = "BITCOIN"
             close_prices = pd.DataFrame(columns=["symbol","ctmString","open","close","high","low","vol","quoteId", "datetime", "rsiM1","signal"])
             now = dt.now() # current date and time
             date_time_str = now.strftime("%Y%m%d_%H%M%S")

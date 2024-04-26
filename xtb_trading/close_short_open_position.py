@@ -33,9 +33,12 @@ async def main():
             # symbol = Symbol(x.socket, "MSFT.US_9")
             # await symbol.close_short_buy(True)
             symbol = Symbol(x.socket, "PLTR.US_9")
-            await symbol.close_short_buy(True)
+            await symbol.set_sell_stop_price_to_close(True)
             # symbol = Symbol(x.socket, "BITCOINCASH")
-            # await symbol.close_short_buy(True)                                        
+            # await symbol.close_short_buy(True)      
+
+            
+                                              
 
     except xapi.LoginFailed as e:
         print(f"Log in failed: {e}")

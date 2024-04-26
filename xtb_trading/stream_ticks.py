@@ -14,7 +14,8 @@ with open("credentials.json", "r") as f:
 async def main():
     while True:
         try:
-            symbol = "PLTR.US_9"
+            # symbol = "PLTR.US_9"
+            symbol = "BITCOIN"
             symbol_prices = pd.DataFrame(columns=["symbol","ask","bid","low","high", "askVolume","bidVolume","spreadRaw","timestamp","datetime","rsiM1","signal"])
             now = dt.now() # current date and time
             date_time_str = now.strftime("%Y%m%d_%H%M%S")
