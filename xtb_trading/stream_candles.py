@@ -13,20 +13,20 @@ with open("credentials.json", "r") as f:
     credentials = json.load(f)    
 
 async def main():
+    #symbol_str = "RHM.DE_9"
+    symbol_str = "MSF.DE_9"            
+    # symbol_str = "PLTR.US_9"
+    #symbol_str = "SMCI.US_9"
+    #symbol_str = "BITCOINCASH"
+    now = dt.now() # current date and time
+    date_time_str = now.strftime("%Y%m%d_%H%M%S")
+    filename = ".\\StreamCandles\\" + symbol_str + "_candles_" + date_time_str + ".csv"
+    print(filename)            
+    close_prices = pd.DataFrame(columns=["symbol","ctmString","open","close","high","low","vol","quoteId", "datetime", "rsiM1","signal"])
+    close_prices.to_csv(filename, mode='x', header=True, index=False)
+    
     while True:
-        try:
-            # symbol_str = "RHM.DE_9"
-            #symbol_str = "MSF.DE_9"            
-            # symbol_str = "PLTR.US_9"
-            symbol_str = "SMCI.US_9"
-            #symbol_str = "BITCOINCASH"
-            now = dt.now() # current date and time
-            date_time_str = now.strftime("%Y%m%d_%H%M%S")
-            filename = ".\\candles\\" + symbol_str + "_candles_" + date_time_str + ".csv"
-            print(filename)            
-            close_prices = pd.DataFrame(columns=["symbol","ctmString","open","close","high","low","vol","quoteId", "datetime", "rsiM1","signal"])
-            close_prices.to_csv(filename, mode='x', header=True, index=False)
-            
+        try:                       
             async with await xapi.connect(**credentials) as x:
                 await x.stream.getCandles(symbol_str)
 
