@@ -20,11 +20,12 @@ async def main():
             # symbol_str = "PLTR.US_9"
             symbol_str = "SMCI.US_9"
             #symbol_str = "BITCOINCASH"
-            close_prices = pd.DataFrame(columns=["symbol","ctmString","open","close","high","low","vol","quoteId", "datetime", "rsiM1","signal"])
             now = dt.now() # current date and time
             date_time_str = now.strftime("%Y%m%d_%H%M%S")
-            filename = symbol_str + "_candles_" + date_time_str + ".csv"
+            filename = ".\\candles\\" + symbol_str + "_candles_" + date_time_str + ".csv"
             print(filename)            
+            close_prices = pd.DataFrame(columns=["symbol","ctmString","open","close","high","low","vol","quoteId", "datetime", "rsiM1","signal"])
+            close_prices.to_csv(filename, mode='x', header=True, index=False)
             
             async with await xapi.connect(**credentials) as x:
                 await x.stream.getCandles(symbol_str)
