@@ -1,3 +1,4 @@
 websockets>=11.0.2
 pandas 
 pandas_ta
+xapi-python

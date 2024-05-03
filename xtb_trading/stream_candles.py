@@ -13,8 +13,8 @@ with open("credentials.json", "r") as f:
     credentials = json.load(f)    
 
 async def main():
-    #symbol_str = "RHM.DE_9"
-    symbol_str = "MSF.DE_9"            
+    symbol_str = "RHM.DE_9"
+    #symbol_str = "MSF.DE_9"            
     # symbol_str = "PLTR.US_9"
     #symbol_str = "SMCI.US_9"
     #symbol_str = "BITCOINCASH"
