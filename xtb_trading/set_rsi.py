@@ -4,7 +4,7 @@ import pandas as pd
 import pandas_ta as ta
 
 
-def set_rsi(prices:pd.DataFrame, ref_price_str:str, rsi_period = 14, sell_rsi = 70, buy_rsi = 30):        
+async def set_rsi(symbol:Symbol, prices:pd.DataFrame, ref_price_str:str, rsi_period = 14, sell_rsi = 70, buy_rsi = 30):
     # RSI com os tick prices e ver divergências!## de ALTA ou de BAIXA!
     # mais regra do risco retorno (MAX 2%)  de todo o capital em risco (youtube)
     # Sinal de compra: RSI > 30 
@@ -18,10 +18,11 @@ def set_rsi(prices:pd.DataFrame, ref_price_str:str, rsi_period = 14, sell_rsi = 
         print ("Sell signal")
         print ("above " + str(sell_rsi))                            
         print("RSI: " + str(last_price["rsiM1"].iloc[0]))
-        print("BID: " + str(last_price[ref_price_str].iloc[0]))                                                      
-        prices.loc[prices.index[-1], "signal"] = "SELL"
-        # symbol = Symbol(x.socket, symbol_str)
-        # await symbol.close_short_buy(True)
+        print(ref_price_str + ":" + str(last_price[ref_price_str].iloc[0]))                                                      
+        prices.loc[prices.index[-1], "signal"] = "SELL"        
+        symbol_data = await symbol.get_data()
+        prices.loc[prices.index[-1], "signal_price"] = symbol_data["bid"].loc[0]
+        print(symbol_data)
         has_signal = True
     else:                            
         print ("No sell signal")
@@ -34,10 +35,11 @@ def set_rsi(prices:pd.DataFrame, ref_price_str:str, rsi_period = 14, sell_rsi = 
             print ("Buy signal")
             print ("below " + str(buy_rsi))                            
             print("RSI: " + str(last_price["rsiM1"].iloc[0]))
-            print("ASK: " + str(last_price[ref_price_str].iloc[0]))  
+            print(ref_price_str + ":" + str(last_price[ref_price_str].iloc[0]))  
             prices.loc[prices.index[-1], "signal"] = "BUY"
-            # symbol = Symbol(x.socket, symbol_str)
-            # await symbol.open_short_buy(1000, True)                            
+            symbol_data = await symbol.get_data()                    
+            prices.loc[prices.index[-1], "signal_price"] = symbol_data["ask"].loc[0]
+            print(symbol_data)            
         else:                            
             print ("No buy signal")                        
             prices.loc[prices.index[-1], "signal"] = "HOLD"

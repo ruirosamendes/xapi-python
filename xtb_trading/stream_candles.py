@@ -15,21 +15,24 @@ with open("credentials.json", "r") as f:
 async def main():
     #symbol_str = "RHM.DE_9"
     #symbol_str = "MSF.DE_9"            
-    symbol_str = "PLTR.US_9"
+    #symbol_str = "PLTR.US_9"
+    symbol_str = "GOOGL.US_9"
     #symbol_str = "SMCI.US_9"
     #symbol_str = "BITCOINCASH"
     now = dt.now() # current date and time
     date_time_str = now.strftime("%Y%m%d_%H%M%S")
     filename = ".\\StreamCandles\\" + symbol_str + "_candles_" + date_time_str + ".csv"
     print(filename)            
-    close_prices = pd.DataFrame(columns=["symbol","ctmString","open","close","high","low","vol","quoteId", "datetime", "rsiM1","signal"])
+    close_prices = pd.DataFrame(columns=["symbol","ctmString","open","close","high","low","vol","quoteId","datetime","rsiM1","signal","signal_price"])
     close_prices.to_csv(filename, mode='x', header=True, index=False)
     
+
     while True:
         try:                       
             async with await xapi.connect(**credentials) as x:
+                symbol = Symbol(x.socket, symbol_str)
+    
                 await x.stream.getCandles(symbol_str)
-
                 async for message in x.stream.listen():                    
                     data = pd.json_normalize(message['data'])    
                     print(data)                
@@ -37,7 +40,7 @@ async def main():
                     datetime_object = dt.strptime(minute_data["ctmString"].iloc[0], '%b %d, %Y, %I:%M:%S %p')                    
                     minute_data.insert(8, "datetime", datetime_object)          
                     close_prices = pd.concat([close_prices, minute_data], ignore_index=True)                                    
-                    set_rsi(close_prices,"close", 11, 74, 26)
+                    await set_rsi(symbol, close_prices,"close", 11, 70, 30)
                     print(close_prices.tail(1))
                     close_prices.tail(1).to_csv(filename, mode='a', header=False, index=False)
 
