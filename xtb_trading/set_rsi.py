@@ -23,6 +23,14 @@ async def set_rsi(symbol:Symbol, prices:pd.DataFrame, ref_price_str:str, rsi_per
         symbol_data = await symbol.get_data()
         prices.loc[prices.index[-1], "signal_price"] = symbol_data["bid"].loc[0]
         print(symbol_data)
+         # Is there any position open?
+        buy_positions = await symbol.get_buy_positions()
+        if(len(buy_positions) > 0):
+            print("Set sell stop prices to quickly close open buy position.")
+            await symbol.set_sell_stop_price_to_close(True)
+        else:
+            print("There are no buy open positions to close")
+            
         has_signal = True
     else:                            
         print ("No sell signal")
@@ -37,9 +45,16 @@ async def set_rsi(symbol:Symbol, prices:pd.DataFrame, ref_price_str:str, rsi_per
             print("RSI: " + str(last_price["rsiM1"].iloc[0]))
             print(ref_price_str + ":" + str(last_price[ref_price_str].iloc[0]))  
             prices.loc[prices.index[-1], "signal"] = "BUY"
-            symbol_data = await symbol.get_data()                    
+            symbol_data = await symbol.get_data()                
             prices.loc[prices.index[-1], "signal_price"] = symbol_data["ask"].loc[0]
             print(symbol_data)            
+            # Is there any position open?
+            buy_positions = await symbol.get_buy_positions()
+            if(len(buy_positions) > 0):
+                print("There are already open positions. We will not open a new one.")
+            else:
+                print("There are no open positions. We will open a new one.")
+                await symbol.open_short_buy(2000, True)            
         else:                            
             print ("No buy signal")                        
             prices.loc[prices.index[-1], "signal"] = "HOLD"

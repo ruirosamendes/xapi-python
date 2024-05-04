@@ -1,3 +1,4 @@
+import argparse
 from trade_symbol import Symbol
 import logging
 from datetime import datetime as dt
@@ -12,21 +13,18 @@ logging.basicConfig(level=logging.INFO)
 with open("credentials.json", "r") as f:
     credentials = json.load(f)    
 
-async def main():
-    #symbol_str = "RHM.DE_9"
-    #symbol_str = "MSF.DE_9"            
-    #symbol_str = "PLTR.US_9"
-    symbol_str = "GOOGL.US_9"
-    #symbol_str = "SMCI.US_9"
-    #symbol_str = "BITCOINCASH"
+parser = argparse.ArgumentParser(description='Stream candles for a specific symbol.')
+parser.add_argument('symbol_str', type=str, help='The symbol to stream candles for.')
+args = parser.parse_args()    
+
+async def main(symbol_str:str = args.symbol_str):
+    
     now = dt.now() # current date and time
     date_time_str = now.strftime("%Y%m%d_%H%M%S")
     filename = ".\\StreamCandles\\" + symbol_str + "_candles_" + date_time_str + ".csv"
     print(filename)            
     close_prices = pd.DataFrame(columns=["symbol","ctmString","open","close","high","low","vol","quoteId","datetime","rsiM1","signal","signal_price"])
     close_prices.to_csv(filename, mode='x', header=True, index=False)
-    
-
     while True:
         try:                       
             async with await xapi.connect(**credentials) as x:

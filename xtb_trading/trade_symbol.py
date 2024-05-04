@@ -26,25 +26,25 @@ class Symbol:
 
     async def get_data(self):
         response = await self.socket.getSymbol(self.symbol)
-        symbol_data = None
+        symbol_data = []
         if response['status'] is True:            
             data = pd.json_normalize(response['returnData'])            
             symbol_data = data[["symbol", "description", "categoryName", "currency", "bid","ask", "time", "precision", "spreadRaw"]]
         else:
-            symbol_data = None
+            symbol_data = []
             print("Failed to get symbol", response)
         return symbol_data
     
     async def __get_order_data(self, order:int):
         response = await self.socket.getTradeRecords([order])
-        order_data = None
+        order_data = []
         if response['status'] is True:
             print(response['returnData'])
             data = pd.json_normalize(response['returnData'])
             print(data)
             #order_data = data[["symbol", "description", "categoryName", "currency", "bid","ask", "time"]]
         else:
-            order_data = None
+            order_data = []
             print("Failed to get order", response)
         return order_data
     
@@ -105,7 +105,7 @@ class Symbol:
         """Calculate Sell Stop and set it."""
         # Calculate Sell Stop    
         response = await self.socket.getTrades(True)
-        if response['status'] is True:
+        if response['status'] is True and len(response['returnData']) > 0:
             trade_records = response['returnData']
             data = pd.json_normalize(trade_records)        
             buy_trade_records = data[["order", "symbol","volume","open_price","close_price","profit","open_timeString","nominalValue","cmd","position"]].query("cmd==0 and symbol == @self.symbol")
@@ -251,7 +251,7 @@ class Symbol:
         
         print("Closing a buy short position\n")                                     
         response = await self.socket.getTrades(False)
-        if response['status'] == True:
+        if response['status'] is True and len(response['returnData']) > 0:
             trades = response['returnData']
             data = pd.json_normalize(trades)                 
             print(data.columns.values)
@@ -275,7 +275,7 @@ class Symbol:
         """Set Sell Stop and to force the position close."""
         # Calculate Sell Stop    
         response = await self.socket.getTrades(True)
-        if response['status'] is True:
+        if response['status'] is True and len(response['returnData']) > 0:
             trade_records = response['returnData']
             data = pd.json_normalize(trade_records)        
             buy_trade_records = data[["order", "symbol","volume","open_price","close_price","profit","open_timeString","nominalValue","cmd","position"]].query("cmd==0 and symbol == @self.symbol")
@@ -283,17 +283,19 @@ class Symbol:
             open_price = buy_trade_records["open_price"].values[0]
             close_price = buy_trade_records["close_price"].values[0]
             buy_volume = buy_trade_records["volume"].values[0]
-            # Chose close price as reference if close price is higher
-            # than open price and negative percentage requested
-            sell_stop_price = open_price 
-            if (close_price > open_price):
-                sell_stop_price = close_price   
-            else:
-                user_input = input("Closing price below the open price. Do you update current sell stop prices to force the closing?")
-                if user_input.lower() == 'yes':     
-                    sell_stop_price = close_price
-                else:
-                    return
+            # # Chose close price as reference if close price is higher
+            # # than open price and negative percentage requested
+            # sell_stop_price = open_price 
+            # if (close_price > open_price):
+            #     sell_stop_price = close_price   
+            # else:
+            #     print"Close
+            #     user_input = input("Closing price below the open price. Do you update current sell stop prices to force the closing?")
+            #     if user_input.lower() == 'yes':     
+            #         sell_stop_price = close_price
+            #     else:
+            #         return
+            sell_stop_price = close_price
             print("Symbol: " + self.symbol)
             print("Volume: " + str(buy_volume))
             print("Sell Stop Price: " + str(sell_stop_price))
@@ -321,3 +323,17 @@ class Symbol:
         else:
             print("Failed to get trade records", response)
             return
+
+    async def get_buy_positions(self):
+        """Set Sell Stop and to force the position close."""
+        buy_trade_records = []
+        # Calculate Sell Stop    
+        response = await self.socket.getTrades(True)
+        if response['status'] is True and len(response['returnData']) > 0:
+            trade_records = response['returnData']
+            data = pd.json_normalize(trade_records)        
+            buy_trade_records = data[["order", "symbol","volume","open_price","close_price","profit","open_timeString","nominalValue","cmd","position"]].query("cmd==0 and symbol == @self.symbol")          
+            return buy_trade_records
+        else:
+            print("Failed to get buy trade records", response)
+            return buy_trade_records

@@ -16,7 +16,7 @@ async def main():
     try:
         async with await xapi.connect(**CREDENTIALS) as x:
             response = await x.socket.getTrades(False)
-            if response['status'] == True:
+            if response['status'] == True and len(response['returnData']) > 0:
                 trades = response['returnData']
                 data = pd.json_normalize(trades)                              
                 print(data.columns.values)
