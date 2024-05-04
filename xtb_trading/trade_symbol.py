@@ -163,7 +163,7 @@ class Symbol:
             print("Failed to get trade records", response)
             return
         
-    async def open_short_buy(self, investment_value_reference:int, commit: bool = False, loss_margin:float = 1.0, gain_margin:float = 2.5):
+    async def open_short_buy(self, investment_value_reference:int, commit:bool = False, loss_margin:float = 1.0, gain_margin:float = 2.5):
         """Open short buy."""        
         print("Get current negotiation data")                             
         symbol_data = await self.get_data()        

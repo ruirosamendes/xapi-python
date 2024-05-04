@@ -4,7 +4,7 @@ import pandas as pd
 import pandas_ta as ta
 
 
-async def set_rsi(symbol:Symbol, prices:pd.DataFrame, ref_price_str:str, rsi_period = 14, sell_rsi = 70, buy_rsi = 30):
+async def buy_sell_with_rsi(symbol:Symbol, investment:int, commit:bool, prices:pd.DataFrame, ref_price_str:str, rsi_period = 14, sell_rsi = 70, buy_rsi = 30):
     # RSI com os tick prices e ver divergências!## de ALTA ou de BAIXA!
     # mais regra do risco retorno (MAX 2%)  de todo o capital em risco (youtube)
     # Sinal de compra: RSI > 30 
@@ -27,7 +27,7 @@ async def set_rsi(symbol:Symbol, prices:pd.DataFrame, ref_price_str:str, rsi_per
         buy_positions = await symbol.get_buy_positions()
         if(len(buy_positions) > 0):
             print("Set sell stop prices to quickly close open buy position.")
-            await symbol.set_sell_stop_price_to_close(True)
+            await symbol.set_sell_stop_price_to_close(commit)
         else:
             print("There are no buy open positions to close")
             
@@ -54,7 +54,7 @@ async def set_rsi(symbol:Symbol, prices:pd.DataFrame, ref_price_str:str, rsi_per
                 print("There are already open positions. We will not open a new one.")
             else:
                 print("There are no open positions. We will open a new one.")
-                await symbol.open_short_buy(2000, True)            
+                await symbol.open_short_buy(investment, commit)            
         else:                            
             print ("No buy signal")                        
             prices.loc[prices.index[-1], "signal"] = "HOLD"

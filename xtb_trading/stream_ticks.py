@@ -5,7 +5,7 @@ import pandas as pd
 import asyncio
 import json
 import xapi
-from set_rsi import set_rsi
+from set_rsi import buy_sell_with_rsi
 
 logging.basicConfig(level=logging.INFO)
 
@@ -43,7 +43,7 @@ async def main():
                     datetime = dt.fromtimestamp(ticks_data["timestamp"][0]/1000)
                     ticks_data.insert(9, "datetime", datetime)
                     symbol_prices = pd.concat([symbol_prices, ticks_data], ignore_index=True)                    
-                    await set_rsi(symbol, symbol_prices, "ask", 14, 50, 45)
+                    await buy_sell_with_rsi(symbol, 1000, False, symbol_prices, "ask", 14, 50, 45)
                     print(symbol_prices.tail(1))
                     symbol_prices.tail(1).to_csv(filename, mode='a', header=False, index=False)
 
