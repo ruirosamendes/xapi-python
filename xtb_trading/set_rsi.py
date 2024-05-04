@@ -9,7 +9,7 @@ async def buy_sell_with_rsi(symbol:Symbol, investment:int, commit:bool, prices:p
     # mais regra do risco retorno (MAX 2%)  de todo o capital em risco (youtube)
     # Sinal de compra: RSI > 30 
     # Sinal de Venda: RSI < 70                                                                                                       
-    prices["rsiM1"] = ta.rsi(prices[ref_price_str], length=rsi_period)                                             
+    prices["rsiM1"] = ta.rsi(prices[ref_price_str], length=rsi_period)
     last_price = prices.tail(1)                                     
     has_signal = False                    
     filter_sell = (prices["rsiM1"].shift(1) < sell_rsi) & (last_price["rsiM1"] > sell_rsi)
@@ -26,8 +26,12 @@ async def buy_sell_with_rsi(symbol:Symbol, investment:int, commit:bool, prices:p
          # Is there any position open?
         buy_positions = await symbol.get_buy_positions()
         if(len(buy_positions) > 0):
-            print("Set sell stop prices to quickly close open buy position.")
-            await symbol.set_sell_stop_price_to_close(commit)
+            if(symbol_data["categoryName"].loc[0] == "STC"):
+                print("Set sell stop prices to quickly close open buy position.")
+                await symbol.set_sell_stop_price_to_close(commit)
+            elif (symbol_data["categoryName"].loc[0] == "CRT"):
+                print("Close open buy position.")
+                await symbol.close_short_buy(commit)               
         else:
             print("There are no buy open positions to close")
             

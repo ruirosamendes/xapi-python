@@ -177,7 +177,10 @@ class Symbol:
         stop_loss_price = sell_stop_price        
         take_profit_price = round(current_ask * (1 + gain_margin/100),precision-1)        
         # Investment, loss and profit values
-        volume = round(investment_value_reference / current_ask, 0)        
+        if(investment_value_reference > current_ask):
+            volume = round(investment_value_reference / current_ask, 0)        
+        else:
+            volume = round(investment_value_reference / current_ask, precision)        
         buy_value = round(buy_price * volume, 2)
         sell_stop_value = round(sell_stop_price * volume, 2)
         stop_loss_value = round(stop_loss_price * volume, 2)

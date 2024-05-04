@@ -1,3 +1,4 @@
+import argparse
 from trade_symbol import Symbol
 import logging
 from datetime import datetime as dt
@@ -12,10 +13,11 @@ logging.basicConfig(level=logging.INFO)
 with open("credentials.json", "r") as f:
     credentials = json.load(f)
 
-async def main():
-    # symbol_str = "PLTR.US_9"
-    # symbol_str = "GOOGL.US_9"
-    symbol_str = "BITCOINCASH"
+parser = argparse.ArgumentParser(description='Stream candles for a specific symbol.')
+parser.add_argument('symbol_str', type=str, help='The symbol to stream candles for.')
+args = parser.parse_args()    
+
+async def main(symbol_str:str = args.symbol_str):
     now = dt.now() # current date and time
     date_time_str = now.strftime("%Y%m%d_%H%M%S")
     filename = ".\\StreamTicks\\" + symbol_str + "_ticks_" + date_time_str + ".csv"    
@@ -43,7 +45,7 @@ async def main():
                     datetime = dt.fromtimestamp(ticks_data["timestamp"][0]/1000)
                     ticks_data.insert(9, "datetime", datetime)
                     symbol_prices = pd.concat([symbol_prices, ticks_data], ignore_index=True)                    
-                    await buy_sell_with_rsi(symbol, 1000, False, symbol_prices, "ask", 14, 50, 45)
+                    await buy_sell_with_rsi(symbol, 10000, True, symbol_prices, "bid", 11, 65, 55)
                     print(symbol_prices.tail(1))
                     symbol_prices.tail(1).to_csv(filename, mode='a', header=False, index=False)
 
