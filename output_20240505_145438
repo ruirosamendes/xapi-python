@@ -1,0 +1,39 @@
+.\StreamCandles\ETHEREUM_candles_20240505_145438.csv
+             ctm                ctmString    open    close      high      low     vol  quoteId    symbol
+0  1714917240000  May 5, 2024, 3:54:00 PM  3142.6  3143.53  3144.015  3142.58  3454.0        5  ETHEREUM
+0    False
+Name: rsiM1, dtype: bool
+No sell signal
+No buy signal
+     symbol                ctmString    open    close      high      low     vol quoteId            datetime rsiM1 signal signal_price
+0  ETHEREUM  May 5, 2024, 3:54:00 PM  3142.6  3143.53  3144.015  3142.58  3454.0       5 2024-05-05 15:54:00  None   HOLD          NaN
+             ctm                ctmString     open    close     high      low     vol  quoteId    symbol
+0  1714917300000  May 5, 2024, 3:55:00 PM  3143.46  3143.88  3144.32  3141.51  3211.0        5  ETHEREUM
+0    False
+1    False
+Name: rsiM1, dtype: bool
+No sell signal
+No buy signal
+     symbol                ctmString     open    close     high      low     vol quoteId            datetime rsiM1 signal signal_price
+1  ETHEREUM  May 5, 2024, 3:55:00 PM  3143.46  3143.88  3144.32  3141.51  3211.0       5 2024-05-05 15:55:00  None   HOLD          NaN
+             ctm                ctmString    open   close     high      low     vol  quoteId    symbol
+0  1714917360000  May 5, 2024, 3:56:00 PM  3143.9  3142.0  3144.47  3141.81  3148.0        5  ETHEREUM
+0    False
+1    False
+2    False
+Name: rsiM1, dtype: bool
+No sell signal
+No buy signal
+     symbol                ctmString    open   close     high      low     vol quoteId            datetime rsiM1 signal signal_price
+2  ETHEREUM  May 5, 2024, 3:56:00 PM  3143.9  3142.0  3144.47  3141.81  3148.0       5 2024-05-05 15:56:00  None   HOLD          NaN
+             ctm                ctmString     open    close    high      low     vol  quoteId    symbol
+0  1714917420000  May 5, 2024, 3:57:00 PM  3142.15  3141.47  3142.6  3141.47  3204.0        5  ETHEREUM
+0    False
+1    False
+2    False
+3    False
+Name: rsiM1, dtype: bool
+No sell signal
+No buy signal
+     symbol                ctmString     open    close    high      low     vol quoteId            datetime rsiM1 signal signal_price
+3  ETHEREUM  May 5, 2024, 3:57:00 PM  3142.15  3141.47  3142.6  3141.47  3204.0       5 2024-05-05 15:57:00  None   HOLD          NaN

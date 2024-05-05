@@ -304,3 +304,75 @@ No sell signal
 No buy signal
      symbol                ctmString     open    close     high      low     vol quoteId            datetime      rsiM1 signal signal_price
 19  BITCOIN  May 5, 2024, 3:53:00 PM  64092.1  64064.5  64092.1  64049.5  3247.0       5 2024-05-05 15:53:00  59.552971   HOLD          NaN
+             ctm                ctmString     open    close     high      low     vol  quoteId   symbol
+0  1714917240000  May 5, 2024, 3:54:00 PM  64059.8  64088.0  64088.2  64059.8  3466.0        5  BITCOIN
+10    False
+11    False
+12    False
+13    False
+14    False
+15    False
+16    False
+17    False
+18    False
+19    False
+20    False
+Name: rsiM1, dtype: bool
+No sell signal
+No buy signal
+     symbol                ctmString     open    close     high      low     vol quoteId            datetime      rsiM1 signal signal_price
+20  BITCOIN  May 5, 2024, 3:54:00 PM  64059.8  64088.0  64088.2  64059.8  3466.0       5 2024-05-05 15:54:00  61.937024   HOLD          NaN
+             ctm                ctmString     open    close     high      low     vol  quoteId   symbol
+0  1714917300000  May 5, 2024, 3:55:00 PM  64086.7  64060.4  64092.9  64031.1  3547.0        5  BITCOIN
+11    False
+12    False
+13    False
+14    False
+15    False
+16    False
+17    False
+18    False
+19    False
+20    False
+21    False
+Name: rsiM1, dtype: bool
+No sell signal
+No buy signal
+     symbol                ctmString     open    close     high      low     vol quoteId            datetime     rsiM1 signal signal_price
+21  BITCOIN  May 5, 2024, 3:55:00 PM  64086.7  64060.4  64092.9  64031.1  3547.0       5 2024-05-05 15:55:00  57.55433   HOLD          NaN
+             ctm                ctmString     open    close     high      low     vol  quoteId   symbol
+0  1714917360000  May 5, 2024, 3:56:00 PM  64062.1  64015.9  64070.3  64015.9  3498.0        5  BITCOIN
+12    False
+13    False
+14    False
+15    False
+16    False
+17    False
+18    False
+19    False
+20    False
+21    False
+22    False
+Name: rsiM1, dtype: bool
+No sell signal
+No buy signal
+     symbol                ctmString     open    close     high      low     vol quoteId            datetime      rsiM1 signal signal_price
+22  BITCOIN  May 5, 2024, 3:56:00 PM  64062.1  64015.9  64070.3  64015.9  3498.0       5 2024-05-05 15:56:00  51.136798   HOLD          NaN
+             ctm                ctmString     open    close     high      low     vol  quoteId   symbol
+0  1714917420000  May 5, 2024, 3:57:00 PM  64018.2  64026.0  64035.1  64014.9  3276.0        5  BITCOIN
+13    False
+14    False
+15    False
+16    False
+17    False
+18    False
+19    False
+20    False
+21    False
+22    False
+23    False
+Name: rsiM1, dtype: bool
+No sell signal
+No buy signal
+     symbol                ctmString     open    close     high      low     vol quoteId            datetime      rsiM1 signal signal_price
+23  BITCOIN  May 5, 2024, 3:57:00 PM  64018.2  64026.0  64035.1  64014.9  3276.0       5 2024-05-05 15:57:00  52.460229   HOLD          NaN
