@@ -1,0 +1,2 @@
+symbol,ctmString,open,close,high,low,vol,quoteId,datetime,rsiM1,signal,signal_price
+BITCOIN,"May 5, 2024, 12:04:00 PM",63593.9,63610.5,63612.7,63593.9,3794.0,5,2024-05-05 12:04:00,,HOLD,

@@ -1,3 +1,5 @@
+
+import sys
 import argparse
 from trade_symbol import Symbol
 import logging
@@ -8,7 +10,36 @@ import json
 import xapi
 from set_rsi import buy_sell_with_rsi
 
+# class LoggerWriter:
+#     def __init__(self, level):
+#         self.level = level
+
+#     def write(self, message):
+#         if message.rstrip() != "":
+#             logger.log(self.level, message.rstrip())
+
+#     def flush(self):
+#         pass
+
+
+# Open the output file
+date_time_str = dt.now().strftime("%Y%m%d_%H%M%S")    
+output_file = open('output_' + date_time_str, 'w')
+# Redirect stdout to the output file
+sys.stdout = output_file
+
 logging.basicConfig(level=logging.INFO)
+# # Create a FileHandler for output.txt.
+# file_handler = logging.FileHandler('output.txt')
+# # Create a StreamHandler for stdout.
+# stream_handler = logging.StreamHandler(sys.stdout)
+# # Get the root logger and add the handlers to it.
+# logger = logging.getLogger()
+# logger.addHandler(file_handler)
+# logger.addHandler(stream_handler)
+
+# # Redirect stdout to logger
+# sys.stdout = LoggerWriter(logging.INFO)
 
 with open("credentials.json", "r") as f:
     credentials = json.load(f)    
@@ -37,12 +68,16 @@ async def main(symbol_str:str = args.symbol_str):
                     datetime_object = dt.strptime(minute_data["ctmString"].iloc[0], '%b %d, %Y, %I:%M:%S %p')                    
                     minute_data.insert(8, "datetime", datetime_object)          
                     close_prices = pd.concat([close_prices, minute_data], ignore_index=True)                                    
-                    await buy_sell_with_rsi(symbol, 10000, True, close_prices,"close", 14, 70, 30)
+                    await buy_sell_with_rsi(symbol, 10000, True, close_prices,"close", 11, 75, 25)
                     print(close_prices.tail(1))
                     close_prices.tail(1).to_csv(filename, mode='a', header=False, index=False)
+                    # Flush the output to the file
+                    output_file.flush()
 
         except xapi.LoginFailed as e:
             print(f"Log in failed: {e}")
+            # Close the output file
+            output_file.close()
             return
 
         except xapi.ConnectionClosed as e:
