@@ -1,0 +1,3079 @@
+.\StreamCandles\PLTR.US_9_candles_20240506_181021.csv
+             ctm                ctmString   open  close   high    low    vol  quoteId     symbol
+0  1715015400000  May 6, 2024, 7:10:00 PM  24.94  24.96  24.96  24.94  677.0        6  PLTR.US_9
+0    False
+Name: rsiM1, dtype: bool
+No sell signal
+No buy signal
+      symbol                ctmString   open  close   high    low    vol quoteId            datetime rsiM1 signal signal_price
+0  PLTR.US_9  May 6, 2024, 7:10:00 PM  24.94  24.96  24.96  24.94  677.0       6 2024-05-06 19:10:00  None   HOLD          NaN
+             ctm                ctmString   open  close   high    low    vol  quoteId     symbol
+0  1715015460000  May 6, 2024, 7:11:00 PM  24.96  24.95  24.96  24.95  363.0        6  PLTR.US_9
+0    False
+1    False
+Name: rsiM1, dtype: bool
+No sell signal
+No buy signal
+      symbol                ctmString   open  close   high    low    vol quoteId            datetime rsiM1 signal signal_price
+1  PLTR.US_9  May 6, 2024, 7:11:00 PM  24.96  24.95  24.96  24.95  363.0       6 2024-05-06 19:11:00  None   HOLD          NaN
+             ctm                ctmString   open  close   high    low    vol  quoteId     symbol
+0  1715015520000  May 6, 2024, 7:12:00 PM  24.96  24.96  24.96  24.96  267.0        6  PLTR.US_9
+0    False
+1    False
+2    False
+Name: rsiM1, dtype: bool
+No sell signal
+No buy signal
+      symbol                ctmString   open  close   high    low    vol quoteId            datetime rsiM1 signal signal_price
+2  PLTR.US_9  May 6, 2024, 7:12:00 PM  24.96  24.96  24.96  24.96  267.0       6 2024-05-06 19:12:00  None   HOLD          NaN
+             ctm                ctmString   open  close   high    low    vol  quoteId     symbol
+0  1715015580000  May 6, 2024, 7:13:00 PM  24.96  24.95  24.96  24.94  297.0        6  PLTR.US_9
+0    False
+1    False
+2    False
+3    False
+Name: rsiM1, dtype: bool
+No sell signal
+No buy signal
+      symbol                ctmString   open  close   high    low    vol quoteId            datetime rsiM1 signal signal_price
+3  PLTR.US_9  May 6, 2024, 7:13:00 PM  24.96  24.95  24.96  24.94  297.0       6 2024-05-06 19:13:00  None   HOLD          NaN
+             ctm                ctmString   open  close   high    low    vol  quoteId     symbol
+0  1715015640000  May 6, 2024, 7:14:00 PM  24.95  24.94  24.96  24.93  578.0        6  PLTR.US_9
+0    False
+1    False
+2    False
+3    False
+4    False
+Name: rsiM1, dtype: bool
+No sell signal
+No buy signal
+      symbol                ctmString   open  close   high    low    vol quoteId            datetime rsiM1 signal signal_price
+4  PLTR.US_9  May 6, 2024, 7:14:00 PM  24.95  24.94  24.96  24.93  578.0       6 2024-05-06 19:14:00  None   HOLD          NaN
+             ctm                ctmString   open  close   high    low    vol  quoteId     symbol
+0  1715015700000  May 6, 2024, 7:15:00 PM  24.94  24.97  24.97  24.93  669.0        6  PLTR.US_9
+0    False
+1    False
+2    False
+3    False
+4    False
+5    False
+Name: rsiM1, dtype: bool
+No sell signal
+No buy signal
+      symbol                ctmString   open  close   high    low    vol quoteId            datetime rsiM1 signal signal_price
+5  PLTR.US_9  May 6, 2024, 7:15:00 PM  24.94  24.97  24.97  24.93  669.0       6 2024-05-06 19:15:00  None   HOLD          NaN
+             ctm                ctmString   open  close   high    low    vol  quoteId     symbol
+0  1715015760000  May 6, 2024, 7:16:00 PM  24.97  24.97  24.99  24.97  697.0        6  PLTR.US_9
+0    False
+1    False
+2    False
+3    False
+4    False
+5    False
+6    False
+Name: rsiM1, dtype: bool
+No sell signal
+No buy signal
+      symbol                ctmString   open  close   high    low    vol quoteId            datetime rsiM1 signal signal_price
+6  PLTR.US_9  May 6, 2024, 7:16:00 PM  24.97  24.97  24.99  24.97  697.0       6 2024-05-06 19:16:00  None   HOLD          NaN
+             ctm                ctmString   open  close   high    low    vol  quoteId     symbol
+0  1715015820000  May 6, 2024, 7:17:00 PM  24.97  24.98  24.98  24.97  341.0        6  PLTR.US_9
+0    False
+1    False
+2    False
+3    False
+4    False
+5    False
+6    False
+7    False
+Name: rsiM1, dtype: bool
+No sell signal
+No buy signal
+      symbol                ctmString   open  close   high    low    vol quoteId            datetime rsiM1 signal signal_price
+7  PLTR.US_9  May 6, 2024, 7:17:00 PM  24.97  24.98  24.98  24.97  341.0       6 2024-05-06 19:17:00  None   HOLD          NaN
+             ctm                ctmString   open  close   high    low    vol  quoteId     symbol
+0  1715015880000  May 6, 2024, 7:18:00 PM  24.98  24.98  24.98  24.98  186.0        6  PLTR.US_9
+0    False
+1    False
+2    False
+3    False
+4    False
+5    False
+6    False
+7    False
+8    False
+Name: rsiM1, dtype: bool
+No sell signal
+No buy signal
+      symbol                ctmString   open  close   high    low    vol quoteId            datetime rsiM1 signal signal_price
+8  PLTR.US_9  May 6, 2024, 7:18:00 PM  24.98  24.98  24.98  24.98  186.0       6 2024-05-06 19:18:00  None   HOLD          NaN
+             ctm                ctmString   open  close   high    low    vol  quoteId     symbol
+0  1715015940000  May 6, 2024, 7:19:00 PM  24.98  24.95  24.98  24.95  408.0        6  PLTR.US_9
+0    False
+1    False
+2    False
+3    False
+4    False
+5    False
+6    False
+7    False
+8    False
+9    False
+Name: rsiM1, dtype: bool
+No sell signal
+No buy signal
+      symbol                ctmString   open  close   high    low    vol quoteId            datetime rsiM1 signal signal_price
+9  PLTR.US_9  May 6, 2024, 7:19:00 PM  24.98  24.95  24.98  24.95  408.0       6 2024-05-06 19:19:00  None   HOLD          NaN
+             ctm                ctmString   open  close   high    low    vol  quoteId     symbol
+0  1715016000000  May 6, 2024, 7:20:00 PM  24.95  24.93  24.95  24.93  597.0        6  PLTR.US_9
+0     False
+1     False
+2     False
+3     False
+4     False
+5     False
+6     False
+7     False
+8     False
+9     False
+10    False
+Name: rsiM1, dtype: bool
+No sell signal
+No buy signal
+       symbol                ctmString   open  close   high    low    vol quoteId            datetime  rsiM1 signal signal_price
+10  PLTR.US_9  May 6, 2024, 7:20:00 PM  24.95  24.93  24.95  24.93  597.0       6 2024-05-06 19:20:00    NaN   HOLD          NaN
+             ctm                ctmString   open  close   high    low    vol  quoteId     symbol
+0  1715016060000  May 6, 2024, 7:21:00 PM  24.93  24.95  24.95  24.93  407.0        6  PLTR.US_9
+1     False
+2     False
+3     False
+4     False
+5     False
+6     False
+7     False
+8     False
+9     False
+10    False
+11    False
+Name: rsiM1, dtype: bool
+No sell signal
+No buy signal
+       symbol                ctmString   open  close   high    low    vol quoteId            datetime      rsiM1 signal signal_price
+11  PLTR.US_9  May 6, 2024, 7:21:00 PM  24.93  24.95  24.95  24.93  407.0       6 2024-05-06 19:21:00  45.879886   HOLD          NaN
+             ctm                ctmString   open  close   high   low    vol  quoteId     symbol
+0  1715016120000  May 6, 2024, 7:22:00 PM  24.95  24.91  24.95  24.9  378.0        6  PLTR.US_9
+2     False
+3     False
+4     False
+5     False
+6     False
+7     False
+8     False
+9     False
+10    False
+11    False
+12    False
+Name: rsiM1, dtype: bool
+No sell signal
+No buy signal
+       symbol                ctmString   open  close   high   low    vol quoteId            datetime      rsiM1 signal signal_price
+12  PLTR.US_9  May 6, 2024, 7:22:00 PM  24.95  24.91  24.95  24.9  378.0       6 2024-05-06 19:22:00  32.297976   HOLD          NaN
+             ctm                ctmString   open  close   high    low    vol  quoteId     symbol
+0  1715016180000  May 6, 2024, 7:23:00 PM  24.89  24.88  24.89  24.88  310.0        6  PLTR.US_9
+3     False
+4     False
+5     False
+6     False
+7     False
+8     False
+9     False
+10    False
+11    False
+12    False
+13    False
+Name: rsiM1, dtype: bool
+No sell signal
+No buy signal
+       symbol                ctmString   open  close   high    low    vol quoteId            datetime     rsiM1 signal signal_price
+13  PLTR.US_9  May 6, 2024, 7:23:00 PM  24.89  24.88  24.89  24.88  310.0       6 2024-05-06 19:23:00  25.95828   HOLD          NaN
+             ctm                ctmString   open  close   high    low    vol  quoteId     symbol
+0  1715016240000  May 6, 2024, 7:24:00 PM  24.87  24.85  24.87  24.85  420.0        6  PLTR.US_9
+4     False
+5     False
+6     False
+7     False
+8     False
+9     False
+10    False
+11    False
+12    False
+13    False
+14    False
+Name: rsiM1, dtype: bool
+No sell signal
+Buy signal
+below 25
+RSI: 21.348736384434208
+close:24.85
+      symbol                          description categoryName currency    bid    ask           time  precision  spreadRaw
+0  PLTR.US_9  Palantir Technologies Inc - class A          STC      USD  24.85  24.87  1715016296918          2       0.02
+Failed to get buy trade records {'status': True, 'returnData': []}
+There are no open positions. We will open a new one.
+Get current negotiation data
+Symbol: PLTR.US_9
+Volume: 402.0
+Ask price: 24.87
+Bid price: 24.85
+
+Buy strategy data
+buy price: 24.87
+Sell stop price: 24.6
+Stop loss price: 24.6
+Take profit price: 25.5
+Investment Reference: 10000
+Buy value: 9997.74
+Sell stop value: 9889.2
+Max loss value: 108.54
+
+
+Opening a buy short position using the ask price and the investment reference
+Stock order
+617897116
+Transaction done
+The transaction has been executed successfully
+The transaction has been executed successfully
+Buy order accepted, so now lets set the sell stop with the bid price and the same volume
+617897120
+Transaction done
+The transaction has been executed successfully
+       symbol                ctmString   open  close   high    low    vol quoteId            datetime      rsiM1 signal signal_price
+14  PLTR.US_9  May 6, 2024, 7:24:00 PM  24.87  24.85  24.87  24.85  420.0       6 2024-05-06 19:24:00  21.348736    BUY        24.87
+             ctm                ctmString   open  close   high    low    vol  quoteId     symbol
+0  1715016300000  May 6, 2024, 7:25:00 PM  24.86  24.85  24.86  24.85  573.0        6  PLTR.US_9
+5     False
+6     False
+7     False
+8     False
+9     False
+10    False
+11    False
+12    False
+13    False
+14    False
+15    False
+Name: rsiM1, dtype: bool
+No sell signal
+No buy signal
+       symbol                ctmString   open  close   high    low    vol quoteId            datetime      rsiM1 signal signal_price
+15  PLTR.US_9  May 6, 2024, 7:25:00 PM  24.86  24.85  24.86  24.85  573.0       6 2024-05-06 19:25:00  21.348736   HOLD          NaN
+             ctm                ctmString   open  close   high    low    vol  quoteId     symbol
+0  1715016360000  May 6, 2024, 7:26:00 PM  24.84  24.82  24.84  24.82  289.0        6  PLTR.US_9
+6     False
+7     False
+8     False
+9     False
+10    False
+11    False
+12    False
+13    False
+14    False
+15    False
+16    False
+Name: rsiM1, dtype: bool
+No sell signal
+No buy signal
+       symbol                ctmString   open  close   high    low    vol quoteId            datetime      rsiM1 signal signal_price
+16  PLTR.US_9  May 6, 2024, 7:26:00 PM  24.84  24.82  24.84  24.82  289.0       6 2024-05-06 19:26:00  17.572917   HOLD          NaN
+             ctm                ctmString   open  close   high    low    vol  quoteId     symbol
+0  1715016420000  May 6, 2024, 7:27:00 PM  24.82  24.83  24.83  24.82  424.0        6  PLTR.US_9
+7     False
+8     False
+9     False
+10    False
+11    False
+12    False
+13    False
+14    False
+15    False
+16    False
+17    False
+Name: rsiM1, dtype: bool
+No sell signal
+No buy signal
+       symbol                ctmString   open  close   high    low    vol quoteId            datetime      rsiM1 signal signal_price
+17  PLTR.US_9  May 6, 2024, 7:27:00 PM  24.82  24.83  24.83  24.82  424.0       6 2024-05-06 19:27:00  22.592781   HOLD          NaN
+             ctm                ctmString   open  close   high    low    vol  quoteId     symbol
+0  1715016480000  May 6, 2024, 7:28:00 PM  24.84  24.87  24.88  24.84  584.0        6  PLTR.US_9
+8     False
+9     False
+10    False
+11    False
+12    False
+13    False
+14    False
+15    False
+16    False
+17    False
+18    False
+Name: rsiM1, dtype: bool
+No sell signal
+No buy signal
+       symbol                ctmString   open  close   high    low    vol quoteId            datetime      rsiM1 signal signal_price
+18  PLTR.US_9  May 6, 2024, 7:28:00 PM  24.84  24.87  24.88  24.84  584.0       6 2024-05-06 19:28:00  38.951513   HOLD          NaN
+             ctm                ctmString   open  close   high    low    vol  quoteId     symbol
+0  1715016540000  May 6, 2024, 7:29:00 PM  24.88  24.88  24.88  24.88  270.0        6  PLTR.US_9
+9     False
+10    False
+11    False
+12    False
+13    False
+14    False
+15    False
+16    False
+17    False
+18    False
+19    False
+Name: rsiM1, dtype: bool
+No sell signal
+No buy signal
+       symbol                ctmString   open  close   high    low    vol quoteId            datetime      rsiM1 signal signal_price
+19  PLTR.US_9  May 6, 2024, 7:29:00 PM  24.88  24.88  24.88  24.88  270.0       6 2024-05-06 19:29:00  42.304579   HOLD          NaN
+             ctm                ctmString   open  close   high    low    vol  quoteId     symbol
+0  1715016600000  May 6, 2024, 7:30:00 PM  24.88  24.84  24.88  24.84  467.0        6  PLTR.US_9
+10    False
+11    False
+12    False
+13    False
+14    False
+15    False
+16    False
+17    False
+18    False
+19    False
+20    False
+Name: rsiM1, dtype: bool
+No sell signal
+No buy signal
+       symbol                ctmString   open  close   high    low    vol quoteId            datetime      rsiM1 signal signal_price
+20  PLTR.US_9  May 6, 2024, 7:30:00 PM  24.88  24.84  24.88  24.84  467.0       6 2024-05-06 19:30:00  34.070753   HOLD          NaN
+             ctm                ctmString   open  close   high    low    vol  quoteId     symbol
+0  1715016660000  May 6, 2024, 7:31:00 PM  24.84  24.84  24.85  24.84  398.0        6  PLTR.US_9
+11    False
+12    False
+13    False
+14    False
+15    False
+16    False
+17    False
+18    False
+19    False
+20    False
+21    False
+Name: rsiM1, dtype: bool
+No sell signal
+No buy signal
+       symbol                ctmString   open  close   high    low    vol quoteId            datetime      rsiM1 signal signal_price
+21  PLTR.US_9  May 6, 2024, 7:31:00 PM  24.84  24.84  24.85  24.84  398.0       6 2024-05-06 19:31:00  34.070753   HOLD          NaN
+             ctm                ctmString   open  close   high    low    vol  quoteId     symbol
+0  1715016720000  May 6, 2024, 7:32:00 PM  24.83  24.86  24.86  24.82  509.0        6  PLTR.US_9
+12    False
+13    False
+14    False
+15    False
+16    False
+17    False
+18    False
+19    False
+20    False
+21    False
+22    False
+Name: rsiM1, dtype: bool
+No sell signal
+No buy signal
+       symbol                ctmString   open  close   high    low    vol quoteId            datetime      rsiM1 signal signal_price
+22  PLTR.US_9  May 6, 2024, 7:32:00 PM  24.83  24.86  24.86  24.82  509.0       6 2024-05-06 19:32:00  41.016232   HOLD          NaN
+             ctm                ctmString   open  close   high    low    vol  quoteId     symbol
+0  1715016780000  May 6, 2024, 7:33:00 PM  24.87  24.88  24.88  24.87  248.0        6  PLTR.US_9
+13    False
+14    False
+15    False
+16    False
+17    False
+18    False
+19    False
+20    False
+21    False
+22    False
+23    False
+Name: rsiM1, dtype: bool
+No sell signal
+No buy signal
+       symbol                ctmString   open  close   high    low    vol quoteId            datetime      rsiM1 signal signal_price
+23  PLTR.US_9  May 6, 2024, 7:33:00 PM  24.87  24.88  24.88  24.87  248.0       6 2024-05-06 19:33:00  47.141582   HOLD          NaN
+             ctm                ctmString   open  close  high    low    vol  quoteId     symbol
+0  1715016840000  May 6, 2024, 7:34:00 PM  24.88  24.89  24.9  24.88  586.0        6  PLTR.US_9
+14    False
+15    False
+16    False
+17    False
+18    False
+19    False
+20    False
+21    False
+22    False
+23    False
+24    False
+Name: rsiM1, dtype: bool
+No sell signal
+No buy signal
+       symbol                ctmString   open  close  high    low    vol quoteId            datetime      rsiM1 signal signal_price
+24  PLTR.US_9  May 6, 2024, 7:34:00 PM  24.88  24.89  24.9  24.88  586.0       6 2024-05-06 19:34:00  49.997545   HOLD          NaN
+             ctm                ctmString  open  close   high   low    vol  quoteId     symbol
+0  1715016900000  May 6, 2024, 7:35:00 PM  24.9  24.93  24.93  24.9  622.0        6  PLTR.US_9
+15    False
+16    False
+17    False
+18    False
+19    False
+20    False
+21    False
+22    False
+23    False
+24    False
+25    False
+Name: rsiM1, dtype: bool
+No sell signal
+No buy signal
+       symbol                ctmString  open  close   high   low    vol quoteId            datetime      rsiM1 signal signal_price
+25  PLTR.US_9  May 6, 2024, 7:35:00 PM  24.9  24.93  24.93  24.9  622.0       6 2024-05-06 19:35:00  59.601608   HOLD          NaN
+             ctm                ctmString   open  close   high    low    vol  quoteId     symbol
+0  1715016960000  May 6, 2024, 7:36:00 PM  24.94  24.96  24.96  24.94  541.0        6  PLTR.US_9
+16    False
+17    False
+18    False
+19    False
+20    False
+21    False
+22    False
+23    False
+24    False
+25    False
+26    False
+Name: rsiM1, dtype: bool
+No sell signal
+No buy signal
+       symbol                ctmString   open  close   high    low    vol quoteId            datetime      rsiM1 signal signal_price
+26  PLTR.US_9  May 6, 2024, 7:36:00 PM  24.94  24.96  24.96  24.94  541.0       6 2024-05-06 19:36:00  65.127482   HOLD          NaN
+             ctm                ctmString   open  close   high    low    vol  quoteId     symbol
+0  1715017020000  May 6, 2024, 7:37:00 PM  24.95  24.93  24.95  24.92  394.0        6  PLTR.US_9
+17    False
+18    False
+19    False
+20    False
+21    False
+22    False
+23    False
+24    False
+25    False
+26    False
+27    False
+Name: rsiM1, dtype: bool
+No sell signal
+No buy signal
+       symbol                ctmString   open  close   high    low    vol quoteId            datetime      rsiM1 signal signal_price
+27  PLTR.US_9  May 6, 2024, 7:37:00 PM  24.95  24.93  24.95  24.92  394.0       6 2024-05-06 19:37:00  56.609804   HOLD          NaN
+             ctm                ctmString   open  close   high    low    vol  quoteId     symbol
+0  1715017080000  May 6, 2024, 7:38:00 PM  24.93  24.93  24.93  24.93  305.0        6  PLTR.US_9
+18    False
+19    False
+20    False
+21    False
+22    False
+23    False
+24    False
+25    False
+26    False
+27    False
+28    False
+Name: rsiM1, dtype: bool
+No sell signal
+No buy signal
+       symbol                ctmString   open  close   high    low    vol quoteId            datetime      rsiM1 signal signal_price
+28  PLTR.US_9  May 6, 2024, 7:38:00 PM  24.93  24.93  24.93  24.93  305.0       6 2024-05-06 19:38:00  56.609804   HOLD          NaN
+             ctm                ctmString   open  close   high    low    vol  quoteId     symbol
+0  1715017140000  May 6, 2024, 7:39:00 PM  24.93  24.92  24.93  24.92  394.0        6  PLTR.US_9
+19    False
+20    False
+21    False
+22    False
+23    False
+24    False
+25    False
+26    False
+27    False
+28    False
+29    False
+Name: rsiM1, dtype: bool
+No sell signal
+No buy signal
+       symbol                ctmString   open  close   high    low    vol quoteId            datetime      rsiM1 signal signal_price
+29  PLTR.US_9  May 6, 2024, 7:39:00 PM  24.93  24.92  24.93  24.92  394.0       6 2024-05-06 19:39:00  53.773273   HOLD          NaN
+             ctm                ctmString   open  close   high    low    vol  quoteId     symbol
+0  1715017200000  May 6, 2024, 7:40:00 PM  24.93  24.95  24.95  24.92  522.0        6  PLTR.US_9
+20    False
+21    False
+22    False
+23    False
+24    False
+25    False
+26    False
+27    False
+28    False
+29    False
+30    False
+Name: rsiM1, dtype: bool
+No sell signal
+No buy signal
+       symbol                ctmString   open  close   high    low    vol quoteId            datetime      rsiM1 signal signal_price
+30  PLTR.US_9  May 6, 2024, 7:40:00 PM  24.93  24.95  24.95  24.92  522.0       6 2024-05-06 19:40:00  60.332396   HOLD          NaN
+             ctm                ctmString   open  close   high    low    vol  quoteId     symbol
+0  1715017260000  May 6, 2024, 7:41:00 PM  24.96  24.96  24.96  24.95  364.0        6  PLTR.US_9
+21    False
+22    False
+23    False
+24    False
+25    False
+26    False
+27    False
+28    False
+29    False
+30    False
+31    False
+Name: rsiM1, dtype: bool
+No sell signal
+No buy signal
+       symbol                ctmString   open  close   high    low    vol quoteId            datetime    rsiM1 signal signal_price
+31  PLTR.US_9  May 6, 2024, 7:41:00 PM  24.96  24.96  24.96  24.95  364.0       6 2024-05-06 19:41:00  62.2941   HOLD          NaN
+             ctm                ctmString   open  close   high    low    vol  quoteId     symbol
+0  1715017320000  May 6, 2024, 7:42:00 PM  24.97  25.02  25.02  24.96  759.0        6  PLTR.US_9
+22    False
+23    False
+24    False
+25    False
+26    False
+27    False
+28    False
+29    False
+30    False
+31    False
+32    False
+Name: rsiM1, dtype: bool
+No sell signal
+No buy signal
+       symbol                ctmString   open  close   high    low    vol quoteId            datetime      rsiM1 signal signal_price
+32  PLTR.US_9  May 6, 2024, 7:42:00 PM  24.97  25.02  25.02  24.96  759.0       6 2024-05-06 19:42:00  71.572611   HOLD          NaN
+             ctm                ctmString   open  close   high    low    vol  quoteId     symbol
+0  1715017380000  May 6, 2024, 7:43:00 PM  25.02  25.01  25.05  25.01  612.0        6  PLTR.US_9
+23    False
+24    False
+25    False
+26    False
+27    False
+28    False
+29    False
+30    False
+31    False
+32    False
+33    False
+Name: rsiM1, dtype: bool
+No sell signal
+No buy signal
+       symbol                ctmString   open  close   high    low    vol quoteId            datetime      rsiM1 signal signal_price
+33  PLTR.US_9  May 6, 2024, 7:43:00 PM  25.02  25.01  25.05  25.01  612.0       6 2024-05-06 19:43:00  68.483072   HOLD          NaN
+             ctm                ctmString   open  close   high    low    vol  quoteId     symbol
+0  1715017440000  May 6, 2024, 7:44:00 PM  25.01  25.01  25.03  25.01  691.0        6  PLTR.US_9
+24    False
+25    False
+26    False
+27    False
+28    False
+29    False
+30    False
+31    False
+32    False
+33    False
+34    False
+Name: rsiM1, dtype: bool
+No sell signal
+No buy signal
+       symbol                ctmString   open  close   high    low    vol quoteId            datetime      rsiM1 signal signal_price
+34  PLTR.US_9  May 6, 2024, 7:44:00 PM  25.01  25.01  25.03  25.01  691.0       6 2024-05-06 19:44:00  68.483072   HOLD          NaN
+             ctm                ctmString   open  close   high   low    vol  quoteId     symbol
+0  1715017500000  May 6, 2024, 7:45:00 PM  25.01   25.0  25.02  25.0  367.0        6  PLTR.US_9
+25    False
+26    False
+27    False
+28    False
+29    False
+30    False
+31    False
+32    False
+33    False
+34    False
+35    False
+Name: rsiM1, dtype: bool
+No sell signal
+No buy signal
+       symbol                ctmString   open  close   high   low    vol quoteId            datetime      rsiM1 signal signal_price
+35  PLTR.US_9  May 6, 2024, 7:45:00 PM  25.01   25.0  25.02  25.0  367.0       6 2024-05-06 19:45:00  65.083658   HOLD          NaN
+             ctm                ctmString   open  close   high    low    vol  quoteId     symbol
+0  1715017560000  May 6, 2024, 7:46:00 PM  24.99  25.02  25.02  24.99  375.0        6  PLTR.US_9
+26    False
+27    False
+28    False
+29    False
+30    False
+31    False
+32    False
+33    False
+34    False
+35    False
+36    False
+Name: rsiM1, dtype: bool
+No sell signal
+No buy signal
+       symbol                ctmString   open  close   high    low    vol quoteId            datetime      rsiM1 signal signal_price
+36  PLTR.US_9  May 6, 2024, 7:46:00 PM  24.99  25.02  25.02  24.99  375.0       6 2024-05-06 19:46:00  68.521298   HOLD          NaN
+             ctm                ctmString   open  close   high    low    vol  quoteId     symbol
+0  1715017620000  May 6, 2024, 7:47:00 PM  25.02  25.03  25.03  25.01  683.0        6  PLTR.US_9
+27    False
+28    False
+29    False
+30    False
+31    False
+32    False
+33    False
+34    False
+35    False
+36    False
+37    False
+Name: rsiM1, dtype: bool
+No sell signal
+No buy signal
+       symbol                ctmString   open  close   high    low    vol quoteId            datetime      rsiM1 signal signal_price
+37  PLTR.US_9  May 6, 2024, 7:47:00 PM  25.02  25.03  25.03  25.01  683.0       6 2024-05-06 19:47:00  70.138294   HOLD          NaN
+             ctm                ctmString   open  close   high    low    vol  quoteId     symbol
+0  1715017680000  May 6, 2024, 7:48:00 PM  25.04  25.03  25.06  25.03  723.0        6  PLTR.US_9
+28    False
+29    False
+30    False
+31    False
+32    False
+33    False
+34    False
+35    False
+36    False
+37    False
+38    False
+Name: rsiM1, dtype: bool
+No sell signal
+No buy signal
+       symbol                ctmString   open  close   high    low    vol quoteId            datetime      rsiM1 signal signal_price
+38  PLTR.US_9  May 6, 2024, 7:48:00 PM  25.04  25.03  25.06  25.03  723.0       6 2024-05-06 19:48:00  70.138294   HOLD          NaN
+             ctm                ctmString   open  close   high    low    vol  quoteId     symbol
+0  1715017740000  May 6, 2024, 7:49:00 PM  25.03  25.05  25.05  25.03  283.0        6  PLTR.US_9
+29    False
+30    False
+31    False
+32    False
+33    False
+34    False
+35    False
+36    False
+37    False
+38    False
+39    False
+Name: rsiM1, dtype: bool
+No sell signal
+No buy signal
+       symbol                ctmString   open  close   high    low    vol quoteId            datetime      rsiM1 signal signal_price
+39  PLTR.US_9  May 6, 2024, 7:49:00 PM  25.03  25.05  25.05  25.03  283.0       6 2024-05-06 19:49:00  73.439981   HOLD          NaN
+             ctm                ctmString   open  close   high    low    vol  quoteId     symbol
+0  1715017800000  May 6, 2024, 7:50:00 PM  25.04  25.03  25.04  25.03  435.0        6  PLTR.US_9
+30    False
+31    False
+32    False
+33    False
+34    False
+35    False
+36    False
+37    False
+38    False
+39    False
+40    False
+Name: rsiM1, dtype: bool
+No sell signal
+No buy signal
+       symbol                ctmString   open  close   high    low    vol quoteId            datetime      rsiM1 signal signal_price
+40  PLTR.US_9  May 6, 2024, 7:50:00 PM  25.04  25.03  25.04  25.03  435.0       6 2024-05-06 19:50:00  65.476558   HOLD          NaN
+             ctm                ctmString   open  close   high    low    vol  quoteId     symbol
+0  1715017860000  May 6, 2024, 7:51:00 PM  25.02  25.01  25.02  25.01  211.0        6  PLTR.US_9
+31    False
+32    False
+33    False
+34    False
+35    False
+36    False
+37    False
+38    False
+39    False
+40    False
+41    False
+Name: rsiM1, dtype: bool
+No sell signal
+No buy signal
+       symbol                ctmString   open  close   high    low    vol quoteId            datetime      rsiM1 signal signal_price
+41  PLTR.US_9  May 6, 2024, 7:51:00 PM  25.02  25.01  25.02  25.01  211.0       6 2024-05-06 19:51:00  58.498929   HOLD          NaN
+             ctm                ctmString  open  close   high   low    vol  quoteId     symbol
+0  1715017920000  May 6, 2024, 7:52:00 PM  25.0  25.02  25.02  25.0  445.0        6  PLTR.US_9
+32    False
+33    False
+34    False
+35    False
+36    False
+37    False
+38    False
+39    False
+40    False
+41    False
+42    False
+Name: rsiM1, dtype: bool
+No sell signal
+No buy signal
+       symbol                ctmString  open  close   high   low    vol quoteId            datetime      rsiM1 signal signal_price
+42  PLTR.US_9  May 6, 2024, 7:52:00 PM  25.0  25.02  25.02  25.0  445.0       6 2024-05-06 19:52:00  60.796703   HOLD          NaN
+             ctm                ctmString   open  close   high    low    vol  quoteId     symbol
+0  1715017980000  May 6, 2024, 7:53:00 PM  25.02  25.05  25.05  25.02  598.0        6  PLTR.US_9
+33    False
+34    False
+35    False
+36    False
+37    False
+38    False
+39    False
+40    False
+41    False
+42    False
+43    False
+Name: rsiM1, dtype: bool
+No sell signal
+No buy signal
+       symbol                ctmString   open  close   high    low    vol quoteId            datetime      rsiM1 signal signal_price
+43  PLTR.US_9  May 6, 2024, 7:53:00 PM  25.02  25.05  25.05  25.02  598.0       6 2024-05-06 19:53:00  66.852988   HOLD          NaN
+             ctm                ctmString   open  close   high    low    vol  quoteId     symbol
+0  1715018040000  May 6, 2024, 7:54:00 PM  25.06  25.04  25.06  25.03  503.0        6  PLTR.US_9
+34    False
+35    False
+36    False
+37    False
+38    False
+39    False
+40    False
+41    False
+42    False
+43    False
+44    False
+Name: rsiM1, dtype: bool
+No sell signal
+No buy signal
+       symbol                ctmString   open  close   high    low    vol quoteId            datetime     rsiM1 signal signal_price
+44  PLTR.US_9  May 6, 2024, 7:54:00 PM  25.06  25.04  25.06  25.03  503.0       6 2024-05-06 19:54:00  63.26916   HOLD          NaN
+             ctm                ctmString   open  close   high    low    vol  quoteId     symbol
+0  1715018100000  May 6, 2024, 7:55:00 PM  25.04  25.04  25.05  25.04  547.0        6  PLTR.US_9
+35    False
+36    False
+37    False
+38    False
+39    False
+40    False
+41    False
+42    False
+43    False
+44    False
+45    False
+Name: rsiM1, dtype: bool
+No sell signal
+No buy signal
+       symbol                ctmString   open  close   high    low    vol quoteId            datetime     rsiM1 signal signal_price
+45  PLTR.US_9  May 6, 2024, 7:55:00 PM  25.04  25.04  25.05  25.04  547.0       6 2024-05-06 19:55:00  63.26916   HOLD          NaN
+             ctm                ctmString   open  close   high    low    vol  quoteId     symbol
+0  1715018160000  May 6, 2024, 7:56:00 PM  25.03  25.03  25.04  25.03  300.0        6  PLTR.US_9
+36    False
+37    False
+38    False
+39    False
+40    False
+41    False
+42    False
+43    False
+44    False
+45    False
+46    False
+Name: rsiM1, dtype: bool
+No sell signal
+No buy signal
+       symbol                ctmString   open  close   high    low    vol quoteId            datetime      rsiM1 signal signal_price
+46  PLTR.US_9  May 6, 2024, 7:56:00 PM  25.03  25.03  25.04  25.03  300.0       6 2024-05-06 19:56:00  59.415182   HOLD          NaN
+             ctm                ctmString   open  close   high    low    vol  quoteId     symbol
+0  1715018220000  May 6, 2024, 7:57:00 PM  25.04  25.07  25.07  25.04  559.0        6  PLTR.US_9
+37    False
+38    False
+39    False
+40    False
+41    False
+42    False
+43    False
+44    False
+45    False
+46    False
+47    False
+Name: rsiM1, dtype: bool
+No sell signal
+No buy signal
+       symbol                ctmString   open  close   high    low    vol quoteId            datetime      rsiM1 signal signal_price
+47  PLTR.US_9  May 6, 2024, 7:57:00 PM  25.04  25.07  25.07  25.04  559.0       6 2024-05-06 19:57:00  67.993591   HOLD          NaN
+             ctm                ctmString   open  close   high    low    vol  quoteId     symbol
+0  1715018280000  May 6, 2024, 7:58:00 PM  25.07  25.11  25.11  25.07  568.0        6  PLTR.US_9
+38    False
+39    False
+40    False
+41    False
+42    False
+43    False
+44    False
+45    False
+46    False
+47    False
+48    False
+Name: rsiM1, dtype: bool
+No sell signal
+No buy signal
+       symbol                ctmString   open  close   high    low    vol quoteId            datetime      rsiM1 signal signal_price
+48  PLTR.US_9  May 6, 2024, 7:58:00 PM  25.07  25.11  25.11  25.07  568.0       6 2024-05-06 19:58:00  74.031456   HOLD          NaN
+             ctm                ctmString  open  close  high    low    vol  quoteId     symbol
+0  1715018340000  May 6, 2024, 7:59:00 PM  25.1  25.09  25.1  25.09  589.0        6  PLTR.US_9
+39    False
+40    False
+41    False
+42    False
+43    False
+44    False
+45    False
+46    False
+47    False
+48    False
+49    False
+Name: rsiM1, dtype: bool
+No sell signal
+No buy signal
+       symbol                ctmString  open  close  high    low    vol quoteId            datetime      rsiM1 signal signal_price
+49  PLTR.US_9  May 6, 2024, 7:59:00 PM  25.1  25.09  25.1  25.09  589.0       6 2024-05-06 19:59:00  67.072361   HOLD          NaN
+             ctm                ctmString   open  close   high    low    vol  quoteId     symbol
+0  1715018400000  May 6, 2024, 8:00:00 PM  25.08  25.11  25.12  25.08  863.0        6  PLTR.US_9
+40    False
+41    False
+42    False
+43    False
+44    False
+45    False
+46    False
+47    False
+48    False
+49    False
+50    False
+Name: rsiM1, dtype: bool
+No sell signal
+No buy signal
+       symbol                ctmString   open  close   high    low    vol quoteId            datetime      rsiM1 signal signal_price
+50  PLTR.US_9  May 6, 2024, 8:00:00 PM  25.08  25.11  25.12  25.08  863.0       6 2024-05-06 20:00:00  70.158077   HOLD          NaN
+             ctm                ctmString   open  close   high    low    vol  quoteId     symbol
+0  1715018460000  May 6, 2024, 8:01:00 PM  25.11  25.11  25.12  25.11  364.0        6  PLTR.US_9
+41    False
+42    False
+43    False
+44    False
+45    False
+46    False
+47    False
+48    False
+49    False
+50    False
+51    False
+Name: rsiM1, dtype: bool
+No sell signal
+No buy signal
+       symbol                ctmString   open  close   high    low    vol quoteId            datetime      rsiM1 signal signal_price
+51  PLTR.US_9  May 6, 2024, 8:01:00 PM  25.11  25.11  25.12  25.11  364.0       6 2024-05-06 20:01:00  70.158077   HOLD          NaN
+             ctm                ctmString  open  close   high    low    vol  quoteId     symbol
+0  1715018520000  May 6, 2024, 8:02:00 PM  25.1  25.11  25.12  25.08  666.0        6  PLTR.US_9
+42    False
+43    False
+44    False
+45    False
+46    False
+47    False
+48    False
+49    False
+50    False
+51    False
+52    False
+Name: rsiM1, dtype: bool
+No sell signal
+No buy signal
+       symbol                ctmString  open  close   high    low    vol quoteId            datetime      rsiM1 signal signal_price
+52  PLTR.US_9  May 6, 2024, 8:02:00 PM  25.1  25.11  25.12  25.08  666.0       6 2024-05-06 20:02:00  70.158077   HOLD          NaN
+             ctm                ctmString   open  close   high    low    vol  quoteId     symbol
+0  1715018580000  May 6, 2024, 8:03:00 PM  25.11  25.08  25.11  25.08  442.0        6  PLTR.US_9
+43    False
+44    False
+45    False
+46    False
+47    False
+48    False
+49    False
+50    False
+51    False
+52    False
+53    False
+Name: rsiM1, dtype: bool
+No sell signal
+No buy signal
+       symbol                ctmString   open  close   high    low    vol quoteId            datetime      rsiM1 signal signal_price
+53  PLTR.US_9  May 6, 2024, 8:03:00 PM  25.11  25.08  25.11  25.08  442.0       6 2024-05-06 20:03:00  59.100589   HOLD          NaN
+             ctm                ctmString   open  close   high    low    vol  quoteId     symbol
+0  1715018640000  May 6, 2024, 8:04:00 PM  25.07  25.05  25.07  25.05  531.0        6  PLTR.US_9
+44    False
+45    False
+46    False
+47    False
+48    False
+49    False
+50    False
+51    False
+52    False
+53    False
+54    False
+Name: rsiM1, dtype: bool
+No sell signal
+No buy signal
+       symbol                ctmString   open  close   high    low    vol quoteId            datetime      rsiM1 signal signal_price
+54  PLTR.US_9  May 6, 2024, 8:04:00 PM  25.07  25.05  25.07  25.05  531.0       6 2024-05-06 20:04:00  50.368288   HOLD          NaN
+             ctm                ctmString   open  close   high    low    vol  quoteId     symbol
+0  1715018700000  May 6, 2024, 8:05:00 PM  25.05  25.05  25.06  25.05  483.0        6  PLTR.US_9
+45    False
+46    False
+47    False
+48    False
+49    False
+50    False
+51    False
+52    False
+53    False
+54    False
+55    False
+Name: rsiM1, dtype: bool
+No sell signal
+No buy signal
+       symbol                ctmString   open  close   high    low    vol quoteId            datetime      rsiM1 signal signal_price
+55  PLTR.US_9  May 6, 2024, 8:05:00 PM  25.05  25.05  25.06  25.05  483.0       6 2024-05-06 20:05:00  50.368288   HOLD          NaN
+             ctm                ctmString   open  close   high    low    vol  quoteId     symbol
+0  1715018760000  May 6, 2024, 8:06:00 PM  25.06  25.08  25.08  25.06  531.0        6  PLTR.US_9
+46    False
+47    False
+48    False
+49    False
+50    False
+51    False
+52    False
+53    False
+54    False
+55    False
+56    False
+Name: rsiM1, dtype: bool
+No sell signal
+No buy signal
+       symbol                ctmString   open  close   high    low    vol quoteId            datetime      rsiM1 signal signal_price
+56  PLTR.US_9  May 6, 2024, 8:06:00 PM  25.06  25.08  25.08  25.06  531.0       6 2024-05-06 20:06:00  57.895745   HOLD          NaN
+             ctm                ctmString   open  close   high    low    vol  quoteId     symbol
+0  1715018820000  May 6, 2024, 8:07:00 PM  25.08  25.06  25.08  25.04  330.0        6  PLTR.US_9
+47    False
+48    False
+49    False
+50    False
+51    False
+52    False
+53    False
+54    False
+55    False
+56    False
+57    False
+Name: rsiM1, dtype: bool
+No sell signal
+No buy signal
+       symbol                ctmString   open  close   high    low    vol quoteId            datetime      rsiM1 signal signal_price
+57  PLTR.US_9  May 6, 2024, 8:07:00 PM  25.08  25.06  25.08  25.04  330.0       6 2024-05-06 20:07:00  52.100974   HOLD          NaN
+             ctm                ctmString   open  close   high    low    vol  quoteId     symbol
+0  1715018880000  May 6, 2024, 8:08:00 PM  25.05  25.05  25.05  25.05  552.0        6  PLTR.US_9
+48    False
+49    False
+50    False
+51    False
+52    False
+53    False
+54    False
+55    False
+56    False
+57    False
+58    False
+Name: rsiM1, dtype: bool
+No sell signal
+No buy signal
+       symbol                ctmString   open  close   high    low    vol quoteId            datetime      rsiM1 signal signal_price
+58  PLTR.US_9  May 6, 2024, 8:08:00 PM  25.05  25.05  25.05  25.05  552.0       6 2024-05-06 20:08:00  49.382499   HOLD          NaN
+             ctm                ctmString   open  close   high    low    vol  quoteId     symbol
+0  1715018940000  May 6, 2024, 8:09:00 PM  25.06  25.07  25.07  25.06  466.0        6  PLTR.US_9
+49    False
+50    False
+51    False
+52    False
+53    False
+54    False
+55    False
+56    False
+57    False
+58    False
+59    False
+Name: rsiM1, dtype: bool
+No sell signal
+No buy signal
+       symbol                ctmString   open  close   high    low    vol quoteId            datetime      rsiM1 signal signal_price
+59  PLTR.US_9  May 6, 2024, 8:09:00 PM  25.06  25.07  25.07  25.06  466.0       6 2024-05-06 20:09:00  54.594566   HOLD          NaN
+             ctm                ctmString   open  close  high    low    vol  quoteId     symbol
+0  1715019000000  May 6, 2024, 8:10:00 PM  25.07  25.06  25.1  25.06  585.0        6  PLTR.US_9
+50    False
+51    False
+52    False
+53    False
+54    False
+55    False
+56    False
+57    False
+58    False
+59    False
+60    False
+Name: rsiM1, dtype: bool
+No sell signal
+No buy signal
+       symbol                ctmString   open  close  high    low    vol quoteId            datetime      rsiM1 signal signal_price
+60  PLTR.US_9  May 6, 2024, 8:10:00 PM  25.07  25.06  25.1  25.06  585.0       6 2024-05-06 20:10:00  51.668412   HOLD          NaN
+             ctm                ctmString   open  close   high    low    vol  quoteId     symbol
+0  1715019060000  May 6, 2024, 8:11:00 PM  25.05  25.04  25.05  25.04  247.0        6  PLTR.US_9
+51    False
+52    False
+53    False
+54    False
+55    False
+56    False
+57    False
+58    False
+59    False
+60    False
+61    False
+Name: rsiM1, dtype: bool
+No sell signal
+No buy signal
+       symbol                ctmString   open  close   high    low    vol quoteId            datetime      rsiM1 signal signal_price
+61  PLTR.US_9  May 6, 2024, 8:11:00 PM  25.05  25.04  25.05  25.04  247.0       6 2024-05-06 20:11:00  46.218537   HOLD          NaN
+             ctm                ctmString   open  close   high    low    vol  quoteId     symbol
+0  1715019120000  May 6, 2024, 8:12:00 PM  25.04  25.01  25.04  25.01  422.0        6  PLTR.US_9
+52    False
+53    False
+54    False
+55    False
+56    False
+57    False
+58    False
+59    False
+60    False
+61    False
+62    False
+Name: rsiM1, dtype: bool
+No sell signal
+No buy signal
+       symbol                ctmString   open  close   high    low    vol quoteId            datetime      rsiM1 signal signal_price
+62  PLTR.US_9  May 6, 2024, 8:12:00 PM  25.04  25.01  25.04  25.01  422.0       6 2024-05-06 20:12:00  39.367138   HOLD          NaN
+             ctm                ctmString   open  close   high   low    vol  quoteId     symbol
+0  1715019180000  May 6, 2024, 8:13:00 PM  25.01   25.0  25.01  25.0  215.0        6  PLTR.US_9
+53    False
+54    False
+55    False
+56    False
+57    False
+58    False
+59    False
+60    False
+61    False
+62    False
+63    False
+Name: rsiM1, dtype: bool
+No sell signal
+No buy signal
+       symbol                ctmString   open  close   high   low    vol quoteId            datetime      rsiM1 signal signal_price
+63  PLTR.US_9  May 6, 2024, 8:13:00 PM  25.01   25.0  25.01  25.0  215.0       6 2024-05-06 20:13:00  37.337672   HOLD          NaN
+             ctm                ctmString  open  close   high   low    vol  quoteId     symbol
+0  1715019240000  May 6, 2024, 8:14:00 PM  25.0  25.01  25.01  25.0  328.0        6  PLTR.US_9
+54    False
+55    False
+56    False
+57    False
+58    False
+59    False
+60    False
+61    False
+62    False
+63    False
+64    False
+Name: rsiM1, dtype: bool
+No sell signal
+No buy signal
+       symbol                ctmString  open  close   high   low    vol quoteId            datetime      rsiM1 signal signal_price
+64  PLTR.US_9  May 6, 2024, 8:14:00 PM  25.0  25.01  25.01  25.0  328.0       6 2024-05-06 20:14:00  40.700404   HOLD          NaN
+             ctm                ctmString   open  close   high   low    vol  quoteId     symbol
+0  1715019300000  May 6, 2024, 8:15:00 PM  25.01  25.01  25.01  25.0  365.0        6  PLTR.US_9
+55    False
+56    False
+57    False
+58    False
+59    False
+60    False
+61    False
+62    False
+63    False
+64    False
+65    False
+Name: rsiM1, dtype: bool
+No sell signal
+No buy signal
+       symbol                ctmString   open  close   high   low    vol quoteId            datetime      rsiM1 signal signal_price
+65  PLTR.US_9  May 6, 2024, 8:15:00 PM  25.01  25.01  25.01  25.0  365.0       6 2024-05-06 20:15:00  40.700404   HOLD          NaN
+             ctm                ctmString   open  close   high    low    vol  quoteId     symbol
+0  1715019360000  May 6, 2024, 8:16:00 PM  25.01  25.01  25.02  25.01  442.0        6  PLTR.US_9
+56    False
+57    False
+58    False
+59    False
+60    False
+61    False
+62    False
+63    False
+64    False
+65    False
+66    False
+Name: rsiM1, dtype: bool
+No sell signal
+No buy signal
+       symbol                ctmString   open  close   high    low    vol quoteId            datetime      rsiM1 signal signal_price
+66  PLTR.US_9  May 6, 2024, 8:16:00 PM  25.01  25.01  25.02  25.01  442.0       6 2024-05-06 20:16:00  40.700404   HOLD          NaN
+             ctm                ctmString   open  close   high    low    vol  quoteId     symbol
+0  1715019420000  May 6, 2024, 8:17:00 PM  25.02  25.02  25.02  25.01  370.0        6  PLTR.US_9
+57    False
+58    False
+59    False
+60    False
+61    False
+62    False
+63    False
+64    False
+65    False
+66    False
+67    False
+Name: rsiM1, dtype: bool
+No sell signal
+No buy signal
+       symbol                ctmString   open  close   high    low    vol quoteId            datetime      rsiM1 signal signal_price
+67  PLTR.US_9  May 6, 2024, 8:17:00 PM  25.02  25.02  25.02  25.01  370.0       6 2024-05-06 20:17:00  44.653642   HOLD          NaN
+             ctm                ctmString   open  close   high    low    vol  quoteId     symbol
+0  1715019480000  May 6, 2024, 8:18:00 PM  25.03  25.05  25.05  25.02  444.0        6  PLTR.US_9
+58    False
+59    False
+60    False
+61    False
+62    False
+63    False
+64    False
+65    False
+66    False
+67    False
+68    False
+Name: rsiM1, dtype: bool
+No sell signal
+No buy signal
+       symbol                ctmString   open  close   high    low    vol quoteId            datetime     rsiM1 signal signal_price
+68  PLTR.US_9  May 6, 2024, 8:18:00 PM  25.03  25.05  25.05  25.02  444.0       6 2024-05-06 20:18:00  54.63399   HOLD          NaN
+             ctm                ctmString   open  close   high    low    vol  quoteId     symbol
+0  1715019540000  May 6, 2024, 8:19:00 PM  25.03  25.03  25.03  25.03  262.0        6  PLTR.US_9
+59    False
+60    False
+61    False
+62    False
+63    False
+64    False
+65    False
+66    False
+67    False
+68    False
+69    False
+Name: rsiM1, dtype: bool
+No sell signal
+No buy signal
+       symbol                ctmString   open  close   high    low    vol quoteId            datetime      rsiM1 signal signal_price
+69  PLTR.US_9  May 6, 2024, 8:19:00 PM  25.03  25.03  25.03  25.03  262.0       6 2024-05-06 20:19:00  48.253074   HOLD          NaN
+             ctm                ctmString   open  close   high    low    vol  quoteId     symbol
+0  1715019600000  May 6, 2024, 8:20:00 PM  25.03  25.02  25.03  25.02  296.0        6  PLTR.US_9
+60    False
+61    False
+62    False
+63    False
+64    False
+65    False
+66    False
+67    False
+68    False
+69    False
+70    False
+Name: rsiM1, dtype: bool
+No sell signal
+No buy signal
+       symbol                ctmString   open  close   high    low    vol quoteId            datetime      rsiM1 signal signal_price
+70  PLTR.US_9  May 6, 2024, 8:20:00 PM  25.03  25.02  25.03  25.02  296.0       6 2024-05-06 20:20:00  45.340549   HOLD          NaN
+             ctm                ctmString   open  close   high    low    vol  quoteId     symbol
+0  1715019660000  May 6, 2024, 8:21:00 PM  25.02  25.02  25.02  25.02  185.0        6  PLTR.US_9
+61    False
+62    False
+63    False
+64    False
+65    False
+66    False
+67    False
+68    False
+69    False
+70    False
+71    False
+Name: rsiM1, dtype: bool
+No sell signal
+No buy signal
+       symbol                ctmString   open  close   high    low    vol quoteId            datetime      rsiM1 signal signal_price
+71  PLTR.US_9  May 6, 2024, 8:21:00 PM  25.02  25.02  25.02  25.02  185.0       6 2024-05-06 20:21:00  45.340549   HOLD          NaN
+             ctm                ctmString   open  close   high    low    vol  quoteId     symbol
+0  1715019720000  May 6, 2024, 8:22:00 PM  25.01  24.96  25.01  24.96  671.0        6  PLTR.US_9
+62    False
+63    False
+64    False
+65    False
+66    False
+67    False
+68    False
+69    False
+70    False
+71    False
+72    False
+Name: rsiM1, dtype: bool
+No sell signal
+No buy signal
+       symbol                ctmString   open  close   high    low    vol quoteId            datetime      rsiM1 signal signal_price
+72  PLTR.US_9  May 6, 2024, 8:22:00 PM  25.01  24.96  25.01  24.96  671.0       6 2024-05-06 20:22:00  31.525704   HOLD          NaN
+             ctm                ctmString   open  close   high    low    vol  quoteId     symbol
+0  1715019780000  May 6, 2024, 8:23:00 PM  24.96  24.96  24.96  24.96  299.0        6  PLTR.US_9
+63    False
+64    False
+65    False
+66    False
+67    False
+68    False
+69    False
+70    False
+71    False
+72    False
+73    False
+Name: rsiM1, dtype: bool
+No sell signal
+No buy signal
+       symbol                ctmString   open  close   high    low    vol quoteId            datetime      rsiM1 signal signal_price
+73  PLTR.US_9  May 6, 2024, 8:23:00 PM  24.96  24.96  24.96  24.96  299.0       6 2024-05-06 20:23:00  31.525704   HOLD          NaN
+             ctm                ctmString   open  close  high    low    vol  quoteId     symbol
+0  1715019840000  May 6, 2024, 8:24:00 PM  24.96   25.0  25.0  24.96  501.0        6  PLTR.US_9
+64    False
+65    False
+66    False
+67    False
+68    False
+69    False
+70    False
+71    False
+72    False
+73    False
+74    False
+Name: rsiM1, dtype: bool
+No sell signal
+No buy signal
+       symbol                ctmString   open  close  high    low    vol quoteId            datetime      rsiM1 signal signal_price
+74  PLTR.US_9  May 6, 2024, 8:24:00 PM  24.96   25.0  25.0  24.96  501.0       6 2024-05-06 20:24:00  45.035172   HOLD          NaN
+             ctm                ctmString  open  close   high    low    vol  quoteId     symbol
+0  1715019900000  May 6, 2024, 8:25:00 PM  25.0   25.0  25.03  24.99  618.0        6  PLTR.US_9
+65    False
+66    False
+67    False
+68    False
+69    False
+70    False
+71    False
+72    False
+73    False
+74    False
+75    False
+Name: rsiM1, dtype: bool
+No sell signal
+No buy signal
+       symbol                ctmString  open  close   high    low    vol quoteId            datetime      rsiM1 signal signal_price
+75  PLTR.US_9  May 6, 2024, 8:25:00 PM  25.0   25.0  25.03  24.99  618.0       6 2024-05-06 20:25:00  45.035172   HOLD          NaN
+             ctm                ctmString   open  close   high    low    vol  quoteId     symbol
+0  1715019960000  May 6, 2024, 8:26:00 PM  25.01  25.01  25.03  25.01  365.0        6  PLTR.US_9
+66    False
+67    False
+68    False
+69    False
+70    False
+71    False
+72    False
+73    False
+74    False
+75    False
+76    False
+Name: rsiM1, dtype: bool
+No sell signal
+No buy signal
+       symbol                ctmString   open  close   high    low    vol quoteId            datetime      rsiM1 signal signal_price
+76  PLTR.US_9  May 6, 2024, 8:26:00 PM  25.01  25.01  25.03  25.01  365.0       6 2024-05-06 20:26:00  48.130778   HOLD          NaN
+             ctm                ctmString   open  close   high    low    vol  quoteId     symbol
+0  1715020020000  May 6, 2024, 8:27:00 PM  25.01  25.03  25.03  25.01  233.0        6  PLTR.US_9
+67    False
+68    False
+69    False
+70    False
+71    False
+72    False
+73    False
+74    False
+75    False
+76    False
+77    False
+Name: rsiM1, dtype: bool
+No sell signal
+No buy signal
+       symbol                ctmString   open  close   high    low    vol quoteId            datetime      rsiM1 signal signal_price
+77  PLTR.US_9  May 6, 2024, 8:27:00 PM  25.01  25.03  25.03  25.01  233.0       6 2024-05-06 20:27:00  53.849043   HOLD          NaN
+             ctm                ctmString   open  close   high    low    vol  quoteId     symbol
+0  1715020080000  May 6, 2024, 8:28:00 PM  25.03  25.07  25.08  25.03  889.0        6  PLTR.US_9
+68    False
+69    False
+70    False
+71    False
+72    False
+73    False
+74    False
+75    False
+76    False
+77    False
+78    False
+Name: rsiM1, dtype: bool
+No sell signal
+No buy signal
+       symbol                ctmString   open  close   high    low    vol quoteId            datetime      rsiM1 signal signal_price
+78  PLTR.US_9  May 6, 2024, 8:28:00 PM  25.03  25.07  25.08  25.03  889.0       6 2024-05-06 20:28:00  62.857466   HOLD          NaN
+             ctm                ctmString   open  close   high    low    vol  quoteId     symbol
+0  1715020140000  May 6, 2024, 8:29:00 PM  25.07  25.08  25.08  25.07  427.0        6  PLTR.US_9
+69    False
+70    False
+71    False
+72    False
+73    False
+74    False
+75    False
+76    False
+77    False
+78    False
+79    False
+Name: rsiM1, dtype: bool
+No sell signal
+No buy signal
+       symbol                ctmString   open  close   high    low    vol quoteId            datetime      rsiM1 signal signal_price
+79  PLTR.US_9  May 6, 2024, 8:29:00 PM  25.07  25.08  25.08  25.07  427.0       6 2024-05-06 20:29:00  64.749653   HOLD          NaN
+             ctm                ctmString   open  close   high    low    vol  quoteId     symbol
+0  1715020200000  May 6, 2024, 8:30:00 PM  25.08  25.09  25.11  25.08  463.0        6  PLTR.US_9
+70    False
+71    False
+72    False
+73    False
+74    False
+75    False
+76    False
+77    False
+78    False
+79    False
+80    False
+Name: rsiM1, dtype: bool
+No sell signal
+No buy signal
+       symbol                ctmString   open  close   high    low    vol quoteId            datetime      rsiM1 signal signal_price
+80  PLTR.US_9  May 6, 2024, 8:30:00 PM  25.08  25.09  25.11  25.08  463.0       6 2024-05-06 20:30:00  66.620202   HOLD          NaN
+             ctm                ctmString   open  close   high    low    vol  quoteId     symbol
+0  1715020260000  May 6, 2024, 8:31:00 PM  25.09   25.1  25.11  25.09  590.0        6  PLTR.US_9
+71    False
+72    False
+73    False
+74    False
+75    False
+76    False
+77    False
+78    False
+79    False
+80    False
+81    False
+Name: rsiM1, dtype: bool
+No sell signal
+No buy signal
+       symbol                ctmString   open  close   high    low    vol quoteId            datetime     rsiM1 signal signal_price
+81  PLTR.US_9  May 6, 2024, 8:31:00 PM  25.09   25.1  25.11  25.09  590.0       6 2024-05-06 20:31:00  68.46116   HOLD          NaN
+             ctm                ctmString  open  close  high    low    vol  quoteId     symbol
+0  1715020320000  May 6, 2024, 8:32:00 PM  25.1   25.1  25.1  25.08  455.0        6  PLTR.US_9
+72    False
+73    False
+74    False
+75    False
+76    False
+77    False
+78    False
+79    False
+80    False
+81    False
+82    False
+Name: rsiM1, dtype: bool
+No sell signal
+No buy signal
+       symbol                ctmString  open  close  high    low    vol quoteId            datetime     rsiM1 signal signal_price
+82  PLTR.US_9  May 6, 2024, 8:32:00 PM  25.1   25.1  25.1  25.08  455.0       6 2024-05-06 20:32:00  68.46116   HOLD          NaN
+             ctm                ctmString  open  close  high   low    vol  quoteId     symbol
+0  1715020380000  May 6, 2024, 8:33:00 PM  25.1   25.1  25.1  25.1  288.0        6  PLTR.US_9
+73    False
+74    False
+75    False
+76    False
+77    False
+78    False
+79    False
+80    False
+81    False
+82    False
+83    False
+Name: rsiM1, dtype: bool
+No sell signal
+No buy signal
+       symbol                ctmString  open  close  high   low    vol quoteId            datetime     rsiM1 signal signal_price
+83  PLTR.US_9  May 6, 2024, 8:33:00 PM  25.1   25.1  25.1  25.1  288.0       6 2024-05-06 20:33:00  68.46116   HOLD          NaN
+             ctm                ctmString  open  close  high    low    vol  quoteId     symbol
+0  1715020440000  May 6, 2024, 8:34:00 PM  25.1   25.1  25.1  25.09  518.0        6  PLTR.US_9
+74    False
+75    False
+76    False
+77    False
+78    False
+79    False
+80    False
+81    False
+82    False
+83    False
+84    False
+Name: rsiM1, dtype: bool
+No sell signal
+No buy signal
+       symbol                ctmString  open  close  high    low    vol quoteId            datetime     rsiM1 signal signal_price
+84  PLTR.US_9  May 6, 2024, 8:34:00 PM  25.1   25.1  25.1  25.09  518.0       6 2024-05-06 20:34:00  68.46116   HOLD          NaN
+             ctm                ctmString  open  close   high    low    vol  quoteId     symbol
+0  1715020500000  May 6, 2024, 8:35:00 PM  25.1  25.09  25.11  25.09  312.0        6  PLTR.US_9
+75    False
+76    False
+77    False
+78    False
+79    False
+80    False
+81    False
+82    False
+83    False
+84    False
+85    False
+Name: rsiM1, dtype: bool
+No sell signal
+No buy signal
+       symbol                ctmString  open  close   high    low    vol quoteId            datetime      rsiM1 signal signal_price
+85  PLTR.US_9  May 6, 2024, 8:35:00 PM  25.1  25.09  25.11  25.09  312.0       6 2024-05-06 20:35:00  63.346098   HOLD          NaN
+             ctm                ctmString   open  close   high    low    vol  quoteId     symbol
+0  1715020560000  May 6, 2024, 8:36:00 PM  25.08  25.09  25.09  25.07  669.0        6  PLTR.US_9
+76    False
+77    False
+78    False
+79    False
+80    False
+81    False
+82    False
+83    False
+84    False
+85    False
+86    False
+Name: rsiM1, dtype: bool
+No sell signal
+No buy signal
+       symbol                ctmString   open  close   high    low    vol quoteId            datetime      rsiM1 signal signal_price
+86  PLTR.US_9  May 6, 2024, 8:36:00 PM  25.08  25.09  25.09  25.07  669.0       6 2024-05-06 20:36:00  63.346098   HOLD          NaN
+             ctm                ctmString   open  close   high    low    vol  quoteId     symbol
+0  1715020620000  May 6, 2024, 8:37:00 PM  25.08  25.08  25.08  25.08  212.0        6  PLTR.US_9
+77    False
+78    False
+79    False
+80    False
+81    False
+82    False
+83    False
+84    False
+85    False
+86    False
+87    False
+Name: rsiM1, dtype: bool
+No sell signal
+No buy signal
+       symbol                ctmString   open  close   high    low    vol quoteId            datetime      rsiM1 signal signal_price
+87  PLTR.US_9  May 6, 2024, 8:37:00 PM  25.08  25.08  25.08  25.08  212.0       6 2024-05-06 20:37:00  58.094106   HOLD          NaN
+             ctm                ctmString   open  close   high    low    vol  quoteId     symbol
+0  1715020680000  May 6, 2024, 8:38:00 PM  25.08  25.06  25.08  25.06  647.0        6  PLTR.US_9
+78    False
+79    False
+80    False
+81    False
+82    False
+83    False
+84    False
+85    False
+86    False
+87    False
+88    False
+Name: rsiM1, dtype: bool
+No sell signal
+No buy signal
+       symbol                ctmString   open  close   high    low    vol quoteId            datetime      rsiM1 signal signal_price
+88  PLTR.US_9  May 6, 2024, 8:38:00 PM  25.08  25.06  25.08  25.06  647.0       6 2024-05-06 20:38:00  49.132327   HOLD          NaN
+             ctm                ctmString   open  close   high    low    vol  quoteId     symbol
+0  1715020740000  May 6, 2024, 8:39:00 PM  25.05  25.07  25.07  25.05  363.0        6  PLTR.US_9
+79    False
+80    False
+81    False
+82    False
+83    False
+84    False
+85    False
+86    False
+87    False
+88    False
+89    False
+Name: rsiM1, dtype: bool
+No sell signal
+No buy signal
+       symbol                ctmString   open  close   high    low    vol quoteId            datetime      rsiM1 signal signal_price
+89  PLTR.US_9  May 6, 2024, 8:39:00 PM  25.05  25.07  25.07  25.05  363.0       6 2024-05-06 20:39:00  53.110642   HOLD          NaN
+             ctm                ctmString   open  close   high    low    vol  quoteId     symbol
+0  1715020800000  May 6, 2024, 8:40:00 PM  25.06  25.08  25.08  25.06  480.0        6  PLTR.US_9
+80    False
+81    False
+82    False
+83    False
+84    False
+85    False
+86    False
+87    False
+88    False
+89    False
+90    False
+Name: rsiM1, dtype: bool
+No sell signal
+No buy signal
+       symbol                ctmString   open  close   high    low    vol quoteId            datetime      rsiM1 signal signal_price
+90  PLTR.US_9  May 6, 2024, 8:40:00 PM  25.06  25.08  25.08  25.06  480.0       6 2024-05-06 20:40:00  56.824988   HOLD          NaN
+             ctm                ctmString   open  close  high    low    vol  quoteId     symbol
+0  1715020860000  May 6, 2024, 8:41:00 PM  25.09   25.1  25.1  25.09  350.0        6  PLTR.US_9
+81    False
+82    False
+83    False
+84    False
+85    False
+86    False
+87    False
+88    False
+89    False
+90    False
+91    False
+Name: rsiM1, dtype: bool
+No sell signal
+No buy signal
+       symbol                ctmString   open  close  high    low    vol quoteId            datetime      rsiM1 signal signal_price
+91  PLTR.US_9  May 6, 2024, 8:41:00 PM  25.09   25.1  25.1  25.09  350.0       6 2024-05-06 20:41:00  63.232569   HOLD          NaN
+             ctm                ctmString  open  close   high   low    vol  quoteId     symbol
+0  1715020920000  May 6, 2024, 8:42:00 PM  25.1   25.1  25.12  25.1  450.0        6  PLTR.US_9
+82    False
+83    False
+84    False
+85    False
+86    False
+87    False
+88    False
+89    False
+90    False
+91    False
+92    False
+Name: rsiM1, dtype: bool
+No sell signal
+No buy signal
+       symbol                ctmString  open  close   high   low    vol quoteId            datetime      rsiM1 signal signal_price
+92  PLTR.US_9  May 6, 2024, 8:42:00 PM  25.1   25.1  25.12  25.1  450.0       6 2024-05-06 20:42:00  63.232569   HOLD          NaN
+             ctm                ctmString  open  close   high   low    vol  quoteId     symbol
+0  1715020980000  May 6, 2024, 8:43:00 PM  25.1  25.12  25.12  25.1  240.0        6  PLTR.US_9
+83    False
+84    False
+85    False
+86    False
+87    False
+88    False
+89    False
+90    False
+91    False
+92    False
+93    False
+Name: rsiM1, dtype: bool
+No sell signal
+No buy signal
+       symbol                ctmString  open  close   high   low    vol quoteId            datetime      rsiM1 signal signal_price
+93  PLTR.US_9  May 6, 2024, 8:43:00 PM  25.1  25.12  25.12  25.1  240.0       6 2024-05-06 20:43:00  68.829946   HOLD          NaN
+             ctm                ctmString   open  close   high    low    vol  quoteId     symbol
+0  1715021040000  May 6, 2024, 8:44:00 PM  25.12  25.15  25.16  25.12  635.0        6  PLTR.US_9
+84    False
+85    False
+86    False
+87    False
+88    False
+89    False
+90    False
+91    False
+92    False
+93    False
+94     True
+Name: rsiM1, dtype: bool
+Sell signal
+above 75
+RSI: 75.08770638777222
+close:25.15
+      symbol                          description categoryName currency    bid    ask           time  precision  spreadRaw
+0  PLTR.US_9  Palantir Technologies Inc - class A          STC      USD  25.15  25.17  1715021084683          2       0.02
+Set sell stop prices to quickly close open buy position.
+       order     symbol  volume  open_price  close_price  profit                open_timeString  nominalValue  cmd   position
+1  617897055  PLTR.US_9   402.0       24.87        25.15   11.46  Mon May 06 19:25:05 CEST 2024       9325.55    0  617897055
+Symbol: PLTR.US_9
+Volume: 402.0
+Sell Stop Price: 25.15
+Closing at price: 25.15
+
+       order     symbol  volume  open_price  cmd
+0  617897120  PLTR.US_9   402.0        24.6    5
+0
+Modify sell stop order: 617897120
+
+617897120
+Transaction done
+The transaction has been executed successfully
+The transaction has been executed successfully
+       symbol                ctmString   open  close   high    low    vol quoteId            datetime      rsiM1 signal signal_price
+94  PLTR.US_9  May 6, 2024, 8:44:00 PM  25.12  25.15  25.16  25.12  635.0       6 2024-05-06 20:44:00  75.087706   SELL        25.15
+             ctm                ctmString   open  close   high    low    vol  quoteId     symbol
+0  1715021100000  May 6, 2024, 8:45:00 PM  25.16  25.12  25.16  25.12  691.0        6  PLTR.US_9
+85    False
+86    False
+87    False
+88    False
+89    False
+90    False
+91    False
+92    False
+93    False
+94    False
+95    False
+Name: rsiM1, dtype: bool
+No sell signal
+No buy signal
+       symbol                ctmString   open  close   high    low    vol quoteId            datetime      rsiM1 signal signal_price
+95  PLTR.US_9  May 6, 2024, 8:45:00 PM  25.16  25.12  25.16  25.12  691.0       6 2024-05-06 20:45:00  61.505047   HOLD          NaN
+             ctm                ctmString   open  close   high   low    vol  quoteId     symbol
+0  1715021160000  May 6, 2024, 8:46:00 PM  25.12  25.13  25.13  25.1  331.0        6  PLTR.US_9
+86    False
+87    False
+88    False
+89    False
+90    False
+91    False
+92    False
+93    False
+94    False
+95    False
+96    False
+Name: rsiM1, dtype: bool
+No sell signal
+No buy signal
+       symbol                ctmString   open  close   high   low    vol quoteId            datetime     rsiM1 signal signal_price
+96  PLTR.US_9  May 6, 2024, 8:46:00 PM  25.12  25.13  25.13  25.1  331.0       6 2024-05-06 20:46:00  63.89947   HOLD          NaN
+             ctm                ctmString   open  close   high    low    vol  quoteId     symbol
+0  1715021220000  May 6, 2024, 8:47:00 PM  25.12  25.14  25.14  25.12  759.0        6  PLTR.US_9
+87    False
+88    False
+89    False
+90    False
+91    False
+92    False
+93    False
+94    False
+95    False
+96    False
+97    False
+Name: rsiM1, dtype: bool
+No sell signal
+No buy signal
+       symbol                ctmString   open  close   high    low    vol quoteId            datetime      rsiM1 signal signal_price
+97  PLTR.US_9  May 6, 2024, 8:47:00 PM  25.12  25.14  25.14  25.12  759.0       6 2024-05-06 20:47:00  66.211328   HOLD          NaN
+             ctm                ctmString   open  close   high    low    vol  quoteId     symbol
+0  1715021280000  May 6, 2024, 8:48:00 PM  25.14  25.16  25.16  25.14  423.0        6  PLTR.US_9
+88    False
+89    False
+90    False
+91    False
+92    False
+93    False
+94    False
+95    False
+96    False
+97    False
+98    False
+Name: rsiM1, dtype: bool
+No sell signal
+No buy signal
+       symbol                ctmString   open  close   high    low    vol quoteId            datetime     rsiM1 signal signal_price
+98  PLTR.US_9  May 6, 2024, 8:48:00 PM  25.14  25.16  25.16  25.14  423.0       6 2024-05-06 20:48:00  70.38385   HOLD          NaN
+             ctm                ctmString   open  close   high    low    vol  quoteId     symbol
+0  1715021340000  May 6, 2024, 8:49:00 PM  25.17  25.17  25.17  25.16  605.0        6  PLTR.US_9
+89    False
+90    False
+91    False
+92    False
+93    False
+94    False
+95    False
+96    False
+97    False
+98    False
+99    False
+Name: rsiM1, dtype: bool
+No sell signal
+No buy signal
+       symbol                ctmString   open  close   high    low    vol quoteId            datetime      rsiM1 signal signal_price
+99  PLTR.US_9  May 6, 2024, 8:49:00 PM  25.17  25.17  25.17  25.16  605.0       6 2024-05-06 20:49:00  72.267415   HOLD          NaN
+             ctm                ctmString   open  close   high    low    vol  quoteId     symbol
+0  1715021400000  May 6, 2024, 8:50:00 PM  25.18  25.16  25.18  25.16  567.0        6  PLTR.US_9
+90     False
+91     False
+92     False
+93     False
+94     False
+95     False
+96     False
+97     False
+98     False
+99     False
+100    False
+Name: rsiM1, dtype: bool
+No sell signal
+No buy signal
+        symbol                ctmString   open  close   high    low    vol quoteId            datetime      rsiM1 signal signal_price
+100  PLTR.US_9  May 6, 2024, 8:50:00 PM  25.18  25.16  25.18  25.16  567.0       6 2024-05-06 20:50:00  67.542217   HOLD          NaN
+             ctm                ctmString   open  close   high    low    vol  quoteId     symbol
+0  1715021460000  May 6, 2024, 8:51:00 PM  25.15  25.16  25.17  25.14  528.0        6  PLTR.US_9
+91     False
+92     False
+93     False
+94     False
+95     False
+96     False
+97     False
+98     False
+99     False
+100    False
+101    False
+Name: rsiM1, dtype: bool
+No sell signal
+No buy signal
+        symbol                ctmString   open  close   high    low    vol quoteId            datetime      rsiM1 signal signal_price
+101  PLTR.US_9  May 6, 2024, 8:51:00 PM  25.15  25.16  25.17  25.14  528.0       6 2024-05-06 20:51:00  67.542217   HOLD          NaN
+             ctm                ctmString   open  close   high    low    vol  quoteId     symbol
+0  1715021520000  May 6, 2024, 8:52:00 PM  25.16  25.16  25.17  25.15  538.0        6  PLTR.US_9
+92     False
+93     False
+94     False
+95     False
+96     False
+97     False
+98     False
+99     False
+100    False
+101    False
+102    False
+Name: rsiM1, dtype: bool
+No sell signal
+No buy signal
+        symbol                ctmString   open  close   high    low    vol quoteId            datetime      rsiM1 signal signal_price
+102  PLTR.US_9  May 6, 2024, 8:52:00 PM  25.16  25.16  25.17  25.15  538.0       6 2024-05-06 20:52:00  67.542217   HOLD          NaN
+             ctm                ctmString   open  close   high    low    vol  quoteId     symbol
+0  1715021580000  May 6, 2024, 8:53:00 PM  25.17  25.17  25.17  25.17  578.0        6  PLTR.US_9
+93     False
+94     False
+95     False
+96     False
+97     False
+98     False
+99     False
+100    False
+101    False
+102    False
+103    False
+Name: rsiM1, dtype: bool
+No sell signal
+No buy signal
+        symbol                ctmString   open  close   high    low    vol quoteId            datetime      rsiM1 signal signal_price
+103  PLTR.US_9  May 6, 2024, 8:53:00 PM  25.17  25.17  25.17  25.17  578.0       6 2024-05-06 20:53:00  70.140784   HOLD          NaN
+             ctm                ctmString   open  close   high    low    vol  quoteId     symbol
+0  1715021640000  May 6, 2024, 8:54:00 PM  25.15  25.22  25.22  25.15  772.0        6  PLTR.US_9
+94     False
+95     False
+96     False
+97     False
+98     False
+99     False
+100    False
+101    False
+102    False
+103    False
+104     True
+Name: rsiM1, dtype: bool
+Sell signal
+above 75
+RSI: 79.26917720296582
+close:25.22
+      symbol                          description categoryName currency    bid    ask           time  precision  spreadRaw
+0  PLTR.US_9  Palantir Technologies Inc - class A          STC      USD  25.22  25.23  1715021700060          2       0.01
+Failed to get buy trade records {'status': True, 'returnData': []}
+There are no buy open positions to close
+        symbol                ctmString   open  close   high    low    vol quoteId            datetime      rsiM1 signal signal_price
+104  PLTR.US_9  May 6, 2024, 8:54:00 PM  25.15  25.22  25.22  25.15  772.0       6 2024-05-06 20:54:00  79.269177   SELL        25.22
+             ctm                ctmString   open  close   high    low    vol  quoteId     symbol
+0  1715021700000  May 6, 2024, 8:55:00 PM  25.22  25.19  25.22  25.19  662.0        6  PLTR.US_9
+95     False
+96     False
+97     False
+98     False
+99     False
+100    False
+101    False
+102    False
+103    False
+104    False
+105    False
+Name: rsiM1, dtype: bool
+No sell signal
+No buy signal
+        symbol                ctmString   open  close   high    low    vol quoteId            datetime      rsiM1 signal signal_price
+105  PLTR.US_9  May 6, 2024, 8:55:00 PM  25.22  25.19  25.22  25.19  662.0       6 2024-05-06 20:55:00  65.960273   HOLD          NaN
+             ctm                ctmString   open  close   high    low    vol  quoteId     symbol
+0  1715021760000  May 6, 2024, 8:56:00 PM  25.18  25.18  25.18  25.17  451.0        6  PLTR.US_9
+96     False
+97     False
+98     False
+99     False
+100    False
+101    False
+102    False
+103    False
+104    False
+105    False
+106    False
+Name: rsiM1, dtype: bool
+No sell signal
+No buy signal
+        symbol                ctmString   open  close   high    low    vol quoteId            datetime      rsiM1 signal signal_price
+106  PLTR.US_9  May 6, 2024, 8:56:00 PM  25.18  25.18  25.18  25.17  451.0       6 2024-05-06 20:56:00  62.135139   HOLD          NaN
+             ctm                ctmString   open  close   high    low    vol  quoteId     symbol
+0  1715021820000  May 6, 2024, 8:57:00 PM  25.17  25.19  25.19  25.17  347.0        6  PLTR.US_9
+97     False
+98     False
+99     False
+100    False
+101    False
+102    False
+103    False
+104    False
+105    False
+106    False
+107    False
+Name: rsiM1, dtype: bool
+No sell signal
+No buy signal
+        symbol                ctmString   open  close   high    low    vol quoteId            datetime     rsiM1 signal signal_price
+107  PLTR.US_9  May 6, 2024, 8:57:00 PM  25.17  25.19  25.19  25.17  347.0       6 2024-05-06 20:57:00  64.40572   HOLD          NaN
+             ctm                ctmString   open  close   high    low    vol  quoteId     symbol
+0  1715021880000  May 6, 2024, 8:58:00 PM  25.18  25.16  25.18  25.15  497.0        6  PLTR.US_9
+98     False
+99     False
+100    False
+101    False
+102    False
+103    False
+104    False
+105    False
+106    False
+107    False
+108    False
+Name: rsiM1, dtype: bool
+No sell signal
+No buy signal
+        symbol                ctmString   open  close   high    low    vol quoteId            datetime     rsiM1 signal signal_price
+108  PLTR.US_9  May 6, 2024, 8:58:00 PM  25.18  25.16  25.18  25.15  497.0       6 2024-05-06 20:58:00  53.76616   HOLD          NaN
+             ctm                ctmString   open  close   high    low    vol  quoteId     symbol
+0  1715021940000  May 6, 2024, 8:59:00 PM  25.17  25.18  25.18  25.17  455.0        6  PLTR.US_9
+99     False
+100    False
+101    False
+102    False
+103    False
+104    False
+105    False
+106    False
+107    False
+108    False
+109    False
+Name: rsiM1, dtype: bool
+No sell signal
+No buy signal
+        symbol                ctmString   open  close   high    low    vol quoteId            datetime      rsiM1 signal signal_price
+109  PLTR.US_9  May 6, 2024, 8:59:00 PM  25.17  25.18  25.18  25.17  455.0       6 2024-05-06 20:59:00  58.761895   HOLD          NaN
+             ctm                ctmString   open  close   high    low    vol  quoteId     symbol
+0  1715022000000  May 6, 2024, 9:00:00 PM  25.17  25.12  25.17  25.12  434.0        6  PLTR.US_9
+100    False
+101    False
+102    False
+103    False
+104    False
+105    False
+106    False
+107    False
+108    False
+109    False
+110    False
+Name: rsiM1, dtype: bool
+No sell signal
+No buy signal
+        symbol                ctmString   open  close   high    low    vol quoteId            datetime      rsiM1 signal signal_price
+110  PLTR.US_9  May 6, 2024, 9:00:00 PM  25.17  25.12  25.17  25.12  434.0       6 2024-05-06 21:00:00  43.316298   HOLD          NaN
+             ctm                ctmString   open  close   high    low    vol  quoteId     symbol
+0  1715022060000  May 6, 2024, 9:01:00 PM  25.12  25.13  25.14  25.12  478.0        6  PLTR.US_9
+101    False
+102    False
+103    False
+104    False
+105    False
+106    False
+107    False
+108    False
+109    False
+110    False
+111    False
+Name: rsiM1, dtype: bool
+No sell signal
+No buy signal
+        symbol                ctmString   open  close   high    low    vol quoteId            datetime      rsiM1 signal signal_price
+111  PLTR.US_9  May 6, 2024, 9:01:00 PM  25.12  25.13  25.14  25.12  478.0       6 2024-05-06 21:01:00  45.922264   HOLD          NaN
+             ctm                ctmString   open  close   high    low    vol  quoteId     symbol
+0  1715022120000  May 6, 2024, 9:02:00 PM  25.13  25.13  25.13  25.12  390.0        6  PLTR.US_9
+102    False
+103    False
+104    False
+105    False
+106    False
+107    False
+108    False
+109    False
+110    False
+111    False
+112    False
+Name: rsiM1, dtype: bool
+No sell signal
+No buy signal
+        symbol                ctmString   open  close   high    low    vol quoteId            datetime      rsiM1 signal signal_price
+112  PLTR.US_9  May 6, 2024, 9:02:00 PM  25.13  25.13  25.13  25.12  390.0       6 2024-05-06 21:02:00  45.922264   HOLD          NaN
+             ctm                ctmString   open  close   high    low    vol  quoteId     symbol
+0  1715022180000  May 6, 2024, 9:03:00 PM  25.14  25.16  25.16  25.14  543.0        6  PLTR.US_9
+103    False
+104    False
+105    False
+106    False
+107    False
+108    False
+109    False
+110    False
+111    False
+112    False
+113    False
+Name: rsiM1, dtype: bool
+No sell signal
+No buy signal
+        symbol                ctmString   open  close   high    low    vol quoteId            datetime      rsiM1 signal signal_price
+113  PLTR.US_9  May 6, 2024, 9:03:00 PM  25.14  25.16  25.16  25.14  543.0       6 2024-05-06 21:03:00  53.656327   HOLD          NaN
+             ctm                ctmString   open  close   high    low    vol  quoteId     symbol
+0  1715022240000  May 6, 2024, 9:04:00 PM  25.16  25.15  25.16  25.15  573.0        6  PLTR.US_9
+104    False
+105    False
+106    False
+107    False
+108    False
+109    False
+110    False
+111    False
+112    False
+113    False
+114    False
+Name: rsiM1, dtype: bool
+No sell signal
+No buy signal
+        symbol                ctmString   open  close   high    low    vol quoteId            datetime      rsiM1 signal signal_price
+114  PLTR.US_9  May 6, 2024, 9:04:00 PM  25.16  25.15  25.16  25.15  573.0       6 2024-05-06 21:04:00  50.982802   HOLD          NaN
+             ctm                ctmString   open  close   high    low    vol  quoteId     symbol
+0  1715022300000  May 6, 2024, 9:05:00 PM  25.15  25.15  25.15  25.15  329.0        6  PLTR.US_9
+105    False
+106    False
+107    False
+108    False
+109    False
+110    False
+111    False
+112    False
+113    False
+114    False
+115    False
+Name: rsiM1, dtype: bool
+No sell signal
+No buy signal
+        symbol                ctmString   open  close   high    low    vol quoteId            datetime      rsiM1 signal signal_price
+115  PLTR.US_9  May 6, 2024, 9:05:00 PM  25.15  25.15  25.15  25.15  329.0       6 2024-05-06 21:05:00  50.982802   HOLD          NaN
+             ctm                ctmString   open  close   high    low    vol  quoteId     symbol
+0  1715022360000  May 6, 2024, 9:06:00 PM  25.15  25.18  25.18  25.15  506.0        6  PLTR.US_9
+106    False
+107    False
+108    False
+109    False
+110    False
+111    False
+112    False
+113    False
+114    False
+115    False
+116    False
+Name: rsiM1, dtype: bool
+No sell signal
+No buy signal
+        symbol                ctmString   open  close   high    low    vol quoteId            datetime      rsiM1 signal signal_price
+116  PLTR.US_9  May 6, 2024, 9:06:00 PM  25.15  25.18  25.18  25.15  506.0       6 2024-05-06 21:06:00  58.490657   HOLD          NaN
+             ctm                ctmString   open  close  high    low    vol  quoteId     symbol
+0  1715022420000  May 6, 2024, 9:07:00 PM  25.18   25.2  25.2  25.18  299.0        6  PLTR.US_9
+107    False
+108    False
+109    False
+110    False
+111    False
+112    False
+113    False
+114    False
+115    False
+116    False
+117    False
+Name: rsiM1, dtype: bool
+No sell signal
+No buy signal
+        symbol                ctmString   open  close  high    low    vol quoteId            datetime      rsiM1 signal signal_price
+117  PLTR.US_9  May 6, 2024, 9:07:00 PM  25.18   25.2  25.2  25.18  299.0       6 2024-05-06 21:07:00  62.682295   HOLD          NaN
+             ctm                ctmString  open  close   high    low    vol  quoteId     symbol
+0  1715022480000  May 6, 2024, 9:08:00 PM  25.2  25.17  25.22  25.17  662.0        6  PLTR.US_9
+108    False
+109    False
+110    False
+111    False
+112    False
+113    False
+114    False
+115    False
+116    False
+117    False
+118    False
+Name: rsiM1, dtype: bool
+No sell signal
+No buy signal
+        symbol                ctmString  open  close   high    low    vol quoteId            datetime      rsiM1 signal signal_price
+118  PLTR.US_9  May 6, 2024, 9:08:00 PM  25.2  25.17  25.22  25.17  662.0       6 2024-05-06 21:08:00  53.729924   HOLD          NaN
+             ctm                ctmString   open  close  high    low    vol  quoteId     symbol
+0  1715022540000  May 6, 2024, 9:09:00 PM  25.17   25.2  25.2  25.17  496.0        6  PLTR.US_9
+109    False
+110    False
+111    False
+112    False
+113    False
+114    False
+115    False
+116    False
+117    False
+118    False
+119    False
+Name: rsiM1, dtype: bool
+No sell signal
+No buy signal
+        symbol                ctmString   open  close  high    low    vol quoteId            datetime      rsiM1 signal signal_price
+119  PLTR.US_9  May 6, 2024, 9:09:00 PM  25.17   25.2  25.2  25.17  496.0       6 2024-05-06 21:09:00  60.012154   HOLD          NaN
+             ctm                ctmString  open  close  high    low    vol  quoteId     symbol
+0  1715022600000  May 6, 2024, 9:10:00 PM  25.2  25.19  25.2  25.19  399.0        6  PLTR.US_9
+110    False
+111    False
+112    False
+113    False
+114    False
+115    False
+116    False
+117    False
+118    False
+119    False
+120    False
+Name: rsiM1, dtype: bool
+No sell signal
+No buy signal
+        symbol                ctmString  open  close  high    low    vol quoteId            datetime      rsiM1 signal signal_price
+120  PLTR.US_9  May 6, 2024, 9:10:00 PM  25.2  25.19  25.2  25.19  399.0       6 2024-05-06 21:10:00  57.166222   HOLD          NaN
+             ctm                ctmString   open  close   high    low    vol  quoteId     symbol
+0  1715022660000  May 6, 2024, 9:11:00 PM  25.19  25.19  25.19  25.18  388.0        6  PLTR.US_9
+111    False
+112    False
+113    False
+114    False
+115    False
+116    False
+117    False
+118    False
+119    False
+120    False
+121    False
+Name: rsiM1, dtype: bool
+No sell signal
+No buy signal
+        symbol                ctmString   open  close   high    low    vol quoteId            datetime      rsiM1 signal signal_price
+121  PLTR.US_9  May 6, 2024, 9:11:00 PM  25.19  25.19  25.19  25.18  388.0       6 2024-05-06 21:11:00  57.166222   HOLD          NaN
+             ctm                ctmString  open  close  high    low    vol  quoteId     symbol
+0  1715022720000  May 6, 2024, 9:12:00 PM  25.2  25.15  25.2  25.15  785.0        6  PLTR.US_9
+112    False
+113    False
+114    False
+115    False
+116    False
+117    False
+118    False
+119    False
+120    False
+121    False
+122    False
+Name: rsiM1, dtype: bool
+No sell signal
+No buy signal
+        symbol                ctmString  open  close  high    low    vol quoteId            datetime      rsiM1 signal signal_price
+122  PLTR.US_9  May 6, 2024, 9:12:00 PM  25.2  25.15  25.2  25.15  785.0       6 2024-05-06 21:12:00  46.494544   HOLD          NaN
+             ctm                ctmString   open  close   high    low    vol  quoteId     symbol
+0  1715022780000  May 6, 2024, 9:13:00 PM  25.13  25.12  25.13  25.12  459.0        6  PLTR.US_9
+113    False
+114    False
+115    False
+116    False
+117    False
+118    False
+119    False
+120    False
+121    False
+122    False
+123    False
+Name: rsiM1, dtype: bool
+No sell signal
+No buy signal
+        symbol                ctmString   open  close   high    low    vol quoteId            datetime      rsiM1 signal signal_price
+123  PLTR.US_9  May 6, 2024, 9:13:00 PM  25.13  25.12  25.13  25.12  459.0       6 2024-05-06 21:13:00  40.289572   HOLD          NaN
+             ctm                ctmString   open  close   high   low    vol  quoteId     symbol
+0  1715022840000  May 6, 2024, 9:14:00 PM  25.12   25.1  25.12  25.1  585.0        6  PLTR.US_9
+114    False
+115    False
+116    False
+117    False
+118    False
+119    False
+120    False
+121    False
+122    False
+123    False
+124    False
+Name: rsiM1, dtype: bool
+No sell signal
+No buy signal
+        symbol                ctmString   open  close   high   low    vol quoteId            datetime      rsiM1 signal signal_price
+124  PLTR.US_9  May 6, 2024, 9:14:00 PM  25.12   25.1  25.12  25.1  585.0       6 2024-05-06 21:14:00  36.698022   HOLD          NaN
+             ctm                ctmString   open  close   high    low    vol  quoteId     symbol
+0  1715022900000  May 6, 2024, 9:15:00 PM  25.09  25.04  25.09  25.04  678.0        6  PLTR.US_9
+115    False
+116    False
+117    False
+118    False
+119    False
+120    False
+121    False
+122    False
+123    False
+124    False
+125    False
+Name: rsiM1, dtype: bool
+No sell signal
+No buy signal
+        symbol                ctmString   open  close   high    low    vol quoteId            datetime      rsiM1 signal signal_price
+125  PLTR.US_9  May 6, 2024, 9:15:00 PM  25.09  25.04  25.09  25.04  678.0       6 2024-05-06 21:15:00  28.356344   HOLD          NaN
+             ctm                ctmString   open  close   high    low    vol  quoteId     symbol
+0  1715022960000  May 6, 2024, 9:16:00 PM  25.03  25.03  25.04  25.02  632.0        6  PLTR.US_9
+116    False
+117    False
+118    False
+119    False
+120    False
+121    False
+122    False
+123    False
+124    False
+125    False
+126    False
+Name: rsiM1, dtype: bool
+No sell signal
+No buy signal
+        symbol                ctmString   open  close   high    low    vol quoteId            datetime      rsiM1 signal signal_price
+126  PLTR.US_9  May 6, 2024, 9:16:00 PM  25.03  25.03  25.04  25.02  632.0       6 2024-05-06 21:16:00  27.221931   HOLD          NaN
+             ctm                ctmString   open  close   high    low    vol  quoteId     symbol
+0  1715023020000  May 6, 2024, 9:17:00 PM  25.02  25.04  25.04  25.02  280.0        6  PLTR.US_9
+117    False
+118    False
+119    False
+120    False
+121    False
+122    False
+123    False
+124    False
+125    False
+126    False
+127    False
+Name: rsiM1, dtype: bool
+No sell signal
+No buy signal
+        symbol                ctmString   open  close   high    low    vol quoteId            datetime      rsiM1 signal signal_price
+127  PLTR.US_9  May 6, 2024, 9:17:00 PM  25.02  25.04  25.04  25.02  280.0       6 2024-05-06 21:17:00  30.289618   HOLD          NaN
+             ctm                ctmString   open  close   high    low    vol  quoteId     symbol
+0  1715023080000  May 6, 2024, 9:18:00 PM  25.04  25.02  25.04  25.02  517.0        6  PLTR.US_9
+118    False
+119    False
+120    False
+121    False
+122    False
+123    False
+124    False
+125    False
+126    False
+127    False
+128    False
+Name: rsiM1, dtype: bool
+No sell signal
+No buy signal
+        symbol                ctmString   open  close   high    low    vol quoteId            datetime      rsiM1 signal signal_price
+128  PLTR.US_9  May 6, 2024, 9:18:00 PM  25.04  25.02  25.04  25.02  517.0       6 2024-05-06 21:18:00  27.719145   HOLD          NaN
+             ctm                ctmString   open  close   high    low    vol  quoteId     symbol
+0  1715023140000  May 6, 2024, 9:19:00 PM  25.01  25.03  25.03  25.01  461.0        6  PLTR.US_9
+119    False
+120    False
+121    False
+122    False
+123    False
+124    False
+125    False
+126    False
+127    False
+128    False
+129    False
+Name: rsiM1, dtype: bool
+No sell signal
+No buy signal
+        symbol                ctmString   open  close   high    low    vol quoteId            datetime      rsiM1 signal signal_price
+129  PLTR.US_9  May 6, 2024, 9:19:00 PM  25.01  25.03  25.03  25.01  461.0       6 2024-05-06 21:19:00  30.942391   HOLD          NaN
+             ctm                ctmString   open  close   high    low    vol  quoteId     symbol
+0  1715023200000  May 6, 2024, 9:20:00 PM  25.03  25.03  25.03  25.01  453.0        6  PLTR.US_9
+120    False
+121    False
+122    False
+123    False
+124    False
+125    False
+126    False
+127    False
+128    False
+129    False
+130    False
+Name: rsiM1, dtype: bool
+No sell signal
+No buy signal
+        symbol                ctmString   open  close   high    low    vol quoteId            datetime      rsiM1 signal signal_price
+130  PLTR.US_9  May 6, 2024, 9:20:00 PM  25.03  25.03  25.03  25.01  453.0       6 2024-05-06 21:20:00  30.942391   HOLD          NaN
+             ctm                ctmString   open  close   high    low    vol  quoteId     symbol
+0  1715023260000  May 6, 2024, 9:21:00 PM  25.03  25.04  25.05  25.03  485.0        6  PLTR.US_9
+121    False
+122    False
+123    False
+124    False
+125    False
+126    False
+127    False
+128    False
+129    False
+130    False
+131    False
+Name: rsiM1, dtype: bool
+No sell signal
+No buy signal
+        symbol                ctmString   open  close   high    low    vol quoteId            datetime      rsiM1 signal signal_price
+131  PLTR.US_9  May 6, 2024, 9:21:00 PM  25.03  25.04  25.05  25.03  485.0       6 2024-05-06 21:21:00  34.477834   HOLD          NaN
+             ctm                ctmString   open  close   high    low    vol  quoteId     symbol
+0  1715023320000  May 6, 2024, 9:22:00 PM  25.05  25.07  25.07  25.05  710.0        6  PLTR.US_9
+122    False
+123    False
+124    False
+125    False
+126    False
+127    False
+128    False
+129    False
+130    False
+131    False
+132    False
+Name: rsiM1, dtype: bool
+No sell signal
+No buy signal
+        symbol                ctmString   open  close   high    low    vol quoteId            datetime      rsiM1 signal signal_price
+132  PLTR.US_9  May 6, 2024, 9:22:00 PM  25.05  25.07  25.07  25.05  710.0       6 2024-05-06 21:22:00  43.947622   HOLD          NaN
+             ctm                ctmString   open  close   high    low    vol  quoteId     symbol
+0  1715023380000  May 6, 2024, 9:23:00 PM  25.07  25.06  25.07  25.06  260.0        6  PLTR.US_9
+123    False
+124    False
+125    False
+126    False
+127    False
+128    False
+129    False
+130    False
+131    False
+132    False
+133    False
+Name: rsiM1, dtype: bool
+No sell signal
+No buy signal
+        symbol                ctmString   open  close   high    low    vol quoteId            datetime      rsiM1 signal signal_price
+133  PLTR.US_9  May 6, 2024, 9:23:00 PM  25.07  25.06  25.07  25.06  260.0       6 2024-05-06 21:23:00  41.735887   HOLD          NaN
+             ctm                ctmString   open  close   high    low    vol  quoteId     symbol
+0  1715023440000  May 6, 2024, 9:24:00 PM  25.06  25.06  25.06  25.06  216.0        6  PLTR.US_9
+124    False
+125    False
+126    False
+127    False
+128    False
+129    False
+130    False
+131    False
+132    False
+133    False
+134    False
+Name: rsiM1, dtype: bool
+No sell signal
+No buy signal
+        symbol                ctmString   open  close   high    low    vol quoteId            datetime      rsiM1 signal signal_price
+134  PLTR.US_9  May 6, 2024, 9:24:00 PM  25.06  25.06  25.06  25.06  216.0       6 2024-05-06 21:24:00  41.735887   HOLD          NaN
+             ctm                ctmString   open  close   high    low    vol  quoteId     symbol
+0  1715023500000  May 6, 2024, 9:25:00 PM  25.06  25.06  25.06  25.06  269.0        6  PLTR.US_9
+125    False
+126    False
+127    False
+128    False
+129    False
+130    False
+131    False
+132    False
+133    False
+134    False
+135    False
+Name: rsiM1, dtype: bool
+No sell signal
+No buy signal
+        symbol                ctmString   open  close   high    low    vol quoteId            datetime      rsiM1 signal signal_price
+135  PLTR.US_9  May 6, 2024, 9:25:00 PM  25.06  25.06  25.06  25.06  269.0       6 2024-05-06 21:25:00  41.735887   HOLD          NaN
+             ctm                ctmString   open  close  high    low    vol  quoteId     symbol
+0  1715023560000  May 6, 2024, 9:26:00 PM  25.07  25.09  25.1  25.07  528.0        6  PLTR.US_9
+126    False
+127    False
+128    False
+129    False
+130    False
+131    False
+132    False
+133    False
+134    False
+135    False
+136    False
+Name: rsiM1, dtype: bool
+No sell signal
+No buy signal
+        symbol                ctmString   open  close  high    low    vol quoteId            datetime      rsiM1 signal signal_price
+136  PLTR.US_9  May 6, 2024, 9:26:00 PM  25.07  25.09  25.1  25.07  528.0       6 2024-05-06 21:26:00  51.485148   HOLD          NaN
+             ctm                ctmString   open  close   high    low    vol  quoteId     symbol
+0  1715023620000  May 6, 2024, 9:27:00 PM  25.09  25.09  25.09  25.07  476.0        6  PLTR.US_9
+127    False
+128    False
+129    False
+130    False
+131    False
+132    False
+133    False
+134    False
+135    False
+136    False
+137    False
+Name: rsiM1, dtype: bool
+No sell signal
+No buy signal
+        symbol                ctmString   open  close   high    low    vol quoteId            datetime      rsiM1 signal signal_price
+137  PLTR.US_9  May 6, 2024, 9:27:00 PM  25.09  25.09  25.09  25.07  476.0       6 2024-05-06 21:27:00  51.485148   HOLD          NaN
+             ctm                ctmString  open  close  high    low    vol  quoteId     symbol
+0  1715023680000  May 6, 2024, 9:28:00 PM  25.1  25.08  25.1  25.08  417.0        6  PLTR.US_9
+128    False
+129    False
+130    False
+131    False
+132    False
+133    False
+134    False
+135    False
+136    False
+137    False
+138    False
+Name: rsiM1, dtype: bool
+No sell signal
+No buy signal
+        symbol                ctmString  open  close  high    low    vol quoteId            datetime      rsiM1 signal signal_price
+138  PLTR.US_9  May 6, 2024, 9:28:00 PM  25.1  25.08  25.1  25.08  417.0       6 2024-05-06 21:28:00  48.230132   HOLD          NaN
+             ctm                ctmString   open  close   high    low    vol  quoteId     symbol
+0  1715023740000  May 6, 2024, 9:29:00 PM  25.08  25.07  25.08  25.07  400.0        6  PLTR.US_9
+129    False
+130    False
+131    False
+132    False
+133    False
+134    False
+135    False
+136    False
+137    False
+138    False
+139    False
+Name: rsiM1, dtype: bool
+No sell signal
+No buy signal
+        symbol                ctmString   open  close   high    low    vol quoteId            datetime      rsiM1 signal signal_price
+139  PLTR.US_9  May 6, 2024, 9:29:00 PM  25.08  25.07  25.08  25.07  400.0       6 2024-05-06 21:29:00  45.094079   HOLD          NaN
+             ctm                ctmString   open  close   high    low    vol  quoteId     symbol
+0  1715023800000  May 6, 2024, 9:30:00 PM  25.07  25.06  25.08  25.06  715.0        6  PLTR.US_9
+130    False
+131    False
+132    False
+133    False
+134    False
+135    False
+136    False
+137    False
+138    False
+139    False
+140    False
+Name: rsiM1, dtype: bool
+No sell signal
+No buy signal
+        symbol                ctmString   open  close   high    low    vol quoteId            datetime      rsiM1 signal signal_price
+140  PLTR.US_9  May 6, 2024, 9:30:00 PM  25.07  25.06  25.08  25.06  715.0       6 2024-05-06 21:30:00  42.084021   HOLD          NaN
+             ctm                ctmString   open  close   high    low    vol  quoteId     symbol
+0  1715023860000  May 6, 2024, 9:31:00 PM  25.06  25.05  25.06  25.05  364.0        6  PLTR.US_9
+131    False
+132    False
+133    False
+134    False
+135    False
+136    False
+137    False
+138    False
+139    False
+140    False
+141    False
+Name: rsiM1, dtype: bool
+No sell signal
+No buy signal
+        symbol                ctmString   open  close   high    low    vol quoteId            datetime      rsiM1 signal signal_price
+141  PLTR.US_9  May 6, 2024, 9:31:00 PM  25.06  25.05  25.06  25.05  364.0       6 2024-05-06 21:31:00  39.205342   HOLD          NaN
+             ctm                ctmString   open  close   high    low    vol  quoteId     symbol
+0  1715023920000  May 6, 2024, 9:32:00 PM  25.06  25.05  25.07  25.05  340.0        6  PLTR.US_9
+132    False
+133    False
+134    False
+135    False
+136    False
+137    False
+138    False
+139    False
+140    False
+141    False
+142    False
+Name: rsiM1, dtype: bool
+No sell signal
+No buy signal
+        symbol                ctmString   open  close   high    low    vol quoteId            datetime      rsiM1 signal signal_price
+142  PLTR.US_9  May 6, 2024, 9:32:00 PM  25.06  25.05  25.07  25.05  340.0       6 2024-05-06 21:32:00  39.205342   HOLD          NaN
+             ctm                ctmString   open  close   high    low    vol  quoteId     symbol
+0  1715023980000  May 6, 2024, 9:33:00 PM  25.04  25.02  25.04  25.01  569.0        6  PLTR.US_9
+133    False
+134    False
+135    False
+136    False
+137    False
+138    False
+139    False
+140    False
+141    False
+142    False
+143    False
+Name: rsiM1, dtype: bool
+No sell signal
+No buy signal
+        symbol                ctmString   open  close   high    low    vol quoteId            datetime      rsiM1 signal signal_price
+143  PLTR.US_9  May 6, 2024, 9:33:00 PM  25.04  25.02  25.04  25.01  569.0       6 2024-05-06 21:33:00  31.406902   HOLD          NaN
+             ctm                ctmString   open  close   high    low    vol  quoteId     symbol
+0  1715024040000  May 6, 2024, 9:34:00 PM  25.03  25.04  25.04  25.01  445.0        6  PLTR.US_9
+134    False
+135    False
+136    False
+137    False
+138    False
+139    False
+140    False
+141    False
+142    False
+143    False
+144    False
+Name: rsiM1, dtype: bool
+No sell signal
+No buy signal
+        symbol                ctmString   open  close   high    low    vol quoteId            datetime      rsiM1 signal signal_price
+144  PLTR.US_9  May 6, 2024, 9:34:00 PM  25.03  25.04  25.04  25.01  445.0       6 2024-05-06 21:34:00  40.138812   HOLD          NaN
+             ctm                ctmString   open  close   high    low    vol  quoteId     symbol
+0  1715024100000  May 6, 2024, 9:35:00 PM  25.05  25.03  25.05  25.03  397.0        6  PLTR.US_9
+135    False
+136    False
+137    False
+138    False
+139    False
+140    False
+141    False
+142    False
+143    False
+144    False
+145    False
+Name: rsiM1, dtype: bool
+No sell signal
+No buy signal
+        symbol                ctmString   open  close   high    low    vol quoteId            datetime     rsiM1 signal signal_price
+145  PLTR.US_9  May 6, 2024, 9:35:00 PM  25.05  25.03  25.05  25.03  397.0       6 2024-05-06 21:35:00  37.51238   HOLD          NaN
+             ctm                ctmString   open  close   high    low    vol  quoteId     symbol
+0  1715024160000  May 6, 2024, 9:36:00 PM  25.04  25.08  25.08  25.04  547.0        6  PLTR.US_9
+136    False
+137    False
+138    False
+139    False
+140    False
+141    False
+142    False
+143    False
+144    False
+145    False
+146    False
+Name: rsiM1, dtype: bool
+No sell signal
+No buy signal
+        symbol                ctmString   open  close   high    low    vol quoteId            datetime      rsiM1 signal signal_price
+146  PLTR.US_9  May 6, 2024, 9:36:00 PM  25.04  25.08  25.08  25.04  547.0       6 2024-05-06 21:36:00  54.049351   HOLD          NaN
+             ctm                ctmString   open  close  high    low    vol  quoteId     symbol
+0  1715024220000  May 6, 2024, 9:37:00 PM  25.09   25.1  25.1  25.09  605.0        6  PLTR.US_9
+137    False
+138    False
+139    False
+140    False
+141    False
+142    False
+143    False
+144    False
+145    False
+146    False
+147    False
+Name: rsiM1, dtype: bool
+No sell signal
+No buy signal
+        symbol                ctmString   open  close  high    low    vol quoteId            datetime      rsiM1 signal signal_price
+147  PLTR.US_9  May 6, 2024, 9:37:00 PM  25.09   25.1  25.1  25.09  605.0       6 2024-05-06 21:37:00  58.841934   HOLD          NaN
+             ctm                ctmString  open  close   high   low    vol  quoteId     symbol
+0  1715024280000  May 6, 2024, 9:38:00 PM  25.1  25.12  25.12  25.1  424.0        6  PLTR.US_9
+138    False
+139    False
+140    False
+141    False
+142    False
+143    False
+144    False
+145    False
+146    False
+147    False
+148    False
+Name: rsiM1, dtype: bool
+No sell signal
+No buy signal
+        symbol                ctmString  open  close   high   low    vol quoteId            datetime     rsiM1 signal signal_price
+148  PLTR.US_9  May 6, 2024, 9:38:00 PM  25.1  25.12  25.12  25.1  424.0       6 2024-05-06 21:38:00  63.07794   HOLD          NaN
+             ctm                ctmString   open  close   high   low    vol  quoteId     symbol
+0  1715024340000  May 6, 2024, 9:39:00 PM  25.12  25.11  25.12  25.1  405.0        6  PLTR.US_9
+139    False
+140    False
+141    False
+142    False
+143    False
+144    False
+145    False
+146    False
+147    False
+148    False
+149    False
+Name: rsiM1, dtype: bool
+No sell signal
+No buy signal
+        symbol                ctmString   open  close   high   low    vol quoteId            datetime      rsiM1 signal signal_price
+149  PLTR.US_9  May 6, 2024, 9:39:00 PM  25.12  25.11  25.12  25.1  405.0       6 2024-05-06 21:39:00  59.698626   HOLD          NaN
+             ctm                ctmString  open  close   high    low    vol  quoteId     symbol
+0  1715024400000  May 6, 2024, 9:40:00 PM  25.1  25.08  25.11  25.08  479.0        6  PLTR.US_9
+140    False
+141    False
+142    False
+143    False
+144    False
+145    False
+146    False
+147    False
+148    False
+149    False
+150    False
+Name: rsiM1, dtype: bool
+No sell signal
+No buy signal
+        symbol                ctmString  open  close   high    low    vol quoteId            datetime      rsiM1 signal signal_price
+150  PLTR.US_9  May 6, 2024, 9:40:00 PM  25.1  25.08  25.11  25.08  479.0       6 2024-05-06 21:40:00  50.729929   HOLD          NaN
+             ctm                ctmString   open  close   high    low    vol  quoteId     symbol
+0  1715024460000  May 6, 2024, 9:41:00 PM  25.08  25.09  25.09  25.08  335.0        6  PLTR.US_9
+141    False
+142    False
+143    False
+144    False
+145    False
+146    False
+147    False
+148    False
+149    False
+150    False
+151    False
+Name: rsiM1, dtype: bool
+No sell signal
+No buy signal
+        symbol                ctmString   open  close   high    low    vol quoteId            datetime     rsiM1 signal signal_price
+151  PLTR.US_9  May 6, 2024, 9:41:00 PM  25.08  25.09  25.09  25.08  335.0       6 2024-05-06 21:41:00  53.30229   HOLD          NaN
+             ctm                ctmString   open  close  high    low    vol  quoteId     symbol
+0  1715024520000  May 6, 2024, 9:42:00 PM  25.09   25.1  25.1  25.09  389.0        6  PLTR.US_9
+142    False
+143    False
+144    False
+145    False
+146    False
+147    False
+148    False
+149    False
+150    False
+151    False
+152    False
+Name: rsiM1, dtype: bool
+No sell signal
+No buy signal
+        symbol                ctmString   open  close  high    low    vol quoteId            datetime      rsiM1 signal signal_price
+152  PLTR.US_9  May 6, 2024, 9:42:00 PM  25.09   25.1  25.1  25.09  389.0       6 2024-05-06 21:42:00  55.838501   HOLD          NaN
+             ctm                ctmString  open  close  high   low    vol  quoteId     symbol
+0  1715024580000  May 6, 2024, 9:43:00 PM  25.1   25.1  25.1  25.1  401.0        6  PLTR.US_9
+143    False
+144    False
+145    False
+146    False
+147    False
+148    False
+149    False
+150    False
+151    False
+152    False
+153    False
+Name: rsiM1, dtype: bool
+No sell signal
+No buy signal
+        symbol                ctmString  open  close  high   low    vol quoteId            datetime      rsiM1 signal signal_price
+153  PLTR.US_9  May 6, 2024, 9:43:00 PM  25.1   25.1  25.1  25.1  401.0       6 2024-05-06 21:43:00  55.838501   HOLD          NaN
+             ctm                ctmString  open  close  high    low    vol  quoteId     symbol
+0  1715024640000  May 6, 2024, 9:44:00 PM  25.1  25.09  25.1  25.09  425.0        6  PLTR.US_9
+144    False
+145    False
+146    False
+147    False
+148    False
+149    False
+150    False
+151    False
+152    False
+153    False
+154    False
+Name: rsiM1, dtype: bool
+No sell signal
+No buy signal
+        symbol                ctmString  open  close  high    low    vol quoteId            datetime      rsiM1 signal signal_price
+154  PLTR.US_9  May 6, 2024, 9:44:00 PM  25.1  25.09  25.1  25.09  425.0       6 2024-05-06 21:44:00  52.395262   HOLD          NaN
+             ctm                ctmString   open  close   high    low    vol  quoteId     symbol
+0  1715024700000  May 6, 2024, 9:45:00 PM  25.08  25.09  25.09  25.08  410.0        6  PLTR.US_9
+145    False
+146    False
+147    False
+148    False
+149    False
+150    False
+151    False
+152    False
+153    False
+154    False
+155    False
+Name: rsiM1, dtype: bool
+No sell signal
+No buy signal
+        symbol                ctmString   open  close   high    low    vol quoteId            datetime      rsiM1 signal signal_price
+155  PLTR.US_9  May 6, 2024, 9:45:00 PM  25.08  25.09  25.09  25.08  410.0       6 2024-05-06 21:45:00  52.395262   HOLD          NaN
+             ctm                ctmString   open  close   high    low     vol  quoteId     symbol
+0  1715024760000  May 6, 2024, 9:46:00 PM  25.11  25.14  25.15  25.11  1096.0        6  PLTR.US_9
+146    False
+147    False
+148    False
+149    False
+150    False
+151    False
+152    False
+153    False
+154    False
+155    False
+156    False
+Name: rsiM1, dtype: bool
+No sell signal
+No buy signal
+        symbol                ctmString   open  close   high    low     vol quoteId            datetime      rsiM1 signal signal_price
+156  PLTR.US_9  May 6, 2024, 9:46:00 PM  25.11  25.14  25.15  25.11  1096.0       6 2024-05-06 21:46:00  65.329674   HOLD          NaN
+             ctm                ctmString   open  close   high    low    vol  quoteId     symbol
+0  1715024820000  May 6, 2024, 9:47:00 PM  25.14  25.17  25.17  25.14  629.0        6  PLTR.US_9
+147    False
+148    False
+149    False
+150    False
+151    False
+152    False
+153    False
+154    False
+155    False
+156    False
+157    False
+Name: rsiM1, dtype: bool
+No sell signal
+No buy signal
+        symbol                ctmString   open  close   high    low    vol quoteId            datetime      rsiM1 signal signal_price
+157  PLTR.US_9  May 6, 2024, 9:47:00 PM  25.14  25.17  25.17  25.14  629.0       6 2024-05-06 21:47:00  70.601547   HOLD          NaN
+             ctm                ctmString   open  close   high    low    vol  quoteId     symbol
+0  1715024880000  May 6, 2024, 9:48:00 PM  25.18  25.17  25.19  25.17  458.0        6  PLTR.US_9
+148    False
+149    False
+150    False
+151    False
+152    False
+153    False
+154    False
+155    False
+156    False
+157    False
+158    False
+Name: rsiM1, dtype: bool
+No sell signal
+No buy signal
+        symbol                ctmString   open  close   high    low    vol quoteId            datetime      rsiM1 signal signal_price
+158  PLTR.US_9  May 6, 2024, 9:48:00 PM  25.18  25.17  25.19  25.17  458.0       6 2024-05-06 21:48:00  70.601547   HOLD          NaN
+             ctm                ctmString   open  close   high    low    vol  quoteId     symbol
+0  1715024940000  May 6, 2024, 9:49:00 PM  25.17  25.19  25.19  25.17  578.0        6  PLTR.US_9
+149    False
+150    False
+151    False
+152    False
+153    False
+154    False
+155    False
+156    False
+157    False
+158    False
+159    False
+Name: rsiM1, dtype: bool
+No sell signal
+No buy signal
+        symbol                ctmString   open  close   high    low    vol quoteId            datetime      rsiM1 signal signal_price
+159  PLTR.US_9  May 6, 2024, 9:49:00 PM  25.17  25.19  25.19  25.17  578.0       6 2024-05-06 21:49:00  73.813561   HOLD          NaN
+             ctm                ctmString   open  close   high    low    vol  quoteId     symbol
+0  1715025000000  May 6, 2024, 9:50:00 PM  25.19  25.21  25.21  25.19  253.0        6  PLTR.US_9
+150    False
+151    False
+152    False
+153    False
+154    False
+155    False
+156    False
+157    False
+158    False
+159    False
+160     True
+Name: rsiM1, dtype: bool
+Sell signal
+above 75
+RSI: 76.62308655571928
+close:25.21
+      symbol                          description categoryName currency    bid    ask           time  precision  spreadRaw
+0  PLTR.US_9  Palantir Technologies Inc - class A          STC      USD  25.21  25.23  1715025060213          2       0.02
+Failed to get buy trade records {'status': True, 'returnData': []}
+There are no buy open positions to close
+        symbol                ctmString   open  close   high    low    vol quoteId            datetime      rsiM1 signal signal_price
+160  PLTR.US_9  May 6, 2024, 9:50:00 PM  25.19  25.21  25.21  25.19  253.0       6 2024-05-06 21:50:00  76.623087   SELL        25.21
+             ctm                ctmString   open  close   high    low    vol  quoteId     symbol
+0  1715025060000  May 6, 2024, 9:51:00 PM  25.21  25.22  25.22  25.21  769.0        6  PLTR.US_9
+151    False
+152    False
+153    False
+154    False
+155    False
+156    False
+157    False
+158    False
+159    False
+160    False
+161    False
+Name: rsiM1, dtype: bool
+No sell signal
+No buy signal
+        symbol                ctmString   open  close   high    low    vol quoteId            datetime      rsiM1 signal signal_price
+161  PLTR.US_9  May 6, 2024, 9:51:00 PM  25.21  25.22  25.22  25.21  769.0       6 2024-05-06 21:51:00  77.925673   HOLD          NaN
+             ctm                ctmString   open  close   high    low    vol  quoteId     symbol
+0  1715025120000  May 6, 2024, 9:52:00 PM  25.22  25.26  25.26  25.22  511.0        6  PLTR.US_9
+152    False
+153    False
+154    False
+155    False
+156    False
+157    False
+158    False
+159    False
+160    False
+161    False
+162    False
+Name: rsiM1, dtype: bool
+No sell signal
+No buy signal
+        symbol                ctmString   open  close   high    low    vol quoteId            datetime      rsiM1 signal signal_price
+162  PLTR.US_9  May 6, 2024, 9:52:00 PM  25.22  25.26  25.26  25.22  511.0       6 2024-05-06 21:52:00  82.272076   HOLD          NaN
+             ctm                ctmString   open  close   high    low    vol  quoteId     symbol
+0  1715025180000  May 6, 2024, 9:53:00 PM  25.26  25.24  25.26  25.23  716.0        6  PLTR.US_9
+153    False
+154    False
+155    False
+156    False
+157    False
+158    False
+159    False
+160    False
+161    False
+162    False
+163    False
+Name: rsiM1, dtype: bool
+No sell signal
+No buy signal
+        symbol                ctmString   open  close   high    low    vol quoteId            datetime      rsiM1 signal signal_price
+163  PLTR.US_9  May 6, 2024, 9:53:00 PM  25.26  25.24  25.26  25.23  716.0       6 2024-05-06 21:53:00  74.233065   HOLD          NaN
+             ctm                ctmString   open  close   high    low    vol  quoteId     symbol
+0  1715025240000  May 6, 2024, 9:54:00 PM  25.24  25.25  25.26  25.24  517.0        6  PLTR.US_9
+154    False
+155    False
+156    False
+157    False
+158    False
+159    False
+160    False
+161    False
+162    False
+163    False
+164     True
+Name: rsiM1, dtype: bool
+Sell signal
+above 75
+RSI: 75.54720455018357
+close:25.25
+      symbol                          description categoryName currency    bid    ask           time  precision  spreadRaw
+0  PLTR.US_9  Palantir Technologies Inc - class A          STC      USD  25.25  25.27  1715025301380          2       0.02
+Failed to get buy trade records {'status': True, 'returnData': []}
+There are no buy open positions to close
+        symbol                ctmString   open  close   high    low    vol quoteId            datetime      rsiM1 signal signal_price
+164  PLTR.US_9  May 6, 2024, 9:54:00 PM  25.24  25.25  25.26  25.24  517.0       6 2024-05-06 21:54:00  75.547205   SELL        25.25
+             ctm                ctmString   open  close   high   low    vol  quoteId     symbol
+0  1715025300000  May 6, 2024, 9:55:00 PM  25.25   25.2  25.25  25.2  835.0        6  PLTR.US_9
+155    False
+156    False
+157    False
+158    False
+159    False
+160    False
+161    False
+162    False
+163    False
+164    False
+165    False
+Name: rsiM1, dtype: bool
+No sell signal
+No buy signal
+        symbol                ctmString   open  close   high   low    vol quoteId            datetime      rsiM1 signal signal_price
+165  PLTR.US_9  May 6, 2024, 9:55:00 PM  25.25   25.2  25.25  25.2  835.0       6 2024-05-06 21:55:00  58.997956   HOLD          NaN
+             ctm                ctmString   open  close   high    low    vol  quoteId     symbol
+0  1715025360000  May 6, 2024, 9:56:00 PM  25.21  25.22  25.23  25.21  498.0        6  PLTR.US_9
+156    False
+157    False
+158    False
+159    False
+160    False
+161    False
+162    False
+163    False
+164    False
+165    False
+166    False
+Name: rsiM1, dtype: bool
+No sell signal
+No buy signal
+        symbol                ctmString   open  close   high    low    vol quoteId            datetime      rsiM1 signal signal_price
+166  PLTR.US_9  May 6, 2024, 9:56:00 PM  25.21  25.22  25.23  25.21  498.0       6 2024-05-06 21:56:00  62.602536   HOLD          NaN
+             ctm                ctmString   open  close   high    low    vol  quoteId     symbol
+0  1715025420000  May 6, 2024, 9:57:00 PM  25.23  25.22  25.23  25.22  540.0        6  PLTR.US_9
+157    False
+158    False
+159    False
+160    False
+161    False
+162    False
+163    False
+164    False
+165    False
+166    False
+167    False
+Name: rsiM1, dtype: bool
+No sell signal
+No buy signal
+        symbol                ctmString   open  close   high    low    vol quoteId            datetime      rsiM1 signal signal_price
+167  PLTR.US_9  May 6, 2024, 9:57:00 PM  25.23  25.22  25.23  25.22  540.0       6 2024-05-06 21:57:00  62.602536   HOLD          NaN
+             ctm                ctmString   open  close   high    low    vol  quoteId     symbol
+0  1715025480000  May 6, 2024, 9:58:00 PM  25.21  25.21  25.21  25.21  436.0        6  PLTR.US_9
+158    False
+159    False
+160    False
+161    False
+162    False
+163    False
+164    False
+165    False
+166    False
+167    False
+168    False
+Name: rsiM1, dtype: bool
+No sell signal
+No buy signal
+        symbol                ctmString   open  close   high    low    vol quoteId            datetime      rsiM1 signal signal_price
+168  PLTR.US_9  May 6, 2024, 9:58:00 PM  25.21  25.21  25.21  25.21  436.0       6 2024-05-06 21:58:00  59.441052   HOLD          NaN
+             ctm                ctmString   open  close   high    low    vol  quoteId     symbol
+0  1715025540000  May 6, 2024, 9:59:00 PM  25.21   25.2  25.21  25.18  741.0        6  PLTR.US_9
+159    False
+160    False
+161    False
+162    False
+163    False
+164    False
+165    False
+166    False
+167    False
+168    False
+169    False
+Name: rsiM1, dtype: bool
+No sell signal
+No buy signal
+        symbol                ctmString   open  close   high    low    vol quoteId            datetime      rsiM1 signal signal_price
+169  PLTR.US_9  May 6, 2024, 9:59:00 PM  25.21   25.2  25.21  25.18  741.0       6 2024-05-06 21:59:00  56.312819   HOLD          NaN
