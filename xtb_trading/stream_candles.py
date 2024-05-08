@@ -24,7 +24,7 @@ from set_rsi import buy_sell_with_rsi
 
 # Open the output file
 date_time_str = dt.now().strftime("%Y%m%d_%H%M%S")    
-output_file = open('output_' + date_time_str, 'w')
+output_file = open('.\\outputs\\output_' + date_time_str + ".str", 'w')
 # Redirect stdout to the output file
 sys.stdout = output_file
 
