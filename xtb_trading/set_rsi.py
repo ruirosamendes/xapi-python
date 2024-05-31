@@ -11,14 +11,18 @@ async def buy_sell_with_rsi(symbol:Symbol, investment:int, commit:bool, prices:p
     # Sinal de Venda: RSI < 70                                                                                                       
     prices["rsiM1"] = ta.rsi(prices[ref_price_str], length=rsi_period)
     last_price = prices.tail(1)                                     
+    # Get last price and RSI
+    last_rsi = last_price["rsiM1"].iloc[0]
+    last_ref_price = last_price[ref_price_str].iloc[0]
+
     has_signal = False                    
     filter_sell = (prices["rsiM1"].shift(1) < sell_rsi) & (last_price["rsiM1"] > sell_rsi)
     print(filter_sell.tail(rsi_period))                    
     if(filter_sell.tail(rsi_period).any()):                    
         print ("Sell signal")
         print ("above " + str(sell_rsi))                            
-        print("RSI: " + str(last_price["rsiM1"].iloc[0]))
-        print(ref_price_str + ":" + str(last_price[ref_price_str].iloc[0]))                                                      
+        print("RSI: " + str(last_rsi))
+        print(ref_price_str + ":" + str(last_ref_price))                                                      
         prices.loc[prices.index[-1], "signal"] = "SELL"        
         symbol_data = await symbol.get_data()
         prices.loc[prices.index[-1], "signal_price"] = symbol_data["bid"].loc[0]
@@ -46,8 +50,8 @@ async def buy_sell_with_rsi(symbol:Symbol, investment:int, commit:bool, prices:p
         if(filter_buy.tail(rsi_period).any()):
             print ("Buy signal")
             print ("below " + str(buy_rsi))                            
-            print("RSI: " + str(last_price["rsiM1"].iloc[0]))
-            print(ref_price_str + ":" + str(last_price[ref_price_str].iloc[0]))  
+            print("RSI: " + str(last_rsi))
+            print(ref_price_str + ":" + str(last_ref_price))  
             prices.loc[prices.index[-1], "signal"] = "BUY"
             symbol_data = await symbol.get_data()                
             prices.loc[prices.index[-1], "signal_price"] = symbol_data["ask"].loc[0]
@@ -62,3 +66,13 @@ async def buy_sell_with_rsi(symbol:Symbol, investment:int, commit:bool, prices:p
         else:                            
             print ("No buy signal")                        
             prices.loc[prices.index[-1], "signal"] = "HOLD"
+
+        #  # Is there any position open?
+        # buy_positions = await symbol.get_buy_positions()
+        # if(len(buy_positions) > 0):
+        #     print("There are already open positions. Is the current price higher than the open price?")
+        #     profit = buy_positions["profit"].loc[0]                                                      
+        #     # Has profit?
+        #     if(profit > 0):
+        #         await symbol.set_sell_stop_price_by_percentage(0, commit)
+            

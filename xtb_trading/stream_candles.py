@@ -44,11 +44,12 @@ logging.basicConfig(level=logging.INFO)
 with open("credentials.json", "r") as f:
     credentials = json.load(f)    
 
-parser = argparse.ArgumentParser(description='Stream candles for a specific symbol.')
+parser = argparse.ArgumentParser(description='Stream candles for a specific symbol and investment value.')
 parser.add_argument('symbol_str', type=str, help='The symbol to stream candles for.')
+parser.add_argument('investment_value', type=int, help='Investment value for buy operation.')
 args = parser.parse_args()    
 
-async def main(symbol_str:str = args.symbol_str):    
+async def main(symbol_str:str = args.symbol_str, investment_value:int = args.investment_value):    
     now = dt.now() # current date and time
     date_time_str = now.strftime("%Y%m%d_%H%M%S")
     filename = ".\\StreamCandles\\" + symbol_str + "_candles_" + date_time_str + ".csv"
@@ -68,7 +69,7 @@ async def main(symbol_str:str = args.symbol_str):
                     datetime_object = dt.strptime(minute_data["ctmString"].iloc[0], '%b %d, %Y, %I:%M:%S %p')                    
                     minute_data.insert(8, "datetime", datetime_object)          
                     close_prices = pd.concat([close_prices, minute_data], ignore_index=True)                                    
-                    await buy_sell_with_rsi(symbol, 10000, True, close_prices,"close", 11, 75, 25)
+                    await buy_sell_with_rsi(symbol, investment_value, True, close_prices,"close", 11, 75, 35)
                     print(close_prices.tail(1))
                     close_prices.tail(1).to_csv(filename, mode='a', header=False, index=False)
                     # Flush the output to the file

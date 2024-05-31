@@ -45,7 +45,7 @@ async def main(symbol_str:str = args.symbol_str):
                     datetime = dt.fromtimestamp(ticks_data["timestamp"][0]/1000)
                     ticks_data.insert(9, "datetime", datetime)
                     symbol_prices = pd.concat([symbol_prices, ticks_data], ignore_index=True)                    
-                    await buy_sell_with_rsi(symbol, 10000, True, symbol_prices, "bid", 11, 65, 55)
+                    await buy_sell_with_rsi(symbol, 1000, True, symbol_prices, "bid", 9, 65, 45)
                     print(symbol_prices.tail(1))
                     symbol_prices.tail(1).to_csv(filename, mode='a', header=False, index=False)
 

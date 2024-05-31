@@ -1,0 +1,2 @@
+symbol,ctmString,open,close,high,low,vol,quoteId,datetime,rsiM1,signal,signal_price
+ETHEREUM,"May 31, 2024, 1:34:00 PM",3787.66,3787.95,3789.75,3787.66,5368.0,5,2024-05-31 13:34:00,,HOLD,

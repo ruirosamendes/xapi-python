@@ -57,6 +57,8 @@ class Symbol:
                         cmd=cmd,
                         type=trade_type,
                         price=price,
+                        sl=stop_loss,
+                        tp=take_profit,
                         volume=volume,
                         customComment=custom_comment
                     )
@@ -194,9 +196,7 @@ class Symbol:
         print("buy price: " + str(buy_price))
         print("Sell stop price: " + str(sell_stop_price))
         print("Stop loss price: " + str(stop_loss_price))
-        print("Take profit price: " + str(take_profit_price))
-        
-        
+        print("Take profit price: " + str(take_profit_price))        
         print("Investment Reference: " + str(investment_value_reference))
         print("Buy value: " + str(buy_value))
 
