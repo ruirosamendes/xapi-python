@@ -200,7 +200,7 @@ class Symbol:
         print("Investment Reference: " + str(investment_value_reference))
         print("Buy value: " + str(buy_value))
 
-        if(category_name == "CRT"):
+        if(category_name == "CRT" or category_name == "IND"):
             print("Stop loss value: " + str(stop_loss_value))
             print("Max loss value: " + str(round(buy_value - stop_loss_value,2)))
             print("Take profit value: " + str(take_profit_value))
@@ -212,8 +212,8 @@ class Symbol:
         print("\n")        
         print("Opening a buy short position using the ask price and the investment reference")                              
         if (commit):               
-            if(category_name == "CRT"):
-                print("Cripto order, so set the stop loss and the take profit")                    
+            if(category_name == "CRT" or category_name == "IND"):
+                print("Cripto or Index order, so set the stop loss and the take profit")                    
                 order = await self.__make_trade(0, TradeCmd.BUY, TradeType.OPEN, volume, buy_price, sell_stop_price, take_profit_price, "open short buy")
             elif(category_name == "STC"):
                 print("Stock order")              

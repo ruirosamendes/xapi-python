@@ -33,7 +33,7 @@ async def buy_sell_with_rsi(symbol:Symbol, investment:int, commit:bool, prices:p
             if(symbol_data["categoryName"].loc[0] == "STC"):
                 print("Set sell stop prices to quickly close open buy position.")
                 await symbol.set_sell_stop_price_to_close(commit)
-            elif (symbol_data["categoryName"].loc[0] == "CRT"):
+            elif (symbol_data["categoryName"].loc[0] == "CRT" or symbol_data["categoryName"].loc[0] == "IND"):
                 print("Close open buy position.")
                 await symbol.close_short_buy(commit)               
         else:
